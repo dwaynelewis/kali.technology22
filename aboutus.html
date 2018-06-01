@@ -1,127 +1,293 @@
+<!DOCTYPE html>
 <html>
+
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="jquery.bubble.text.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+    <title>CONTACT</title>
+
+		<style>
+    *{
+      font-family: 'Anton', sans-serif;
+    }
+		body{
+			height: 100%;
+			background-color:black;
+			color:white;
+		}
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+span{
+	top:0;
+	left:0;
+	width: 10%;
+	text-align: center;
+	position: absolute;
+	color:white ;
+	font-size: 24px;
+}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-      	<script src="jquery.bubble.text.js"></script>
-<title>"KALI"</title>
+	.linear-container1 {
+	  width: 150%;
+	  margin-top: 10rem;
+	  border: 1px solid black;
+	  position: fixed;
+	}
+
+
+		.linear-container2 {
+		  width: 150%;
+		  margin-top: 20rem;
+		  border: 1px solid black;
+		  position: fixed;
+		}
+		.linear-container3 {
+		  width: 150%;
+		  margin-top: 30rem;
+		  border: 1px solid black;
+		  position: fixed;
+		}
+		.linear-container4 {
+		  width: 150%;
+		  margin-top: 40rem;
+		  border: 1px solid black;
+		  position: fixed;
+		}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:black;
+    /* background-color: rgba(0,0,0, 0.9); */
+    overflow-x: hidden;
+		opacity: .7;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: red;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+</style>
 
 
 <style>
 
 
+@media screen and (max-width: 450px) {
 
-	@media screen and (max-width: 1100px){
+* {
+		margin: 0 auto;
+		border: 0;
+		padding: 0;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
 
-    .bubblehold {
-      display: none;
-    }
+	p{
+		position: absolute;
 
+	}
+
+	.par1{
+		top:25%
+	}
+
+.par2{
+	top:45%
 }
 
-body{
-   -webkit-align-items: center;
-  text-align: center;
-  align-items: center;
-}
-		a{
-		background-color: black;
-		opacity: .9;
-		color: white;
-		border-radius: 10px;
-		width: 120px;
-		height: 44px;
-		font-size: .75em;
-		text-align: center;
-		font-size: 200%
-		}
-		a:hover{
-
-		}
-
-    .video-container video {
-  display: block;
-  width: 100%;
+.par3{
+	top:65%
 }
 
-.video-container {
-  margin: 40px auto;
-  outline: 1px solid #dadada;
-  &:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
-  &:nth-of-type(2) { width: 50%; }
-  &:nth-of-type(3) { width: 75%; }
-  &:nth-of-type(4) { width: 100%; }
-}
+	}
 
-#bubble {
-  font-size: 6rem;
-margin: auto;
-  font-weight: bold;
-  font-family: 'Dosis', sans-serif;
-  text-shadow: 1px 1px white;
-}
 
-}
-    </style>
+
+	.linear {
+		height: 1rem;
+	  width: 300%;
+	  /***  CSS Gradient  ***/
+	  /*  Chrome 1-9 and Safari 4-5.0  */
+	  background-image: -webkit-gradient(linear, left top, right top,
+	        color-stop( 0.0, rgb(255, 0, 0) ),
+	        color-stop( 0.168, rgb(146, 213, 0) ),
+	        color-stop( 0.336, rgb(0, 213, 197) ),
+	        color-stop( 0.502, rgb(213, 0, 196) ),
+	        color-stop( 0.669, rgb(255, 0, 0) ),
+	        color-stop( 0.834, rgb(146, 213, 0) ),
+	        color-stop( 1.0, rgb(0, 213, 197) ));
+
+	  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+	  background-image: -webkit-linear-gradient(left,
+	        rgb(255, 0, 0),
+	        rgb(146, 213, 0) 16.8%,
+	        rgb(0, 213, 197) 33.6%,
+	        rgb(213, 0, 196) 50.2%,
+	        rgb(255, 0, 0) 66.9%,
+	        rgb(146, 213, 0) 83.4%,
+	        rgb(0, 213, 197) );
+
+	  /*  Firefox 3.6+  */
+	  background-image: -moz-linear-gradient(left,
+	        rgb(255, 0, 0),
+	        rgb(146, 213, 0) 16.8%,
+	        rgb(0, 213, 197) 33.6%,
+	        rgb(213, 0, 196) 50.2%,
+	        rgb(255, 0, 0) 66.9%,
+	        rgb(146, 213, 0) 83.4%,
+	        rgb(0, 213, 197) );
+
+	  /*  IE 10+  */
+	  background-image: -ms-linear-gradient(left,
+	        rgb(255, 0, 0),
+	        rgb(146, 213, 0) 16.8%,
+	        rgb(0, 213, 197) 33.6%,
+	        rgb(213, 0, 196) 50.2%,
+	        rgb(255, 0, 0) 66.9%,
+	        rgb(146, 213, 0) 83.4%,
+	        rgb(0, 213, 197) );
+
+	  /*  Opera 11.10+  */
+	  background-image: -o-linear-gradient(left,
+	        rgb(255, 0, 0),
+	        rgb(146, 213, 0) 16.8%,
+	        rgb(0, 213, 197) 33.6%,
+	        rgb(213, 0, 196) 50.2%,
+	        rgb(255, 0, 0) 66.9%,
+	        rgb(146, 213, 0) 83.4%,
+	        rgb(0, 213, 197) );
+
+	  /*  W3C  */
+	  background-image: linear-gradient(left,
+	        rgb(255, 0, 0),
+	        rgb(146, 213, 0) 16.8%,
+	        rgb(0, 213, 197) 33.6%,
+	        rgb(213, 0, 196) 50.2%,
+	        rgb(255, 0, 0) 66.9%,
+	        rgb(146, 213, 0) 83.4%,
+	        rgb(0, 213, 197) );
+
+	  -webkit-animation: moving_line_jquery 4s linear infinite reverse;
+	          animation: moving_line_jquery 4s linear infinite reverse;
+
+	}
+
+	@-webkit-keyframes moving_line_jquery { to { margin-left: -210%; } from {margin-left: -10%; } }
+	        @keyframes moving_line_jquery { to { margin-left: -210%; } from {margin-left: -10%; } }
+
+</style>
+
 </head>
+
 <body>
 
+	<div class="linear-container1">
+	<div class="linear">
+	</div>
+	</div>
+
+				<p class="par1">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+
+				<p class="par2">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+
+				<p class="par3">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+
+				<div class="linear-container2">
+				<div class="linear">
+				</div>
+				</div>
+
+					<div class="linear-container3">
+					<div class="linear">
+					</div>
+					</div>
 
 
+					<div class="linear-container4">
+					<div class="linear">
+					</div>
+					</div>
 
 
-<div class="video-container">
-  <video loop autoplay muted playsinline>
-    <source src="office.webm" type="video/webm">
-      <source src="office.mp4" type="video/mp4">
-      <source src="office.ogg" type="video/ogg">
-  </video>
+</body>
+
+</html>
 
 
-
-<div class="bubblehold" style="position:absolute; top:50%; left:50%; ">
-<div id="bubble" style="align-self: center;">KALI D.M.A.</div><br>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="contact.html">CONTACT</a>
+    <a href="services.html">SERVICES</a>
+		<a href="clients.html">CLIENTS</a>
+    <a href="home.html">HOME</a>
+  </div>
 </div>
 
-</div>
-
-
-	<!-- <a href="index.html" style="">HOME</a> -->
+<span style="cursor:pointer; position:absolute;" onclick="openNav()">&#9776; </span>
 
 
 
 
 
-  <script>
-  $(document).ready(function() {
-      var $element = $('#bubble');
-      var phrases = [
-          'branding',
-          'websites',
-          'mobile apps',
-          'commercials',
-          'vip service',
-
-      ];
-      var index = -1;
-      (function loopAnimation() {
-          index = (index + 1) % phrases.length;
-          bubbleText({
-              element: $element,
-              newText: phrases[index],
-              letterSpeed: 70,
-              callback: function() {
-                  setTimeout(loopAnimation, 2000);
-              },
-          });
-      })();
-  });
-  </script>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
 
 
 </body>
+</html>
