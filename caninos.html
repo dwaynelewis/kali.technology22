@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>KALI smooth scroll demo</title>
+
+
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+body,html {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+* {
+	margin:0;
+	padding:0;
+  box-sizing:border-box;
+}
+#tabs {
+	position:fixed;
+	width:100%;
+	bottom:0;
+	border-top:1px solid #330000;
+  box-shadow:2px 2px 2px 2px rgba(0,0,0,0.4);
+}
+.tabs {
+	width:20%;
+	text-align:center;
+	height:45px;
+	line-height:45px;
+	float:left;
+	margin:0;
+	padding-bottom:.5em;
+	font-weight:bold;
+	font-size:1.5em;
+	background:#DCCAA4;
+	color:#FFFFFF;
+	font-family: 'Poiret One', cursive;
+}
+.tabs:after {
+	content:'';
+	position:absolute;
+	background:#990000;
+	width:20px;
+	height:20px;
+	top:-11px;
+	margin-left:-10px;
+	transform:rotate(45deg);
+	opacity:0;
+	border-top:1px solid #330000;
+	border-left:1px solid #330000;
+}
+.tabs:hover {
+	background:#990000;
+}
+.lbl {
+	height:35px; width:100%;
+	cursor:pointer;
+	text-align:center;
+}
+label {
+	margin:0;
+	padding:0;
+}
+input[type="radio"] {
+	display:none;
+}
+#radio1:checked ~ #tabs .one {
+	background:#990000;
+}
+#radio1:checked ~ #tabs .one:after {
+	opacity:1;
+}
+#radio2:checked ~ #tabs .two {
+	background:#990000;
+}
+#radio2:checked ~ #tabs .two:after {
+	opacity:1;
+}
+#radio3:checked ~ #tabs .three{
+	background:#990000;
+}
+#radio3:checked ~ #tabs .three:after {
+	opacity:1;
+}
+#radio4:checked ~ #tabs .four{
+	background:#990000;
+}
+#radio4:checked ~ #tabs .four:after {
+	opacity:1;
+}
+#radio5:checked ~ #tabs .five {
+	background:#990000;
+}
+#radio5:checked ~ #tabs .five:after {
+	opacity:1;
+}
+.content {
+	height:100vh;
+	width:100%;
+	padding-top:20px;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  margin:0;
+	font-family: 'Poiret One', cursive;
+	font-size:16px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+  /* line-height:calc(2000% / 2); */
+	text-shadow:0 0 1px black,0 0 2px black,0 0 5px black;
+}
+
+pre{
+  font-family: cursive;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+.c1 { background:#283B1F; }
+.c2 { background:#B1A26B; }
+.c3 { background:#4E3E0B; }
+.c4 { background:#F1E291; }
+.c5 { background:#A0B385; }
+
+#wrapper{
+	width:100%;
+	transition:all .6s ease-in-out;
+	padding:0; margin:0;
+}
+#radio1:checked ~ #wrapper { }
+
+#radio2:checked ~ #wrapper {
+	transform:translateY(-20%);
+}
+#radio3:checked ~ #wrapper {
+	transform:translateY(-40%);
+}
+#radio4:checked ~ #wrapper {
+	transform:translateY(-60%);
+}
+#radio5:checked ~ #wrapper {
+	transform:translateY(-80%);
+ }
+@media all and (max-width:545px){
+   .tabs{
+     float:none;
+     display:block;
+     width:100%;
+  }
+}
+</style>
+
+
+</head>
+<body>
+<input type="radio" checked name="r" id="radio1">
+<input type="radio" name="r" id="radio2">
+<input type="radio" name="r" id="radio3">
+<input type="radio" name="r" id="radio4">
+<input type="radio" name="r" id="radio5">
+<div id="wrapper">
+<div class="content c1"><h1>TAB ONE</h1> <pre>Lorem ipsum dolor sit amet,
+   consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+   et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+     dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+     cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum.</pre> </div>
+<div class="content c2"><h1>TAB TWO</h1></div>
+<div class="content c3"><h1>TAB THREE</h1></div>
+<div class="content c4"><h1>TAB FOUR</h1></div>
+<div class="content c5"><h1>TAB FIVE</h1></div>
+</div>
+<div id="tabs">
+<div class="one tabs"><label for="radio1"><div class="lbl">One</div></label></div>
+<div class="two tabs"><label for="radio2"><div class="lbl"></label>Two</div></div>
+<div class="three tabs"><label for="radio3"><div class="lbl">Three</div></label></div>
+<div class="four tabs"><label for="radio4"><div class="lbl">Four</div></label></div>
+<div class="five tabs"><label for="radio5"><div class="lbl">Five</div></label></div>
+</div>
+</body>

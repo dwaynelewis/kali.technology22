@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="jquery.bubble.text.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+    <title>CONTACT</title>
+
+		<style>
+    *{
+      font-family: 'Dosis', sans-serif;
+        background-color: #0e194c;
+    }
+    .holdthis{
+      margin: 0 auto;
+      height:300px;
+      width: 100%;
+      color: red;
+      background-color: 	#0e194c;
+      text-align: center;
+      position: relative;
+    }
+    .bubblehold{
+      width: 30%;
+      margin: auto;
+      margin-top: 100px;
+    }
+    .hello{
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+text-decoration: none;
+      margin: auto;
+      width: 100%;
+    }
+#bubble {
+  font-size: 25px;
+margin: auto;
+  font-weight: bold;
+}
+</style>
+
+<script>
+$(document).ready(function() {
+    var $element = $('#bubble');
+    var phrases = [
+        'brand identity',
+        'killer websites',
+        'mobile apps',
+        'impressive commercials',
+        'social media influence',
+
+    ];
+    var index = -1;
+    (function loopAnimation() {
+        index = (index + 1) % phrases.length;
+        bubbleText({
+            element: $element,
+            newText: phrases[index],
+            letterSpeed: 70,
+            callback: function() {
+                setTimeout(loopAnimation, 2000);
+            },
+        });
+    })();
+});
+</script>
+
+</head>
+
+<body>
+
+  <div class="holdthis">
+    <div class="bubblehold">
+    <div id="bubble">Hello, World!</div><br>
+</div>
+
+    <div class="hello"><h2>HELLO@KALI.DIGITAL</h2><br>
+      <h2>9 1 7 4 6 3 7 3 0 3</h2></div>
+  </div>
+</body>
+
+</html>

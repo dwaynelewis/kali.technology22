@@ -1,0 +1,127 @@
+<html>
+<head>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+      	<script src="jquery.bubble.text.js"></script>
+<title>"KALI"</title>
+
+
+<style>
+
+
+
+	@media screen and (max-width: 1100px){
+
+    .bubblehold {
+      display: none;
+    }
+
+}
+
+body{
+   -webkit-align-items: center;
+  text-align: center;
+  align-items: center;
+}
+		a{
+		background-color: black;
+		opacity: .9;
+		color: white;
+		border-radius: 10px;
+		width: 120px;
+		height: 44px;
+		font-size: .75em;
+		text-align: center;
+		font-size: 200%
+		}
+		a:hover{
+
+		}
+
+    .video-container video {
+  display: block;
+  width: 100%;
+}
+
+.video-container {
+  margin: 40px auto;
+  outline: 1px solid #dadada;
+  &:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
+  &:nth-of-type(2) { width: 50%; }
+  &:nth-of-type(3) { width: 75%; }
+  &:nth-of-type(4) { width: 100%; }
+}
+
+#bubble {
+  font-size: 6rem;
+margin: auto;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+  text-shadow: 1px 1px white;
+}
+
+}
+    </style>
+</head>
+<body>
+
+
+
+
+
+<div class="video-container">
+  <video loop autoplay muted playsinline>
+    <source src="office.webm" type="video/webm">
+      <source src="office.mp4" type="video/mp4">
+      <source src="office.ogg" type="video/ogg">
+  </video>
+
+
+
+<div class="bubblehold" style="position:absolute; top:50%; left:50%; ">
+<div id="bubble" style="align-self: center;">KALI D.M.A.</div><br>
+</div>
+
+</div>
+
+
+	<!-- <a href="index.html" style="">HOME</a> -->
+
+
+
+
+
+  <script>
+  $(document).ready(function() {
+      var $element = $('#bubble');
+      var phrases = [
+          'branding',
+          'websites',
+          'mobile apps',
+          'commercials',
+          'vip service',
+
+      ];
+      var index = -1;
+      (function loopAnimation() {
+          index = (index + 1) % phrases.length;
+          bubbleText({
+              element: $element,
+              newText: phrases[index],
+              letterSpeed: 70,
+              callback: function() {
+                  setTimeout(loopAnimation, 2000);
+              },
+          });
+      })();
+  });
+  </script>
+
+
+
+</body>
