@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>kali DIGITAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <script type="text/javascript" src="textition.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<script type="text/javascript" src="textition.js"></script>
+<style>
+
+
+
+
+  @keyframes spinner {
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+
+  .loading-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+
+  .spinner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/oSHLAzp.png') center center;
+    background-size: contain;
+    transition-origin: 50% 50%;
+    animation: spinner 3s infinite alternate ease-in-out;
+  }
+  .spinner-center {
+    display: inline-block;
+    position: absolute;
+    margin-left: -100px;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+    background-size: contain;
+    content: '';
+  }
+
+  #intro{
+    height: 1500px;
+    background-color: white;
+  }
+
+
+  #outro{
+    display: none;
+  }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    font-family: 'Anton', sans-serif;
+
+}
+
+body{
+  position: relative;
+  text-shadow: .5px .5px black;
+
+}
+
+img {
+margin-left: auto;
+margin-right: auto;
+    height: 5vh;
+    width: 10vw;
+
+
+}
+main{
+height: 100vh;
+}
+
+#sub{
+
+  height: 25%;
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+
+}
+
+a{
+  text-decoration: line-through;
+  color: #b80000;
+}
+
+
+
+
+</style>
+
+<style>
+
+
+
+	@media screen and (max-width: 450px){
+
+body{
+   background: linear-gradient(to bottom,darkred 0%, red 50%, white 100%);
+}
+
+  .textef{
+    width: 300px;
+    height: 21px;
+    text-align: center;
+    /* margin-right: 10px;
+    margin-top: 100px; */
+    text-shadow: .5px .5px black;
+    color: white;
+    position: fixed;
+top:45%;
+left: 10%;
+}
+
+
+  #logom{
+  margin-left: auto;
+  margin-right: auto;
+      height: 10vh;
+      width: 35vw;
+      position: absolute;
+      top:99%;
+      left:21%;
+
+  }
+  #pb{
+    position: absolute;
+    top:146%;
+    left:-3%;
+    width:300px;
+      color: #F2DA38;
+
+  }
+  #top{
+    color: white;
+  }
+  #bott{
+    color:black;
+  }
+
+  #autoplay{
+    top:188%;
+    left:-33%;
+  }
+}
+
+
+
+	@media screen and (min-width: 450px){
+
+    body{
+       background: linear-gradient(to bottom,white 0%, #00CED1 100%);
+         text-shadow: .5px .5px white;
+    }
+
+	.textef{
+		width: 75%;
+		height: 21px;
+		text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+		margin-top: 100px;
+	  font-size: 24px;
+		color:#b0a94f;
+      text-shadow: .5px .5px white;
+      top:40%;
+      left: 10%;
+
+	}
+
+  img {
+  margin-left: auto;
+  margin-right: auto;
+      height: 11vh;
+      width: 16vw;
+      position: absolute;
+      top:26%;
+      left:36%;
+  }
+  h2{
+    position:absolute;
+    top:75%;
+    left:36%;
+      color: #b80000;
+  }
+}
+</style>
+</head>
+<body>
+
+
+  <div id="intro">
+
+      <div class="loading-container">
+      <div class="spinner"></div>
+      <div class="spinner-center"></div>
+
+    </div>
+  </div>
+
+  <div id="outro">
+<main>
+<a href="aboutus.html" class="intro animated rotateInDownLeft" style="position: absolute; top:5%; left: 5%;">-ABOUT US-</a>
+<a href="clients.html" class="intro animated rotateInDownRight" style="position: absolute; top:5%; right: 5%;">-CLIENTS-</a>
+<a href="services.html" class="intro animated bounceInUp" style="position: absolute; top:60%; left: 5%;">-FAQ-</a>
+<a href="contact.html" class="intro animated bounceInUp" style="position: absolute; top:60%; right: 5%;">-CONTACT-</a>
+
+
+<div id="sub">
+  <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
+  <h2 id="pb">PERSONAL BRAND SITE</h2>
+
+
+
+
+
+
+<div id="autoplay" style="height: 1px; color:purple; ">
+
+ 
+
+ <div class="textef" style="margin-left: auto; margin-right: auto;">pitch 1</div>
+
+ <div class="textef" style="margin-left: auto; margin-right: auto;">pitch 2</div>
+
+<div class="textef" style="margin-left: auto; margin-right: auto;">pitch 3</div>
+
+</div>
+</div>
+</main>
+</div>
+
+
+  	<script> //INTRO
+  $(document).ready(function(){
+      $(function(){
+
+          $("#intro").delay(1000).fadeOut("slow");
+
+       });
+   });
+   </script>
+   <script>
+  $(document).ready(function(){
+      $(function(){
+
+          $("#outro").delay(1500).fadeIn("slow");
+      });
+  });
+  </script>
+
+
+<script>
+$('#autoplay').delay(11000).textition({
+
+ speed: 1,
+
+ animation: 'ease-out',
+
+ map: {x: 200, y: 100, z: 0},
+
+ autoplay: true,
+
+ interval: 3.0
+
+})
+</script>
+<script type="text/javascript" src="textition.js"></script>
+
+
+
+
+</body>
+</html>

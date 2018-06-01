@@ -1,87 +1,332 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="jquery.bubble.text.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
 
-    <title>CONTACT</title>
 
-		<style>
-    *{
-      font-family: 'Dosis', sans-serif;
-        background-color: #0e194c;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+      	<script src="jquery.bubble.text.js"></script>
+<title>"KALI"</title>
+
+
+<style>
+
+
+
+body{
+   -webkit-align-items: center;
+  text-align: center;
+  align-items: center;
+  background-color: #B00000;
+}
+
+
+  @keyframes spinner {
+    100% {
+      transform: rotate(3600deg);
     }
-    .holdthis{
-      margin: 0 auto;
-      height:300px;
-      width: 100%;
-      color: red;
-      background-color: 	#0e194c;
-      text-align: center;
+  }
+
+  .loading-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+
+  }
+
+  .spinner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/oSHLAzp.png') center center;
+    background-size: contain;
+    transition-origin: 50% 50%;
+    animation: spinner 3s infinite alternate ease-in-out;
+  }
+  .spinner-center {
+    display: inline-block;
+    position: absolute;
+    margin-left: -100px;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+    background-size: contain;
+    content: '';
+  }
+
+  #intro{
+    height: 1500px;
+    background-color: white;
+  }
+
+
+  #outro{
+    display: none;
+  }
+
+  .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-x: hidden;
+      transition: 0.5s;
+  }
+
+  .overlay-content {
       position: relative;
-    }
-    .bubblehold{
-      width: 30%;
-      margin: auto;
-      margin-top: 100px;
-    }
-    .hello{
-      position: absolute;
-      bottom: 0;
-      text-align: center;
-text-decoration: none;
-      margin: auto;
+      top: 25%;
       width: 100%;
+      text-align: center;
+      margin-top: 30px;
+  }
+
+  .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: red;
+      display: block;
+      transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+  }
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
     }
+  }
+
+
+
+
+	@media screen and (max-width: 1100px){
+
+    .bubblehold {
+      font-size: 24px;
+    }
+
+
+		a{
+		background-color: black;
+		opacity: .9;
+		color: white;
+		border-radius: 10px;
+		width: 120px;
+		height: 44px;
+		font-size: .75em;
+		text-align: center;
+		font-size: 200%
+		}
+		a:hover{
+
+		}
+
+    .video-container video {
+  display: block;
+  width: 100%;
+}
+
+.video-container {
+  position: absolute;
+  top:15rem;
+  /* outline: 1px solid #dadada; */
+  &:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
+  &:nth-of-type(2) { width: 50%; }
+  &:nth-of-type(3) { width: 75%; }
+  &:nth-of-type(4) { width: 100%; }
+}
+
+.br{
+  position: absolute;
+  top:55%;
+  left:2%;
+  font-size: 4rem;
+  color: white;
+}
+
 #bubble {
-  font-size: 25px;
+  font-size: 1rem;
 margin: auto;
   font-weight: bold;
+  font-family: 'Dosis', sans-serif;
 }
-</style>
 
-<script>
-$(document).ready(function() {
-    var $element = $('#bubble');
-    var phrases = [
-        'brand identity',
-        'killer websites',
-        'mobile apps',
-        'impressive commercials',
-        'social media influence',
+#logom{
+  position: absolute;
+  top:19%;
+  left: 5%;
+    height: 20vh;
+    width:28vw;
+    visibility: visible;
+    z-index: 1;
+}
 
-    ];
-    var index = -1;
-    (function loopAnimation() {
-        index = (index + 1) % phrases.length;
-        bubbleText({
-            element: $element,
-            newText: phrases[index],
-            letterSpeed: 70,
-            callback: function() {
-                setTimeout(loopAnimation, 2000);
-            },
-        });
-    })();
-});
-</script>
+}
+    </style>
 
+    <style>
+    @media screen and (min-width: 1100px){
+    .br{
+      position: absolute;
+      top:129%;
+      left:2%;
+      font-size: 7rem;
+      color: white;
+    }
+
+
+    #logom{
+      position: absolute;
+      top:19%;
+      left: 5%;
+        height: 20vh;
+        width:28vw;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    span{
+    	top:0;
+    	left:0;
+    	width: 100%;
+    	text-align: center;
+
+    	color:white ;
+    	font-size: 24px;
+    }
+  }
+
+    </style>
 </head>
-
 <body>
 
-  <div class="holdthis">
-    <div class="bubblehold">
-    <div id="bubble">Hello, World!</div><br>
+
+    <div id="intro">
+
+        <div class="loading-container">
+        <div class="spinner"></div>
+        <div class="spinner-center"></div>
+
+      </div>
+    </div>
+
+    <div id="outro">
+
+
+
+      <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
+
+
+<div class="video-container">
+  <video loop autoplay muted playsinline>
+    <source src="office.webm" type="video/webm">
+      <source src="office.mp4" type="video/mp4">
+      <source src="office.ogg" type="video/ogg">
+  </video>
+
+  <h2 class="br"> BRANDING</h2>
+<!--
+<div class="bubblehold">
+<div id="bubble" style="align-self: center;"></div><br>
+</div> -->
+
 </div>
 
-    <div class="hello"><h2>HELLO@KALI.DIGITAL</h2><br>
-      <h2>9 1 7 4 6 3 7 3 0 3</h2></div>
-  </div>
-</body>
 
-</html>
+</div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer;position: absolute; color:white;" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+
+
+  	<script> //INTRO
+  $(document).ready(function(){
+      $(function(){
+
+          $("#intro").delay(1000).fadeOut("slow");
+
+       });
+   });
+   </script>
+   <script>
+  $(document).ready(function(){
+      $(function(){
+
+          $("#outro").delay(1500).fadeIn("slow");
+      });
+  });
+  </script>
+
+
+  <script>
+  $(document).ready(function() {
+      var $element = $('#bubble');
+      var phrases = [
+          'branding',
+          'websites',
+          'mobile apps',
+          'commercials',
+          'vip service',
+
+      ];
+      var index = -1;
+      (function loopAnimation() {
+          index = (index + 1) % phrases.length;
+          bubbleText({
+              element: $element,
+              newText: phrases[index],
+              letterSpeed: 70,
+              callback: function() {
+                  setTimeout(loopAnimation, 2000);
+              },
+          });
+      })();
+  });
+  </script>
+
+
+
+</body>
