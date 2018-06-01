@@ -19,7 +19,28 @@
 			height: 100%;
 			background-color:black;
 			color:white;
+			 background-image: url("redburst.jpg");
 		}
+
+
+			#intro{
+				height: 110rem;
+				background-color: white;
+			}
+
+		  #outro{
+		    display: none;
+		            /* The image used */
+
+
+		            /* Full height */
+		            height: 100%;
+									display: none;
+		            /* Center and scale the image nicely */
+		            background-position: center;
+		            background-repeat: no-repeat;
+		            background-size: cover;
+		        }
 
 #sp{
 	top:0;
@@ -29,6 +50,47 @@
 	color:white ;
 	font-size: 24px;
 }
+
+	</style>
+
+
+
+	  <style>
+
+	  @keyframes spinner {
+	    100% {
+	      transform: rotate(3600deg);
+	    }
+	  }
+
+	  .loading-container {
+	    margin: 0 auto;
+	    text-align: center;
+	    position: relative;
+	    top: 50vh;
+	    transform: translateY(-50%);
+	  }
+
+	  .spinner {
+	    display: inline-block;
+	    width: 100px;
+	    height: 100px;
+	    background: url('http://i.imgur.com/oSHLAzp.png') center center;
+	    background-size: contain;
+	    transition-origin: 50% 50%;
+	    animation: spinner 3s infinite alternate ease-in-out;
+	  }
+	  .spinner-center {
+	    display: inline-block;
+	    position: absolute;
+	    margin-left: -100px;
+	    width: 100px;
+	    height: 100px;
+	    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+	    background-size: contain;
+	    content: '';
+	  }
+
 
 	</style>
 
@@ -144,7 +206,7 @@ p{
 	top:0;
 	left:0;
 	width: 10%;
-	
+
 	color:white ;
 	font-size: 24px;
 }
@@ -239,6 +301,19 @@ p{
 
 <body>
 
+
+
+	<div id="intro">
+
+	    <div class="loading-container">
+	    <div class="spinner"></div>
+	    <div class="spinner-center"></div>
+	  </div>
+	</div>
+
+	<div id="outro">
+
+
 	<div class="linear-container1">
 	<div class="linear">
 	</div>
@@ -272,6 +347,7 @@ p{
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									</p>
 
+								</div>
 
 									<div id="myNav" class="overlay">
 									  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -291,7 +367,23 @@ p{
 
 </html>
 
+<script> //INTRO
+$(document).ready(function(){
+	$(function(){
 
+			$("#intro").delay(1000).fadeOut("slow");
+
+	 });
+});
+</script>
+<script>
+$(document).ready(function(){
+	$(function(){
+
+			$("#outro").delay(1500).fadeIn("slow");
+	});
+});
+</script>
 
 
 <script>
