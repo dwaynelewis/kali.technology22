@@ -7,6 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
   <script type="text/javascript" src="textition.js"></script>
+  <link rel="stylesheet" href="newdesktop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script type="text/javascript" src="textition.js"></script>
 <style>
@@ -77,8 +78,6 @@ background-color: black;
          -webkit-animation-duration: 2s;
          -webkit-animation-delay: 2s;
          -webkit-animation-iteration-count: 1;
-         width: 100%;
-
         }
 
 
@@ -97,6 +96,10 @@ background-color: black;
     body, html {
         height: 100%;
         margin: 0;
+    }
+
+    #desktop{
+      display: none;
     }
 
     #outro{
@@ -155,13 +158,13 @@ background-color: black;
           height: 10vh;
           width: 35vw;
           position: absolute;
-          top:99%;
+          top:16rem;
           left:21%;
 
       }
       #pb{
         position: absolute;
-        top:146%;
+        top:22rem;
         left:-3%;
         width:300px;
           color: white;
@@ -171,60 +174,16 @@ background-color: black;
         color:white;
       }
       #autoplay{
-        top:188%;
+        top:25rem;
         left:-33%;
       }
 }
 
-	@media screen and (min-width: 450px){
-
-    body{
-       background: linear-gradient(to bottom,white 0%, #2B2F3F 100%);
-
-    }
 
 
 
-    #autoplay{
-      top:85%;
-      left:41%;
-    }
 
-	.textef{
-		width: 75%;
-		height: 21px;
-		text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-		margin-top: 100px;
-	  font-size: 24px;
-		color:white;
 
-      top:40%;
-      left: 10%;
-
-	}
-
-  #logom{
-  margin-left: auto;
-  margin-right: auto;
-      height: 18vh;
-      width: 16vw;
-      position: absolute;
-      top:26%;
-      left:36%;
-
-  }
-  #pb{
-    position:absolute;
-    top:100%;
-    left:36%;
-      color:darkred;
-  }
-  a{
-    color:darkred;
-  }
-}
 </style>
 </head>
 <body>
@@ -243,7 +202,7 @@ background-color: black;
   </div>
 
   <div id="outro">
-<main>
+<div id="mobile">
 <a id="top" href="aboutus.html" class="intro animated rotateInDownLeft" style="position: absolute; top:5%; left: 5%;">-ABOUT US-</a>
 <a  id="top" href="clients.html" class="intro animated rotateInDownRight" style="position: absolute; top:5%; right: 5%;">-CLIENTS-</a>
 <a  id="bott" href="faq.html" class="intro animated bounceInUp" style="position: absolute; top:70%; left: 5%;">-FAQ-</a>
@@ -271,11 +230,44 @@ background-color: black;
 
 </div>
 </div>
-</main>
 </div>
 
 
-  - <script> //INTRO
+<div id="desktop">
+
+
+
+	<div class="video-container">
+	  <video loop autoplay muted playsinline>
+	    <source src="Blurry Video Of People Working.webm" type="video/webm">
+	      <source src="Blurry Video Of People Working.mp4" type="video/mp4">
+	      <source src="Blurry Video Of People Working.ogg" type="video/ogg">
+	  </video>
+	</div>
+
+
+
+		<img src="newsite/kalilogor.png" id="sunmain" class="kali">
+  <div class="ann1" style="font-size:3.1em; color: red;text-shadow: 1px 1px #0e194c;">A Group Of Multidisciplinary Designers</div>
+
+<div class="ann2" id="bubble"style=" color:red;text-shadow: 1px 1px #0e194c;">We Build Killer Websites</div> -->
+
+
+
+
+<nav class="nav2">
+  <a id="abu" href="aboutus.html" title="navi4">ABOUT US</a>
+	<a href="clients.html" title="navi5">CLIENTS</a>
+	<a href="questionaire.html" title="navi5">FAQ</a>
+		<a id="con" href="contact.html" title="navi6">CONTACT</a>
+	</nav>
+
+</div>
+</div>
+
+
+
+  <script> //INTRO
   $(document).ready(function(){
       $(function(){
 
@@ -292,6 +284,8 @@ background-color: black;
       });
   });
   </script>
+
+
 <script>
 $('#autoplay').delay(11000).textition({
 

@@ -15,13 +15,19 @@
     *{
       font-family: 'Anton', sans-serif;
     }
-		body{
-			height: 100%;
-			background-color:black;
-			color:white;
-			 background-image: url("redburst.jpg");
-		}
 
+
+body, html {
+    height: 100%;
+    margin: 0;
+		color: white;
+}
+
+		span{
+			position: absolute;
+			top:0;
+			left:0;
+		}
 
 			#intro{
 				height: 110rem;
@@ -30,25 +36,39 @@
 
 		  #outro{
 		    display: none;
-		            /* The image used */
-
-
-		            /* Full height */
-		            height: 100%;
-									display: none;
-		            /* Center and scale the image nicely */
-		            background-position: center;
-		            background-repeat: no-repeat;
-		            background-size: cover;
+				background-color: #B80000 ;
+				height: 100%;
+				margin:0;
 		        }
 
-#sp{
-	top:0;
-	left:0;
-	width: 10%;
-	position: absolute;
-	color:white ;
-	font-size: 24px;
+
+						.bg{
+							/* The image used */
+							background-image: url("redburst.jpg");
+
+						 /* Full height */
+						 height: 100%;
+						 width: 100%;
+							 display: none;
+						 /* Center and scale the image nicely */
+						 background-position: center;
+						 background-repeat: no-repeat;
+						 background-size: cover;
+						}
+
+
+					p{
+						position: absolute;
+					}
+
+
+					#sp{
+						top:0;
+						left:0;
+						width: 10%;
+						position: absolute;
+						color:white ;
+						font-size: 24px;
 }
 
 	</style>
@@ -184,10 +204,10 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 	}
-p{
-	position: absolute;
-}
 
+	p
+	{margin: 10px;
+	}
 	.par1{
  		top:15%;
 	}
@@ -221,21 +241,9 @@ p{
 	}
 
 
-		.linear-container2 {
-			width: 150%;
-			top: 28%;
-			border: 1px solid black;
-			position: absolute;
-		}
-		.linear-container3 {
-			width: 150%;
-			top: 47%;
-			border: 1px solid black;
-			position: absolute;
-		}
 		.linear-container4 {
 			width: 150%;
-			top: 70%;
+			top: 80%;
 			border: 1px solid black;
 			position:absolute;
 		}
@@ -289,9 +297,105 @@ p{
 		    right: 35px;
 		  }
 		}
-
-
 	}
+</style>
+
+
+<style>
+			@media screen and (min-width: 450px) {
+
+	.par1{
+ 		top:35%;
+		left:10%;
+	}
+
+.par2{
+			top:45%;
+				left:10%;
+}
+
+.par3{
+		top:55%;
+			left:10%;
+}
+
+
+#sp{
+	top:0;
+	left:0;
+	width: 10%;
+
+	color:white ;
+	font-size: 24px;
+}
+
+
+
+	.linear-container1 {
+		width: 150%;
+		top: 15%;
+		border: 1px solid black;
+		position: absolute;
+	}
+
+
+		.linear-container4 {
+			width: 150%;
+			top: 80%;
+			border: 1px solid black;
+			position:absolute;
+		}
+
+				.overlay {
+				    height: 100%;
+				    width: 0;
+				    position: fixed;
+				    z-index: 1;
+				    top: 0;
+				    left: 0;
+				    background-color: rgb(0,0,0);
+				    background-color: rgba(0,0,0, 0.9);
+				    overflow-x: hidden;
+				    transition: 0.5s;
+				}
+
+				.overlay-content {
+				    position: relative;
+				    top: 25%;
+				    width: 100%;
+				    text-align: center;
+				    margin-top: 30px;
+				}
+
+				.overlay a {
+				    padding: 8px;
+				    text-decoration: none;
+				    font-size: 36px;
+				    color: white;
+				    display: block;
+				    transition: 0.3s;
+				}
+
+				.overlay a:hover, .overlay a:focus {
+				    color: red;
+				}
+
+				.overlay .closebtn {
+				    position: absolute;
+				    top: 20px;
+				    right: 45px;
+				    font-size: 60px;
+				}
+
+				@media screen and (max-height: 450px) {
+				  .overlay a {font-size: 20px}
+				  .overlay .closebtn {
+				    font-size: 40px;
+				    top: 15px;
+				    right: 35px;
+				  }
+				}
+}
 
 
 
@@ -301,6 +405,7 @@ p{
 
 <body>
 
+				<div class="bg"></div>
 
 
 	<div id="intro">
@@ -312,7 +417,8 @@ p{
 	</div>
 
 	<div id="outro">
-
+				<div id="desktop">
+				<div class="bg"></div>
 
 	<div class="linear-container1">
 	<div class="linear">
@@ -320,20 +426,17 @@ p{
 	</div>
 
 
-				<div class="linear-container2">
-				<div class="linear">
-				</div>
-				</div>
 				<p class="par1">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 
-					<div class="linear-container3">
-					<div class="linear">
-					</div>
-					</div>
+
 
 					<p class="par2">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+
+					<p class="par3">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 
@@ -343,16 +446,12 @@ p{
 					</div>
 
 
-									<p class="par3">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									</p>
-
+					</div>
 								</div>
 
 									<div id="myNav" class="overlay">
 									  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 									  <div class="overlay-content">
-									    <a href="aboutus.html">About</a>
 									    <a href="faq.html">FAQ</a>
 									    <a href="contact.html">Contact</a>
 											 <a href="clients.html">Clients</a>
