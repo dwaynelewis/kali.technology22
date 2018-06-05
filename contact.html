@@ -3,10 +3,13 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       	<script src="jquery.bubble.text.js"></script>
 <title>"KALI"</title>
 
@@ -20,6 +23,11 @@ body{
   text-align: center;
   align-items: center;
   background-color: #B00000;
+    font-family: 'Anton', sans-serif;
+}
+
+a{
+  text-decoration:none;
 }
 
 span{
@@ -198,13 +206,38 @@ margin: auto;
 
 #logom{
   position: absolute;
-  top:24%;
+  top:2rem;
   left: 38%;
     height: 17vh;
     width:28vw;
     visibility: visible;
     z-index: 1;
+    background-color: inherit;
 }
+
+  .momail{
+    position: absolute;
+    width: 150px;
+    top:30rem;
+    left:0;
+    right:0;
+    margin: auto;
+    background-color: inherit;
+  }
+
+  #time{
+    position: absolute;
+    width: 150px;
+    top:15rem;
+    left:0;
+    right:0;
+    margin: auto;
+    color:;
+    font-size: 1.5rem;
+
+  }
+
+
 
 }
     </style>
@@ -245,6 +278,8 @@ margin: auto;
     	color:white ;
     	font-size: 24px;
     }
+
+
   }
 
     </style>
@@ -265,7 +300,7 @@ margin: auto;
 
         <div id="mob">
 
-      <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
+      <img id="logom" src="kaliwhite.png" class="intro animated zoomInDown" alt="Kali logo">
 
 
 <div class="video-container">
@@ -275,13 +310,13 @@ margin: auto;
       <source src="office.ogg" type="video/ogg">
   </video>
 
-  <h2 class="br"> brand</h2>
-<!--
-<div class="bubblehold">
-<div id="bubble" style="align-self: center;"></div><br>
-</div> -->
+
 
 </div>
+
+  	<p id="time" >--</p>
+
+<a href="mailto:info@kali.technology.com" class="momail">EMAIL US</a>
 </div>
 <div id="desk">
 
@@ -296,12 +331,12 @@ margin: auto;
         <source src="office.ogg" type="video/ogg">
     </video>
 
-    <h2 class="br"> brand</h2>
+  <a href="mailto:info@kali.technology.com">Email Us</a>
 
 
 </div>
 
-
+	<p id="time" ></p>
 </div>
 
 <div id="myNav" class="overlay">
@@ -373,6 +408,26 @@ function closeNav() {
       })();
   });
   </script>
+
+
+  	<script> //CLOCK 	<p id="time" ></p>
+  	var myVar = setInterval(function(){ myTimer() }, 1000);
+
+  	function myTimer() {
+  	    var d = new Date();
+  	    var t = d.toLocaleTimeString();
+  	    document.getElementById("time").innerHTML = t;
+  	}
+
+  	function myStopFunction() {
+  	    clearInterval(myVar);
+  	}
+
+
+  	</script>
+
+
+
 
 
 
