@@ -34,12 +34,13 @@ body, html {
 				background-color: white;
 			}
 
-		  #outro{
-		    display: none;
-			  background-image: url("redburst.jpg");
-				height: 100%;
-				margin:0;
-		        }
+
+						  #outro{
+						    display: none;
+							  background-image: url("redburst.jpg");
+								height: 100%;
+								margin:0;
+						        }
 
 
 
@@ -183,6 +184,7 @@ body, html {
 
 @media screen and (max-width: 450px) {
 
+
 * {
 		margin: 0 auto;
 		border: 0;
@@ -191,6 +193,7 @@ body, html {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 	}
+
 
 	p
 	{margin: 10px;
@@ -290,6 +293,22 @@ body, html {
 
 <style>
 			@media screen and (min-width: 450px) {
+
+
+				    #outro{
+				        /* The image used */
+				        background-image: url("redburst.jpg");
+
+				        /* Full height */
+				        height: 100%;
+
+				        /* Center and scale the image nicely */
+				        background-position: center;
+				        background-repeat: no-repeat;
+				        background-size: cover;
+				    }
+
+
 
 	.par1{
  		top:35%;
@@ -392,7 +411,7 @@ body, html {
 
 <body>
 
-			
+
 
 
 	<div id="intro">
@@ -457,7 +476,7 @@ body, html {
 $(document).ready(function(){
 	$(function(){
 
-			$("#intro").delay(1000).fadeOut("slow");
+			$("#intro").delay(1500).fadeOut("slow");
 
 	 });
 });

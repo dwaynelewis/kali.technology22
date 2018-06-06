@@ -12,10 +12,6 @@
 <title>"KALI"</title>
 
 
-<style>
-
-  </style>
-
   <style>
 
     p{
@@ -27,12 +23,23 @@
     color: white;
       font-family: 'Anton', sans-serif;
   			height: 100%;
-  		}
+        /* The image used */
+        background-image: url("redburst.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
 
 
 
   #content{
-   background-image: url("redburst.jpg");
+   background-color: inherit;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -49,10 +56,14 @@
     "footer footer footer footer"
   ;
   }
+
   #content > *{
-     border: 1px solid white;
+     border: 1px;
     padding: 30px;
   }
+
+
+
   header{
     grid-area: header;
   }
@@ -65,11 +76,21 @@
   main{
     grid-area: main;
     background-color: inherit;
-
+    text-align: center;
     display: grid;
   }
   section{
     grid-area: section;
+  }
+
+
+
+  #opening{
+    position: absolute;
+    top:29rem;
+    left:0;
+    right:0;
+    margin: auto;
   }
 
   #demo{
@@ -89,7 +110,12 @@
     color:#b80000;
     padding: 3px;
     font-size: 110%;
+    position: absolute;
+    left:0;
+    right:0;
+    margin: auto;
   }
+
   #ques1{
     display: none;
   }
@@ -284,6 +310,30 @@
   }
 
 
+  </style>
+
+  <style>
+	@media screen and (max-width: 450px) {
+    #content > *{
+       border: 1px solid white;
+      padding: 30px;
+    }
+
+      #getstarted{
+        margin-left: 8.5rem;
+}
+main{
+  padding-left: 8.5rem;
+}
+
+#opening{
+  position: absolute;
+  top:26rem;
+  left:0;
+  right:0;
+  margin: auto;
+}
+  }
   </style>
 
 </head>
