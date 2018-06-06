@@ -26,44 +26,18 @@ body, html {
     height: 100%;
     margin: 0;
   position: relative;
-  background-color: white;
 }
 
+img {
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+    height: 5vh;
+    width: 10vw;
 
-  @keyframes spinner {
-    100% {
-      transform: rotate(3600deg);
-    }
-  }
 
-  .loading-container {
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
-  }
-
-  .spinner {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: url('http://i.imgur.com/oSHLAzp.png') center center;
-    background-size: contain;
-    transition-origin: 50% 50%;
-    animation: spinner 3s infinite alternate ease-in-out;
-  }
-  .spinner-center {
-    display: inline-block;
-    position: absolute;
-    margin-left: -100px;
-    width: 100px;
-    height: 100px;
-    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
-    background-size: contain;
-    content: '';
-  }
-
+}
 main{
 height: 100vh;
 }
@@ -83,8 +57,9 @@ a{
   text-decoration: line-through;
 }
 
-#autoplay{
-  position: absolute;
+
+#outro{
+  display: none;
 }
 
 #intro{
@@ -98,17 +73,6 @@ background-color: white;
   display: none;
 }
 
-#sun{
-          display: block;
-         text-align: center;
-         text-decoration: none;
-         -webkit-animation-duration: 2s;
-         -webkit-animation-delay: 2s;
-         -webkit-animation-iteration-count: 1;
-         width: 100%;
-
-        }
-
 
 </style>
 
@@ -116,65 +80,133 @@ background-color: white;
 
 
 
-	@media screen and (max-width: 450px){
 
 
-    #outro{
-        /* The image used */
-        background-image: url("redburst.jpg");
+    @media screen and (max-width: 450px){
 
-        /* Full height */
-        height: 100%;
+      body, html {
+          height: 100%;
+          margin: 0;
+      }
 
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      #desktop{
+        display: none;
+      }
+
+      #outro{
+          /* The image used */
+          background-image: url("redburst.jpg");
+
+          /* Full height */
+          height: 100%;
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+
+
+
+          #logo{
+
+            height: 17vh;
+            width: 32vw;
+            top: 7rem;
+          }
+
+          #p1{
+              position: absolute;
+              color:white;
+              left:0;
+              right:0;
+              margin: auto;
+              top:17rem;
+          }
+          #p2{
+            position: absolute;
+            color:white;
+            left:0;
+            right:0;
+            margin: auto;
+            top:19rem;`
+          }
+          #p3{
+            position: absolute;
+            color:white;
+            left:0;
+            right:0;
+            margin: auto;
+            top:21rem;
+          }
+
+        .textef{
+          width: 300px;
+          height: 21px;
+          text-align: center;
+          /* margin-right: 10px;
+          margin-top: 100px; */
+          text-shadow: .5px .5px black;
+          color: white;
+          position: absolute;
+          top:16;
+          left:-50px;
+          /* right:0; */
+          margin: auto;
     }
 
-
-      #logom{
-      margin-left: auto;
-      margin-right: auto;
-          height: 10vh;
-          width: 16vw;
+        #time{
           position: absolute;
-          top:32%;
-          left:42%;
-
-      }
-
-    	.textef{
-    		width: 300px;
-    		height: 21px;
-    		text-align: center;
-    		/* margin-right: 10px;
-    		margin-top: 100px; */
-        text-shadow: .5px .5px black;
-    		color: white;
-        position: fixed;
-   top:45%;
-   left: 10%;
-}
+          top:20rem;
+          left:10rem;
+          color:white;
+          font-size: 4vw;
+          height: 10px;
+          width: 10px;
+        }
 
 
-
-      #pb{
+      .time{
+        color: white;
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'Dosis', sans-serif;
         position: absolute;
-        top:42%;
-        left:24%;
-        width:300px;
-          color: white;
+        top:20rem;
+        left:10rem;
+      }
 
-      }
-      a{
-        color:white;
-      }
-      #autoplay{
-        top:48%;
-        left:8%;
-      }
-}
+
+        #logom{
+
+        height: 12.75vh;
+        width: 24vw;
+            position: absolute;
+            top:16rem;
+            left:0;
+            right:0;
+            margin: auto;`
+        }
+        #pb{
+          position: absolute;
+          top:23rem;
+          left:0;
+          right:0;
+          margin: auto;
+          width: 350px;
+            color: white;
+        }
+        a{
+          color:white;
+        }
+        #autoplay{
+          top:25rem;
+          position: absolute;
+          left:-30%;
+          /* right:0; */
+          /* margin: auto;` */
+        }
+    }
 
 	@media screen and (min-width: 450px){
 
@@ -225,7 +257,48 @@ background-color: white;
     color:darkred;
   }
 }
+
 </style>
+
+
+
+
+<style>
+  @keyframes spinner {
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+
+  .loading-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+
+  .spinner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/oSHLAzp.png') center center;
+    background-size: contain;
+    transition-origin: 50% 50%;
+    animation: spinner 3s infinite alternate ease-in-out;
+  }
+  .spinner-center {
+    display: inline-block;
+    position: absolute;
+    margin-left: -100px;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+    background-size: contain;
+    content: '';
+  }
+  </style>
+
 </head>
 <body>
 
@@ -242,36 +315,72 @@ background-color: white;
 
 
 
-  <div id="outro">
-<main>
-<a id="top" href="aboutus.html" class="intro animated rotateInDownLeft" style="position: absolute; top:5%; left: 5%;">-ABOUT US-</a>
-<a  id="top" href="clients.html" class="intro animated rotateInDownRight" style="position: absolute; top:5%; right: 5%;">-CLIENTS-</a>
-<a  id="bott" href="faq.html" class="intro animated bounceInUp" style="position: absolute; top:70%; left: 5%;">-FAQ-</a>
-<a id="bott" href="contact.html" class="intro animated bounceInUp" style="position: absolute; top:70%; right: 5%;">-CONTACT-</a>
+
+      <div id="outro">
+    <div id="mobile">
+    <a id="top" href="aboutus.html" class="intro animated rotateInDownLeft" style="position: absolute; top:5%; left: 5%;">-ABOUT US-</a>
+    <a  id="top" href="clients.html" class="intro animated rotateInDownRight" style="position: absolute; top:5%; right: 5%;">-CLIENTS-</a>
+    <a  id="bott" href="faq.html" class="intro animated bounceInUp" style="position: absolute; top:85%; left: 5%;">-FAQ-</a>
+    <a id="bott" href="contact.html" class="intro animated bounceInUp" style="position: absolute; top:85%; right: 5%;">-CONTACT-</a>
+
+
+    <div id="sub">
+      <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
+      <h2 id="pb">PERSONAL BRAND SITE</h2>
+      	<div class="time"><p id="time" ></p></div>
 
 
 
-  <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
-  <h2 id="pb">PERSONAL BRAND SITE</h2>
+
+
+
+    <div id="autoplay" style="height: 1px; ">
+
+     
+
+     <div class="textef" style="">pitch 1</div>
+
+     <div class="textef" style="">pitch 2</div>
+
+    <div class="textef" style="">pitch 3</div>
+
+    </div>
+    </div>
+    </div>
+
+
+    <div id="desktop">
+
+
+
+    	<div class="video-container">
+    	  <video loop autoplay muted playsinline>
+    	    <source src="Blurry Video Of People Working.webm" type="video/webm">
+    	      <source src="Blurry Video Of People Working.mp4" type="video/mp4">
+    	      <source src="Blurry Video Of People Working.ogg" type="video/ogg">
+    	  </video>
+    	</div>
+
+
+
+    		<img src="newsite/kalilogor.png" id="sunmain" class="kali">
+      <div class="ann1" style="font-size:3.1em; color: red;text-shadow: 1px 1px #0e194c;">A Group Of Multidisciplinary Designers</div>
+
+    <div class="ann2" id="bubble"style=" color:red;text-shadow: 1px 1px #0e194c;">We Build Killer Websites</div> -->
 
 
 
 
+    <nav class="nav2">
+      <a id="abu" href="aboutus.html" title="navi4">ABOUT US</a>
+    	<a href="clients.html" title="navi5">CLIENTS</a>
+    	<a href="questionaire.html" title="navi5">FAQ</a>
+    		<a id="con" href="contact.html" title="navi6">CONTACT</a>
+    	</nav>
 
+    </div>
+    </div>
 
-<div id="autoplay" style="height: 1px; color:purple; ">
-
- 
-
- <div class="textef" style="margin-left: auto; margin-right: auto;">pitch 1</div>
-
- <div class="textef" style="margin-left: auto; margin-right: auto;">pitch 2</div>
-
-<div class="textef" style="margin-left: auto; margin-right: auto;">pitch 3</div>
-
-</div>
-</div>
-</main>
 
 
 
