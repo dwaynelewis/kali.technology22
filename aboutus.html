@@ -38,7 +38,7 @@ body, html {
 						  #outro{
 						    display: none;
 							  /* background-image: url("redburst.jpg"); */
-								background-color:#e94b3c;
+								background-color:#6b5b95;
 								height: 100%;
 								margin:0;
 						        }
@@ -105,7 +105,7 @@ body, html {
 
 <style>
 	.linear {
-		height: 1rem;
+		height: .75rem;
 	  width: 300%;
 	  /***  CSS Gradient  ***/
 	  /*  Chrome 1-9 and Safari 4-5.0  */
@@ -200,7 +200,8 @@ body, html {
 	{margin: 10px;
 	}
 	.par1{
- 		top:15%;
+ 		top:7rem;
+		font-size: 22px;
 	}
 
 .par2{
@@ -434,18 +435,19 @@ body, html {
 
 
 				<p class="par1">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Why do you need a personal website? We are in the age of everything digital, it’s simply more efficient to view someone’s work from our phones before doing business with them. Websites are forever while simultaneously being able to update whenever you would like. Think of having your personal website as a high end resume. You’re able to control the narrative around your brand. All of your past and future endeavors in one place. Websites replace the tedious look of a resume by allowing you to incorporate pictures, videos, and whatever else you would like to showcase your brand. Websites allow you to have visually simulating content to show clientele with a quick google search if needed!
+
 				</p>
 
 
 
-					<p class="par2">
+					<!-- <p class="par2">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 
 					<p class="par3">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					</p>
+					</p> -->
 
 					<div class="linear-container4">
 					<div class="linear">
@@ -454,20 +456,22 @@ body, html {
 
 
 					</div>
+
+
+														<div id="myNav" class="overlay">
+														  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+														  <div class="overlay-content">
+														    <a href="faq.html">FAQ</a>
+														    <a href="contact.html">Contact</a>
+																 <a href="clients.html">Clients</a>
+																  <a href="home.html">Home</a>
+														  </div>
+														</div>
+
+														<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
 								</div>
-
-									<div id="myNav" class="overlay">
-									  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-									  <div class="overlay-content">
-									    <a href="faq.html">FAQ</a>
-									    <a href="contact.html">Contact</a>
-											 <a href="clients.html">Clients</a>
-											  <a href="home.html">Home</a>
-									  </div>
-									</div>
-
-									<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
 
 </body>
 
@@ -477,7 +481,7 @@ body, html {
 $(document).ready(function(){
 	$(function(){
 
-			$("#intro").delay(1500).fadeOut("slow");
+			$("#intro").delay(1000).fadeOut("slow");
 
 	 });
 });
@@ -486,7 +490,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(function(){
 
-			$("#outro").delay(1500).fadeIn("slow");
+			$("#outro").delay(1000).fadeIn("slow");
 	});
 });
 </script>
