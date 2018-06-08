@@ -25,7 +25,6 @@
 
         #p1{
             position: absolute;
-            color:white;
             left:0;
             right:0;
             margin: auto;
@@ -33,20 +32,26 @@
         }
         #p2{
           position: absolute;
-          color:white;
           left:0;
           right:0;
           margin: auto;
-          top:19rem;`
+          top:21rem;`
         }
         #p3{
           position: absolute;
-          color:white;
           left:0;
           right:0;
           margin: auto;
-          top:21rem;
+          top:25rem;
         }
+				#p4{
+					position: absolute;
+					left:0;
+					right:0;
+					margin: auto;
+					top:30rem;
+					font-size: 7vh;
+				}
 
 #outro{
 	display: none;
@@ -79,7 +84,7 @@
 
 		}
 	h2{
-			font-size: 3vh;;
+			font-size: 6vh;;
 	}
 
 
@@ -180,3 +185,11 @@ nav.nav2 a{
 	  a{
 	    color:darkred;
 	  }
+		#autoplay{
+	  position: absolute;
+	  left:42rem;
+	  top:15rem;
+		font-size: 40px;
+	}
+
+}

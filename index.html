@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="newdesktop.css">
   <link rel="stylesheet" href="hometext.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <script type="text/javascript" src="textition.js"></script>
 <style>
 
 *{
@@ -231,20 +232,6 @@ a{
           font-size: 24px;
         }
 
-    	.textef{
-    		width: 300px;
-    		height: 21px;
-    		text-align: center;
-    		/* margin-right: 10px;
-    		margin-top: 100px; */
-        text-shadow: .5px .5px black;
-    		color: white;
-        position: absolute;
-        top:16;
-        left:-50px;
-        /* right:0; */
-        margin: auto;
-}
 
 
       #logom{
@@ -262,13 +249,7 @@ a{
       a{
         color:white;
       }
-      #autoplay{
-        top:25rem;
-        position: absolute;
-        left:-30%;
-        /* right:0; */
-        /* margin: auto;` */
-      }
+
 
       #time{
         position: absolute;
@@ -358,9 +339,7 @@ a{
 
 
   		<img src="newsite/kalilogor.png" id="sunmain" class="kali">
-    <div class="ann1" style="font-size:3.1em; color: red;text-shadow: 1px 1px #0e194c;">A Group Of Multidisciplinary Designers</div>
 
-  <div class="ann2" id="bubble"style=" color:red;text-shadow: 1px 1px #0e194c;">We Build Killer Websites</div> -->
 
 
 
@@ -371,6 +350,25 @@ a{
   	<a href="faq.html" title="navi5">FAQ</a>
   		<a id="con" href="contact.html" title="navi6">CONTACT</a>
   	</nav>
+
+
+    <div id="autoplay" style="height: 1px; ">
+
+     
+
+     <div class="textef" style="">IMPRESS FUTURE CLIENTS</div>
+
+     <div class="textef" style="">MONETIZE YOUR PERSONAL BRAND</div>
+
+    <div class="textef" style="">YOUR DIGITAL REAL ESTATE</div>
+
+    </div>
+
+
+
+        	<div class="time"><p id="time" ></p></div>
+
+
 
   </div>
   </div>
@@ -429,6 +427,27 @@ $(window).load(function() {
    switchClass(-1);
 });
 </script>
+
+
+
+
+    <script>
+    $('#autoplay').delay(11000).textition({
+
+     speed: 1,
+
+     animation: 'ease-out',
+
+     map: {x: 200, y: 100, z: 0},
+
+     autoplay: true,
+
+     interval: 3.0
+
+    })
+    </script>
+    <script type="text/javascript" src="textition.js"></script>
+
 
 
 
