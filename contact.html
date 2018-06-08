@@ -18,14 +18,11 @@
 <style>
 
 
-
-body{
-   -webkit-align-items: center;
-  text-align: center;
-  align-items: center;
-    /* font-family: 'Anton', sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 a{
   text-decoration:none;
 }
@@ -93,69 +90,62 @@ span{
 
 
 
-  .overlay {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: white;
-      opacity: .8;
-      /* background-color: rgb(0,0,0);
-      background-color: rgba(0,0,0, 0.9); */
-      overflow-x: hidden;
-      transition: 0.5s;
-      text-align: center;
-  }
 
-  .overlay-content {
-      position: relative;
-      top: 25%;
-      left: 31%;
-      width: 100%;
-      text-align: center;
-      margin-top: 30px;
-  }
+        		.overlay {
+        		    height: 100%;
+        		    width: 0;
+        		    position: fixed;
+        		    z-index: 1;
+        		    top: 0;
+        		    left: 0;
+        		    background-color: white;
+        				opacity: .8;
+        		    overflow-x: hidden;
+        		    transition: 0.5s;
+        		}
 
-  .overlay a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 36px;
-      color: #6f9fd8;
-      display: block;
-      transition: 0.3s;
-  }
+        		.overlay-content {
+        		    position: relative;
+        		    top: 25%;
+        		    width: 100%;
+        		    text-align: center;
+        		    margin-top: 30px;
+        		}
 
-  .overlay a:hover, .overlay a:focus {
-      color: navy;
-  }
+        		.overlay a {
+        		    padding: 8px;
+        		    text-decoration: none;
+        		    font-size: 36px;
+        		    color:  #6f9fd8;
+        		    display: block;
+        		    transition: 0.3s;
+        		}
 
-  .overlay .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-  }
+        		.overlay a:hover, .overlay a:focus {
+        		    color: navy;
+        		}
 
+        		.overlay .closebtn {
+        		    position: absolute;
+        		    top: 20px;
+        		    right: 45px;
+        		    font-size: 60px;
+        		}
 
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
+        		@media screen and (max-height: 450px) {
+        		  .overlay a {font-size: 20px}
+        		  .overlay .closebtn {
+        		    font-size: 40px;
+        		    top: 15px;
+        		    right: 35px;
+        		  }
+        		}
 
 
 
 
 	@media screen and (max-width: 1100px){
 
-    .bubblehold {
-      font-size: 24px;
-    }
 
       #desk{
         display: none;
@@ -186,12 +176,6 @@ span{
   color: white;
 }
 
-#bubble {
-  font-size: 1rem;
-margin: auto;
-  font-weight: bold;
-  font-family: 'Dosis', sans-serif;
-}
 
 #logom{
   position: absolute;
@@ -259,15 +243,37 @@ margin: auto;
         visibility: visible;
         z-index: 1;
     }
+    
 
     span{
-    	top:0;
-    	left:0;
+    	top:1rem;
+    	left:2rem;
     	width: 100%;
     	text-align: center;
 
     	color:white ;
     	font-size: 24px;
+    }
+
+
+      .momail{
+        position: absolute;
+        width: 300px;
+        top:19rem;
+        left:41rem;
+        background-color:red;
+        font-size: 40px;
+        color:black;
+      }
+
+    #time{
+      position: absolute;
+      width: 150px;
+      top:15rem;
+      left:45rem;
+      color:black;
+      font-size: 2.5rem;
+
     }
 
 
@@ -321,8 +327,8 @@ margin: auto;
         <source src="office.mp4" type="video/mp4">
         <source src="office.ogg" type="video/ogg">
     </video>
-
-  <a href="mailto:info@kali.technology.com">Email Us<i style="font-size:24px" class="fa">&#xf0e0;</i></a>
+    	<p id="time" >--</p>
+  <a href="mailto:info@kali.technology.com" class="momail">Email Us<i style="font-size:24px" class="fa">&#xf0e0;</i></a>
 
 
 </div>
