@@ -2,16 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>kali DIGITAL</title>
+  <title>kali TECHNOLOGY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script type="text/javascript" src="textition.js"></script>
   <link rel="stylesheet" href="newdesktop.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link rel="stylesheet" href="hometext.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-<script type="text/javascript" src="textition.js"></script>
+
+    <style>
+
+      @keyframes spinner {
+        100% {
+          transform: rotate(3600deg);
+        }
+      }
+
+      .loading-container {
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 50vh;
+        transform: translateY(-50%);
+
+      }
+
+      .spinner {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: url('http://i.imgur.com/oSHLAzp.png') center center;
+        background-size: contain;
+        transition-origin: 50% 50%;
+        animation: spinner 3s infinite alternate ease-in-out;
+      }
+      .spinner-center {
+        display: inline-block;
+        position: absolute;
+        margin-left: -100px;
+        width: 100px;
+        height: 100px;
+        background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+        background-size: contain;
+        content: '';
+      }
+
+      #intro{
+        height: 1500px;
+        background-color: white;
+      }
+</style>
+
+
+
 <style>
 
 *{
@@ -21,12 +65,12 @@
   -webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
     -webkit-animation-iteration-count: 1;
-    font-family: 'Anton', sans-serif;
-
+    /* font-family: 'Anton', sans-serif; */
+     font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 body, html {
-    height: 100%;
+    height: 100rem;
     margin: 0;
   position: relative;
 }
@@ -59,12 +103,6 @@ height: 100vh;
 a{
   text-decoration: line-through;
 }
-
-#intro{
-  height: 100rem;
-        text-align: center;
-background-color: white;
-            }
 
 
 #outro{
@@ -104,8 +142,8 @@ background-color: white;
 
     #outro{
         /* The image used */
-        background-image: url("redburst.jpg");
-
+        /* background-image: url("redburst.jpg"); */
+        background-color:  #b6639b;
         /* Full height */
         height: 100%;
 
@@ -113,45 +151,55 @@ background-color: white;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
     }
 
 
     #sun{
       height:7rem;
       width:7rem;
-
+      position: absolute;
+      top:2rem;
 }
 
         #logo{
-
+          position: absolute;
           height: 17vh;
           width: 32vw;
-          top: 7rem;
+          top: 9rem;
         }
 
         #p1{
             position: absolute;
-            color:white;
             left:0;
             right:0;
             margin: auto;
-            top:17rem;
+            top:20rem;
+            font-size: 24px;
         }
         #p2{
           position: absolute;
-          color:white;
           left:0;
           right:0;
           margin: auto;
-          top:19rem;`
+          top:23rem;
+          font-size: 24px;
         }
         #p3{
           position: absolute;
-          color:white;
           left:0;
           right:0;
           margin: auto;
-          top:21rem;
+          top:26rem;
+          font-size: 24px;
+        }
+        #p4{
+          position: absolute;
+          left:0;
+          right:0;
+          margin: auto;
+          top:29rem;
+          font-size: 24px;
         }
 
     	.textef{
@@ -173,21 +221,14 @@ background-color: white;
       #logom{
 
       height: 12.75vh;
-      width: 24vw;
+      width: 34vw;
           position: absolute;
           top:16rem;
           left:0;
           right:0;
           margin: auto;`
       }
-      #pb{
-        position: absolute;
-        top:23rem;
-        left:0;
-        right:0;
-        margin: auto;
-        width: 350px;
-          color: white;
+
       }
       a{
         color:white;
@@ -199,187 +240,166 @@ background-color: white;
         /* right:0; */
         /* margin: auto;` */
       }
+
+      #time{
+        position: absolute;
+        top:11rem;
+        left:3rem;
+        color: white;
+        font-size: 18px;
+      }
 }
 
 
+
+
+
+
 </style>
-
-
-<style>
-  @keyframes spinner {
-    100% {
-      transform: rotate(3600deg);
-    }
-  }
-
-  .loading-container {
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    top: 50vh;
-    transform: translateY(-50%);
-  }
-
-  .spinner {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: url('http://i.imgur.com/oSHLAzp.png') center center;
-    background-size: contain;
-    transition-origin: 50% 50%;
-    animation: spinner 3s infinite alternate ease-in-out;
-  }
-  .spinner-center {
-    display: inline-block;
-    position: absolute;
-    margin-left: -100px;
-    width: 100px;
-    height: 100px;
-    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
-    background-size: contain;
-    content: '';
-  }
-  </style>
-
 </head>
 <body>
 
 
 
+      <div id="intro">
 
-    <div id="intro">
+          <div class="loading-container">
+          <div class="spinner"></div>
+          <div class="spinner-center"></div>
 
-        <div class="loading-container">
-        <div class="spinner"></div>
-        <div class="spinner-center"></div>
+        </div>
+      </div>
+
+  <div id="outro">
+<div id="mobile">
+<a id="top" href="aboutus.html" class="intro animated bounceInUp" style="position: absolute; top:85%; left: 5%;">-ABOUT US-</a>
+<a  id="top" href="clients.html" class="intro animated rotateInDownRight" style="position: absolute; top:5%; right: 5%;">-CLIENTS-</a>
+<a  id="bott" href="faq.html" class="intro animated rotateInDownLeft" style="position: absolute; top:5%; left: 5%;">-FAQ-</a>
+<a id="bott" href="contact.html" class="intro animated bounceInUp" style="position: absolute; top:85%; right: 5%;">-CONTACT-</a>
+
+
+<div id="sub">
+  <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
+
+    <div class="page">
+
+    <div id="home-news">
+      <div class="home_header">
+
+        <span>keep</span>
+        <strong>forever</strong>
+      </div>
+      <div class="home_header">
+        <span>your classy digital </span>
+        <strong>resume</strong>
+      </div>
+      <div class="home_header">
+        <span>monetize your</span>
+        <strong>brand</strong>
       </div>
     </div>
+  </div>
 
-
-
-      <div id="outro">
-    <div id="mobile">
-    <a id="top" href="aboutus.html" class="intro animated rotateInDownLeft" style="position: absolute; top:5%; left: 5%;">-ABOUT US-</a>
-    <a  id="top" href="clients.html" class="intro animated rotateInDownRight" style="position: absolute; top:5%; right: 5%;">-CLIENTS-</a>
-    <a  id="bott" href="faq.html" class="intro animated bounceInUp" style="position: absolute; top:85%; left: 5%;">-FAQ-</a>
-    <a id="bott" href="contact.html" class="intro animated bounceInUp" style="position: absolute; top:85%; right: 5%;">-CONTACT-</a>
-
-
-    <div id="sub">
-      <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
-      <h2 id="pb">PERSONAL BRAND SITE</h2>
-      	<div class="time"><p id="time" ></p></div>
+  	<div class="time"><p id="time" ></p></div>
 
 
 
 
 
 
-    <div id="autoplay" style="height: 1px; ">
-
-     
-
-     <div class="textef" style="">pitch 1</div>
-
-     <div class="textef" style="">pitch 2</div>
-
-    <div class="textef" style="">pitch 3</div>
-
-    </div>
-    </div>
-    </div>
+</div>
+</div>
 
 
-    <div id="desktop">
+<div id="desktop">
 
 
 
-    	<div class="video-container">
-    	  <video loop autoplay muted playsinline>
-    	    <source src="Blurry Video Of People Working.webm" type="video/webm">
-    	      <source src="Blurry Video Of People Working.mp4" type="video/mp4">
-    	      <source src="Blurry Video Of People Working.ogg" type="video/ogg">
-    	  </video>
-    	</div>
+	<div class="video-container">
+	  <video loop autoplay muted playsinline>
+	    <source src="Blurry Video Of People Working.webm" type="video/webm">
+	      <source src="Blurry Video Of People Working.mp4" type="video/mp4">
+	      <source src="Blurry Video Of People Working.ogg" type="video/ogg">
+	  </video>
+	</div>
 
 
 
-    		<img src="newsite/kalilogor.png" id="sunmain" class="kali">
-      <div class="ann1" style="font-size:3.1em; color: red;text-shadow: 1px 1px #0e194c;">A Group Of Multidisciplinary Designers</div>
+		<img src="newsite/kalilogor.png" id="sunmain" class="kali">
+  <div class="ann1" style="font-size:3.1em; color: red;text-shadow: 1px 1px #0e194c;">A Group Of Multidisciplinary Designers</div>
 
-    <div class="ann2" id="bubble"style=" color:red;text-shadow: 1px 1px #0e194c;">We Build Killer Websites</div> -->
+<div class="ann2" id="bubble"style=" color:red;text-shadow: 1px 1px #0e194c;">We Build Killer Websites</div> -->
 
 
 
 
-    <nav class="nav2">
-      <a id="abu" href="aboutus.html" title="navi4">ABOUT US</a>
-    	<a href="clients.html" title="navi5">CLIENTS</a>
-    	<a href="questionaire.html" title="navi5">FAQ</a>
-    		<a id="con" href="contact.html" title="navi6">CONTACT</a>
-    	</nav>
+<nav class="nav2">
+  <a id="abu" href="aboutus.html" title="navi4">ABOUT US</a>
+	<a href="clients.html" title="navi5">CLIENTS</a>
+	<a href="faq.html" title="navi5">FAQ</a>
+		<a id="con" href="contact.html" title="navi6">CONTACT</a>
+	</nav>
+
+</div>
+</div>
 
 
 
-    </div>
-    </div>
+<script> //INTRO
+$(document).ready(function(){
+  $(function(){
 
+      $("#intro").delay(1000).fadeOut("slow");
 
+   });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(function(){
 
-       <script> //INTRO
-      $(document).ready(function(){
-          $(function(){
-
-              $("#intro").delay(1500).fadeOut("slow");
-
-           });
-       });
-       </script>
-       <script>
-      $(document).ready(function(){
-          $(function(){
-
-              $("#outro").delay(1500).fadeIn("slow");
-          });
-      });
-      </script>
-
-
-    <script>
-    $('#autoplay').delay(11000).textition({
-
-     speed: 1,
-
-     animation: 'ease-out',
-
-     map: {x: 200, y: 100, z: 0},
-
-     autoplay: true,
-
-     interval: 3.0
-
-    })
-    </script>
-    <script type="text/javascript" src="textition.js"></script>
-
-
-
-    	<script> //CLOCK
-    	var myVar = setInterval(function(){ myTimer() }, 1000);
-
-    	function myTimer() {
-    	    var d = new Date();
-    	    var t = d.toLocaleTimeString();
-    	    document.getElementById("time").innerHTML = t;
-    	}
-
-    	function myStopFunction() {
-    	    clearInterval(myVar);
-    	}
+      $("#outro").delay(1000).fadeIn("slow");
+  });
+});
+</script>
 
 
 
 
 
-    </body>
-    </html>
+	<script> //CLOCK
+	var myVar = setInterval(function(){ myTimer() }, 1000);
+
+	function myTimer() {
+	    var d = new Date();
+	    var t = d.toLocaleTimeString();
+	    document.getElementById("time").innerHTML = t;
+	}
+
+	function myStopFunction() {
+	    clearInterval(myVar);
+	}
+</script>
+
+<script>
+function switchClass(i) {
+   var lis = $('#home-news > div');
+   lis.eq(i).removeClass('home_header_on');
+   lis.eq(i).removeClass('home_header_out');
+    lis.eq(i = ++i % lis.length).addClass('home_header_on');
+    lis.eq(i = ++i % lis.length).addClass('home_header_out');
+    setTimeout(function() {
+        switchClass(i);
+    }, 3500);
+}
+
+$(window).load(function() {
+   switchClass(-1);
+});
+</script>
+
+
+
+
+</body>
+</html>
