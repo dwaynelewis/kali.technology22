@@ -11,256 +11,195 @@
   <link rel="stylesheet" href="hometext.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       <script type="text/javascript" src="textition.js"></script>
-<style>
 
+      <style>
+        /* INTRO */
+        #intro{
+        -webkit-animation-duration: 3s;
+          -webkit-animation-delay: 1s;
+          -webkit-animation-iteration-count: 1;
+        }
+
+        #sun{
+                  display: block;
+                 text-align: center;
+                 text-decoration: none;
+                 -webkit-animation-duration: 2s;
+                 -webkit-animation-delay: 2s;
+                 -webkit-animation-iteration-count: 1;
+                }
+
+
+                #intro{
+                  height: 100rem;
+                        text-align: center;
+                background-color:#ecdb54;
+                            }
+	@media screen and (max-width: 450px){
+                            #sun{
+                              height:7rem;
+                              width:7rem;
+                              position: absolute;
+                              top:2rem;
+                        }
+                                #logo{
+                                  position: absolute;
+                                  height: 17vh;
+                                  width: 32vw;
+                                  top: 9rem;
+                                }
+                                #p1{
+                                    position: absolute;
+                                    left:0;
+                                    right:0;
+                                    margin: auto;
+                                    top:20rem;
+                                    font-size: 24px;
+                                }
+                                #p2{
+                                  position: absolute;
+                                  left:0;
+                                  right:0;
+                                  margin: auto;
+                                  top:23rem;
+                                  font-size: 24px;
+                                }
+                                #p3{
+                                  position: absolute;
+                                  left:0;
+                                  right:0;
+                                  margin: auto;
+                                  top:26rem;
+                                  font-size: 24px;
+                                }
+                                #p4{
+                                  position: absolute;
+                                  left:0;
+                                  right:0;
+                                  margin: auto;
+                                  top:29rem;
+                                  font-size: 24px;
+                                }
+                              }
+            @media screen and (min-width: 450px){
+
+
+                  #sun{
+                    height:7rem;
+                    width:7rem;
+                  }
+
+                      #logo{
+                        height: 17vh;
+                        width: 32vw;
+                        top: 7rem;
+                      }
+
+                      #p1{
+                          position: absolute;
+                          left:0;
+                          right:0;
+                          margin: auto;
+                          top:19rem;
+                      }
+                      #p2{
+                        position: absolute;
+                        left:0;
+                        right:0;
+                        margin: auto;
+                        top:24rem;`
+                      }
+                      #p3{
+                        position: absolute;
+                        left:0;
+                        right:0;
+                        margin: auto;
+                        top:28rem;
+                      }
+              				#p4{
+              					position: absolute;
+              					left:0;
+              					right:0;
+              					margin: auto;
+              					top:33rem;
+              					font-size: 7vh;
+              				}
+}
+      </style>
+
+
+<style>
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-animation-duration: 3s;
-    -webkit-animation-delay: 1s;
-    -webkit-animation-iteration-count: 1;
     /* font-family: 'Anton', sans-serif; */
      font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
 body, html {
     height: 100rem;
     margin: 0;
   position: relative;
 }
-
 img {
   position: absolute;
   left:0;
   right:0;
   margin: auto;
-    height: 5vh;
-    width: 10vw;
-
-
 }
-main{
-height: 100vh;
-}
-
-#sub{
-
-  height: 25%;
-  width: 50%;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-
-}
-
-a{
-  text-decoration: line-through;
-}
-
-#intro{
-  height: 100rem;
-        text-align: center;
-background-color:#ecdb54;
-            }
-
 
 #outro{
   display: none;
-}
-
-#sun{
-          display: block;
-         text-align: center;
-         text-decoration: none;
-         -webkit-animation-duration: 2s;
-         -webkit-animation-delay: 2s;
-         -webkit-animation-iteration-count: 1;
-        }
-
-
-
-
-
-
-</style>
-
-<style>
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   -webkit-animation-duration: 3s;
     -webkit-animation-delay: 1s;
     -webkit-animation-iteration-count: 1;
-    /* font-family: 'Anton', sans-serif; */
-     font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
-body, html {
-    height: 100rem;
-    margin: 0;
-  position: relative;
-}
-
-img {
-  position: absolute;
-  left:0;
-  right:0;
-  margin: auto;
-    height: 5vh;
-    width: 10vw;
-
-
-}
-main{
-height: 100vh;
-}
-
-#sub{
-
-  height: 25%;
-  width: 50%;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-
-}
-
-a{
-  text-decoration: line-through;
-}
-
-#sun{
-          display: block;
-         text-align: center;
-         text-decoration: none;
-         -webkit-animation-duration: 2s;
-         -webkit-animation-delay: 2s;
-         -webkit-animation-iteration-count: 1;
-        }
-
-
-
-
 
 
 </style>
 
 <style>
-
-
-
 	@media screen and (max-width: 450px){
-
     body, html {
         height: 100%;
         margin: 0;
     }
-
     #desktop{
       display: none;
     }
-
     #outro{
-        /* The image used */
-        /* background-image: url("redburst.jpg"); */
         background-color:  #b6639b;
-        /* Full height */
         height: 100%;
+    }
 
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
+    a{
+      text-decoration: line-through;
+      color:white;
     }
 
 
-    #sun{
-      height:7rem;
-      width:7rem;
-      position: absolute;
-      top:2rem;
-}
-
-        #logo{
-          position: absolute;
-          height: 17vh;
-          width: 32vw;
-          top: 9rem;
-        }
-
-        #p1{
-            position: absolute;
-            left:0;
-            right:0;
-            margin: auto;
-            top:20rem;
-            font-size: 24px;
-        }
-        #p2{
-          position: absolute;
-          left:0;
-          right:0;
-          margin: auto;
-          top:23rem;
-          font-size: 24px;
-        }
-        #p3{
-          position: absolute;
-          left:0;
-          right:0;
-          margin: auto;
-          top:26rem;
-          font-size: 24px;
-        }
-        #p4{
-          position: absolute;
-          left:0;
-          right:0;
-          margin: auto;
-          top:29rem;
-          font-size: 24px;
-        }
+    #logom{
+    height: 12.75vh;
+    width: 34vw;
+      text-align: center;
+      margin-top: 19rem;
+    }
 
 
-
-      #logom{
-
-      height: 12.75vh;
-      width: 34vw;
-          position: absolute;
-          top:16rem;
-          left:0;
-          right:0;
-          margin: auto;`
-      }
-
-
-      a{
-        color:white;
-      }
-
-
-      #time{
-        position: absolute;
-        top:11rem;
-        left:3rem;
+      .time{
         color: white;
         font-size: 18px;
+        text-align: center;
+        padding-top: 29rem;
+      }
+      #time{
+        position: absolute;
+        left:0;
+        right:0;
       }
 }
-
-
-
-
-
-
 </style>
+
 </head>
 <body>
 
@@ -286,7 +225,7 @@ a{
   <a id="bott" href="contact.html" class="intro animated bounceInUp" style="position: absolute; top:85%; right: 5%;">-CONTACT-</a>
 
 
-  <div id="sub">
+
     <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
 
       <div class="page">
@@ -315,7 +254,7 @@ a{
 
 
 
-  </div>
+
   </div>
 
 
@@ -363,16 +302,13 @@ a{
     <script> //INTRO
   $(document).ready(function(){
       $(function(){
-
           $("#intro").delay(5000).fadeOut("slow");
-
        });
    });
    </script>
    <script>
   $(document).ready(function(){
       $(function(){
-
           $("#outro").delay(5500).fadeIn("slow");
       });
   });
@@ -384,13 +320,11 @@ a{
 
 	<script> //CLOCK
 	var myVar = setInterval(function(){ myTimer() }, 1000);
-
 	function myTimer() {
 	    var d = new Date();
 	    var t = d.toLocaleTimeString();
 	    document.getElementById("time").innerHTML = t;
 	}
-
 	function myStopFunction() {
 	    clearInterval(myVar);
 	}
@@ -407,7 +341,6 @@ function switchClass(i) {
         switchClass(i);
     }, 3500);
 }
-
 $(window).load(function() {
    switchClass(-1);
 });

@@ -5,6 +5,7 @@
       position: absolute;
       left:0;
       right:0;
+			margin: auto;
         top:26rem;
     }
     #home-news{
@@ -13,12 +14,6 @@
 
 
 
-.page{
-  width: 21rem;
-  height: 3rem;
-  position: absolute;
-  left:-4rem;
-}
 }
 #home-news{
 

@@ -10,9 +10,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-      	<script src="jquery.bubble.text.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>"KALI"</title>
+<title>CONTACT</title>
 
 
 <style>
@@ -22,9 +21,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+     font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 a{
   text-decoration:none;
+     font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 span{
@@ -76,16 +77,8 @@ span{
 
   #outro{
     display: none;
-            /* The image used */
-            /* background-image: url("redburst.jpg"); */
               background-color: #6f9fd8;
-            /* Full height */
             height: 100%;
-
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
 
@@ -116,7 +109,7 @@ span{
         		    padding: 8px;
         		    text-decoration: none;
         		    font-size: 36px;
-        		    color:  #6f9fd8;
+        		    color:  black;
         		    display: block;
         		    transition: 0.3s;
         		}
@@ -188,7 +181,7 @@ span{
     background-color: inherit;
 }
 
-  .momail{
+  #momail{
     position: absolute;
     width: 150px;
     top:30rem;
@@ -211,14 +204,16 @@ span{
     font-size: 1.5rem;
 
   }
-
+span{
+  color:white;
+}
 
 
 }
     </style>
 
     <style>
-    @media screen and (min-width: 1100px){
+    @media screen and (min-width: 450px){
 
 
 
@@ -236,8 +231,8 @@ span{
 
     #logom{
       position: absolute;
-      top:19%;
-      left: 5%;
+      top:2rem;
+      left:2rem;
         height: 20vh;
         width:28vw;
         visibility: visible;
@@ -247,34 +242,73 @@ span{
 
     span{
     	top:1rem;
-    	left:2rem;
+      color: darkred;
     	width: 100%;
     	text-align: center;
-
-    	color:white ;
     	font-size: 24px;
     }
 
+    #email{
+      position: absolute;
+      width: 300px;
+      top:22rem;
+      left:41rem;
+      font-size: 40px;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay:1s;
+      -webkit-animation-iteration-count: 1;
+       font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
 
-      .momail{
+
+      #momail{
         position: absolute;
-        width: 300px;
-        top:19rem;
-        left:41rem;
-        background-color:red;
+        top:26rem;
+        left:44rem;
+        color: white;
+        background-color: black;
         font-size: 40px;
-        color:black;
+        opacity: .9;
+        padding: .5rem;
+        border-radius: 95%;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-delay:1.5s;
+        -webkit-animation-iteration-count: 1;
+         font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      h2{
+        font-size: 35px;
+        top:18rem;
       }
 
-    #time{
-      position: absolute;
-      width: 150px;
-      top:15rem;
-      left:45rem;
-      color:black;
-      font-size: 2.5rem;
-
-    }
+      #p1{
+          position: absolute;
+          left:8rem;
+      }
+      #p2{
+        position: absolute;
+        left:21rem;
+      }
+      #p3{
+        position: absolute;
+        left:34.5rem;
+      }
+      #p4{
+        position: absolute;
+        left:40rem;
+      }
+      #p5{
+        position: absolute;
+        left:56.5rem;
+      }
+      #p6{
+        position: absolute;
+        left:65rem;
+      }
+      #p7{
+        position: absolute;
+        left:76rem;
+      }
 
 
   }
@@ -311,14 +345,15 @@ span{
 
 </div>
 
-  	<p id="time" >--</p>
+  	<div class="time"><p id="time" ></p></div>
 
-<a href="mailto:info@kali.technology.com" class="momail">EMAIL US</a>
+<a href="mailto:info@kali.technology.com" id="momail">EMAIL US</a>
 </div>
+
 <div id="desk">
 
 
-        <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
+        <img id="logom" src="kalilogor.png" class="intro animated zoomInDown" alt="Kali logo">
 
 
   <div class="video-container">
@@ -327,13 +362,24 @@ span{
         <source src="office.mp4" type="video/mp4">
         <source src="office.ogg" type="video/ogg">
     </video>
-    	<p id="time" >--</p>
-  <a href="mailto:info@kali.technology.com" class="momail">Email Us<i style="font-size:24px" class="fa">&#xf0e0;</i></a>
 
+
+
+        <h2 id="p1" class="intro animated slideInLeft">LOOKING</h2>
+          <h2 id="p2" class="intro animated slideInLeft">FORWARD</h2>
+            <h2 id="p3" class="intro animated slideInLeft">TO</h2>
+            <h2 id="p4" class="intro animated slideInRight">DEVELOPING</h2>
+            <h2 id="p5" class="intro animated slideInLeft">YOUR</h2>
+                  <h2 id="p6" class="intro animated slideInRight">DIGITAL</h2>
+                    <h2 id="p7" class="intro animated slideInRight">BRAND</h2>
+                    <h2 id="email" class="intro animated bounceInUp">EMAIL</h2>
+  <a href="mailto:info@kali.technology.com" id="momail" class="intro animated bounceInUp"><i style="style=" class="fa"> &#xf0e0;</i></a>
+
+
+  <span style="font-size:30px;cursor:pointer;position: absolute;" onclick="openNav()">&#9776;</span>
 
 </div>
 
-	
 </div>
 
 <div id="myNav" class="overlay">
@@ -345,8 +391,7 @@ span{
       <a href="home.html">Home</a>
   </div>
 </div>
-
-<span style="font-size:30px;cursor:pointer;position: absolute; color:white;" onclick="openNav()">&#9776;</span>
+</div>
 
 <script>
 function openNav() {
@@ -380,31 +425,6 @@ function closeNav() {
   </script>
 
 
-  <script>
-  $(document).ready(function() {
-      var $element = $('#bubble');
-      var phrases = [
-          'branding',
-          'websites',
-          'mobile apps',
-          'commercials',
-          'vip service',
-
-      ];
-      var index = -1;
-      (function loopAnimation() {
-          index = (index + 1) % phrases.length;
-          bubbleText({
-              element: $element,
-              newText: phrases[index],
-              letterSpeed: 70,
-              callback: function() {
-                  setTimeout(loopAnimation, 2000);
-              },
-          });
-      })();
-  });
-  </script>
 
 
   	<script> //CLOCK 	<p id="time" ></p>

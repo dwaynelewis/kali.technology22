@@ -9,50 +9,6 @@
 }
 
 
-
-    #sun{
-      height:7rem;
-      width:7rem;
-
-}
-
-        #logo{
-
-          height: 17vh;
-          width: 32vw;
-          top: 7rem;
-        }
-
-        #p1{
-            position: absolute;
-            left:0;
-            right:0;
-            margin: auto;
-            top:17rem;
-        }
-        #p2{
-          position: absolute;
-          left:0;
-          right:0;
-          margin: auto;
-          top:21rem;`
-        }
-        #p3{
-          position: absolute;
-          left:0;
-          right:0;
-          margin: auto;
-          top:25rem;
-        }
-				#p4{
-					position: absolute;
-					left:0;
-					right:0;
-					margin: auto;
-					top:30rem;
-					font-size: 7vh;
-				}
-
 #outro{
 	display: none;
 }
@@ -184,6 +140,6 @@ nav.nav2 a{
 	  a{
 	    color:darkred;
 	  }
-	
+
 
 }
