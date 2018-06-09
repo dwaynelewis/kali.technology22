@@ -60,7 +60,6 @@
     width: 100%;
     margin: 0px auto;
     position:relative;
-	font-family: 'Dosis', sans-serif;
 }
 
 
@@ -68,7 +67,7 @@
 			color: white;
 			text-align: center;
 			font-size: 5vw;
-			font-family: 'Dosis', sans-serif;
+
 		}
 
 
@@ -80,7 +79,7 @@
 	font-size: 20vw;
 		}
 		.intro2{
-			font-family: 'Dosis', sans-serif;
+
 
 		}
 	h2{
@@ -185,11 +184,6 @@ nav.nav2 a{
 	  a{
 	    color:darkred;
 	  }
-		#autoplay{
-	  position: absolute;
-	  left:42rem;
-	  top:15rem;
-		font-size: 40px;
-	}
+	
 
 }

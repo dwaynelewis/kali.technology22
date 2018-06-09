@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>IS HE CHEATING</title>
+    <title>faq</title>
 
 
 
@@ -17,6 +17,23 @@
 
 	  <style>
 
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-animation-duration: 3s;
+        -webkit-animation-delay: 1s;
+        -webkit-animation-iteration-count: 1;
+        /* font-family: 'Anton', sans-serif; */
+         font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    body, html {
+        height: 100rem;
+        margin: 0;
+      position: relative;
+    }
+    
 	  @keyframes spinner {
 	    100% {
 	      transform: rotate(3600deg);
@@ -122,9 +139,6 @@
       }
 
     #outro{
-    height: 100rem;
-    margin: 0;
-    padding: 0;
     background-color:  #bc70a4;
     color:white;
   }
@@ -132,13 +146,15 @@
 
   <style>
 
+  	@media screen and (max-width: 450px){
     p{
     font-size: 200%;
   }
   #opening{
     position: absolute;
     top:10rem;
-    padding: 1rem;
+
+    width: 100%;
   }
 
 
@@ -147,26 +163,70 @@
     left:9rem;
     font-size: 30px;
     top:4rem;
-    width: 10rem;
+    width: 30rem;
   }
 
+    #getstarted{
+      width: 100px;
+      background-color: white;
+      color:  #bc70a4;
+      padding: 3px;
+      font-size: 110%;
+      position: absolute;
+      left:0;
+      right:0;
+      margin: auto;
+      top:16rem;
+    }
+    #outro{
+      width:100%;
+    }
+
+}
+
+
+
+	@media screen and (min-width: 450px){
+
+
+      #autoplay{
+        position: absolute;
+        left:0;
+        right:0;
+        margin: auto;
+        font-size: 30px;
+        top:4rem;
+        width: 10rem;
+      }
+      .textef{
+        width:20rem;
+      }
+      #getstarted{
+        width: 100px;
+        background-color: white;
+        color:  #bc70a4;
+        padding: 3px;
+        font-size: 110%;
+        position: absolute;
+        left:0;
+        right:0;
+        margin: auto;
+        top:16rem;
+      }
+
+      #opening{
+        position: absolute;
+        left:29rem;
+        top:10rem;
+        padding: 1rem;
+      }
+
+  }
 
   #questions{
     display: inline;
   }
 
-  #getstarted{
-    width: 100px;
-    background-color: white;
-    color:  #bc70a4;
-    padding: 3px;
-    font-size: 110%;
-    position: absolute;
-    left:0;
-    right:0;
-    margin: auto;
-    top:16rem;
-  }
   #ques1{
     display: none;
   }
@@ -364,22 +424,6 @@
   </style>
 
 
-  <style>
-  	@media screen and (max-width: 450px) {
-  #autoplay{
-  position: absolute;
-  left:0;
-  right:0;
-  margin: auto;
-}
-#opening{
-  position: absolute;
-  left:28rem;
-}
-}
-
-  </style>
-
 <body>
 
   <div id="intro">
@@ -400,11 +444,11 @@
 
        
 
-       <div class="textef" style="">pitch 1</div>
+       <div class="textef" style="">Create your own environment.</div>
 
-       <div class="textef" style="">pitch 2</div>
+       <div class="textef" style="">Impress clients without saying a word</div>
 
-      <div class="textef" style="">pitch 3</div>
+      <div class="textef" style="">Control your Google search</div>
 
       </div>
 
@@ -419,7 +463,7 @@
 
 
 
-  <button id= "getstarted">Click to get started</button>
+  <button id= "getstarted">Get started</button>
 <div id="ques1">
   <p>Is he telling little lies lately?</p>
 <button id = "choice1a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
