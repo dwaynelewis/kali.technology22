@@ -43,7 +43,7 @@
 	}
 
 
-.kali{
+#kali{
     margin-top: 5%;
     margin-left: 5%;
     position:absolute;
@@ -57,35 +57,11 @@
 		border-radius: 15%;
 }
 
-.ann1{
-    margin-top: 10%;
-    margin-left: 25%;
-    position:absolute;
-    top:-43px;
-    left:0;
-    width:800px;
-    height:20px;
-
-    font-size: 35px;
-	text-align: center;
-}
-.ann2{
-    margin-top: 13%;
-    margin-left: 26%;
-    position:absolute;
-    top:-28px;
-    left:0;
-    width:800px;
-    height:20px;
-    /* color: white; */
-    font-size: 35px;
-	text-align: center;
-}
-.nav2{
+#nav2{
     margin-top: 5%;
     margin-left: 26%;
     position:absolute;
-    top:0;
+    top:-2rem;
     left:0;
     width:800px;
     height:20px;
@@ -93,7 +69,7 @@
     font-size: 17px;
 	text-align: center;
 }
-.nav2 a:link, a:visited {
+#nav2 a:link, a:visited {
 
     color: red;
     padding: 5px 50px;
@@ -108,12 +84,12 @@
 .nav a{
 	/* color:white; */
 }
-.nav2 a:hover, a:active {
+#nav2 a:hover, a:active {
     background-color:red;
 		color: black;
 }
 
-nav.nav2 a{
+nav#nav2 a{
 	height: 32px;
 }
 
@@ -140,6 +116,8 @@ nav.nav2 a{
 	  a{
 	    color:darkred;
 	  }
+
+
 
 
 }
