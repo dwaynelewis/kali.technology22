@@ -217,6 +217,9 @@ img {
                                         &:nth-of-type(3) { width: 75%; }
                                         &:nth-of-type(4) { width: 100%; }
                                       }
+      #vid{
+        display: none;
+      }
 }
 </style>
 
@@ -270,7 +273,7 @@ img {
     	<div class="time"><p id="time" ></p></div>
 
 
-              	<div class="video-container">
+              	<div id="vid" class="video-container">
               	  <video loop autoplay muted playsinline>
               	    <source src="runway.webm" type="video/webm">
               	      <source src="runway.mp4" type="video/mp4">
@@ -329,6 +332,13 @@ img {
   $(document).ready(function(){
       $(function(){
           $("#outro").delay(5500).fadeIn("slow");
+      });
+  });
+  </script>
+  <script>
+  $(document).ready(function(){
+      $(function(){
+          $("#vid").delay(10000).fadeIn("slow");
       });
   });
   </script>
