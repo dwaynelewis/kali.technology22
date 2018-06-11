@@ -81,6 +81,8 @@
                                   top:29rem;
                                   font-size: 24px;
                                 }
+
+
                               }
             @media screen and (min-width: 450px){
 
@@ -180,10 +182,11 @@ img {
 
 
     #logom{
-    height: 12.75vh;
-    width: 34vw;
+      height: 12vh;
+      width: 24.35vw;
       text-align: center;
-      margin-top: 19rem;
+      margin-top: 4rem;
+      z-index: 1;
     }
 
 
@@ -197,7 +200,23 @@ img {
         position: absolute;
         left:0;
         right:0;
+        z-index: 1;
       }
+
+                                          .video-container video {
+                                        display: block;
+                                        width: 100%;
+                                      }
+
+                                      .video-container {
+                                        position: absolute;
+                                        top:12rem;
+                                        /* outline: 1px solid #dadada; */
+                                        &:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
+                                        &:nth-of-type(2) { width: 50%; }
+                                        &:nth-of-type(3) { width: 75%; }
+                                        &:nth-of-type(4) { width: 100%; }
+                                      }
 }
 </style>
 
@@ -227,7 +246,7 @@ img {
 
 
 
-    <img id="logom" src="kaliwhite.png" class="intro animated zoomInDown" alt="Kali logo">
+    <img id="logom" src="kaliwhite.png" class="intro animated zoomIn" alt="Kali logo">
 
       <div class="page">
 
@@ -249,6 +268,15 @@ img {
     </div>
 
     	<div class="time"><p id="time" ></p></div>
+
+
+        	<div class="video-container">
+        	  <video loop autoplay muted playsinline>
+        	    <source src="Blurry Video Of People Working.webm" type="video/webm">
+        	      <source src="Blurry Video Of People Working.mp4" type="video/mp4">
+        	      <source src="Blurry Video Of People Working.ogg" type="video/ogg">
+        	  </video>
+        	</div>
 
 
 
