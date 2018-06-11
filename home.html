@@ -141,6 +141,9 @@ img {
                                       &:nth-of-type(3) { width: 75%; }
                                       &:nth-of-type(4) { width: 100%; }
                                     }
+                                    #vid{
+                                      display: none;
+                                    }
 
 }
 </style>
@@ -190,14 +193,14 @@ img {
 
           	<div class="time"><p id="time" ></p></div>
 
+            <div id="vid" class="video-container">
+              <video loop autoplay muted playsinline>
+                <source src="runway.webm" type="video/webm">
+                  <source src="runway.mp4" type="video/mp4">
+                  <source src="runway.ogg" type="video/ogg">
+              </video>
+            </div>
 
-                    	<div class="video-container">
-                    	  <video loop autoplay muted playsinline>
-                    	    <source src="runway.webm" type="video/webm">
-                    	      <source src="runway.mp4" type="video/mp4">
-                    	      <source src="runway.ogg" type="video/ogg">
-                    	  </video>
-                    	</div>
 
 
 
@@ -264,6 +267,13 @@ img {
         $(function(){
 
             $("#outro").delay(1500).fadeIn("slow");
+        });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+        $(function(){
+            $("#vid").delay(2000).fadeIn("slow");
         });
     });
     </script>
