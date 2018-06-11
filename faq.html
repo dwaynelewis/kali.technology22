@@ -16,14 +16,11 @@
 
 
 	  <style>
-
-
 	  @keyframes spinner {
 	    100% {
 	      transform: rotate(3600deg);
 	    }
 	  }
-
 	  .loading-container {
 	    margin: 0 auto;
 	    text-align: center;
@@ -31,7 +28,6 @@
 	    top: 50vh;
 	    transform: translateY(-50%);
 	  }
-
 	  .spinner {
 	    display: inline-block;
 	    width: 100px;
@@ -51,13 +47,9 @@
 	    background-size: contain;
 	    content: '';
 	  }
-
-
 	</style>
 
 <style>
-
-
         		.overlay {
         		    height: 100%;
         		    width: 0;
@@ -70,7 +62,6 @@
         		    overflow-x: hidden;
         		    transition: 0.5s;
         		}
-
         		.overlay-content {
         		    position: relative;
         		    top: 25%;
@@ -78,7 +69,6 @@
         		    text-align: center;
         		    margin-top: 30px;
         		}
-
         		.overlay a {
         		    padding: 8px;
         		    text-decoration: none;
@@ -87,18 +77,15 @@
         		    display: block;
         		    transition: 0.3s;
         		}
-
         		.overlay a:hover, .overlay a:focus {
         		    color: navy;
         		}
-
         		.overlay .closebtn {
         		    position: absolute;
         		    top: 20px;
         		    right: 45px;
         		    font-size: 60px;
         		}
-
         		@media screen and (max-height: 450px) {
         		  .overlay a {font-size: 20px}
         		  .overlay .closebtn {
@@ -107,16 +94,8 @@
         		    right: 35px;
         		  }
         		}
-
-
-
-
-
-
 </style>
 <style>
-
-
     *{
       margin: 0;
       padding: 0;
@@ -124,22 +103,19 @@
       -webkit-animation-duration: 3s;
         -webkit-animation-delay: 1s;
         -webkit-animation-iteration-count: 1;
-        /* font-family: 'Anton', sans-serif; */
+      color:white;
          font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
-
     body, html {
         height: 100rem;
         margin: 0;
       position: relative;
       text-align: center;
     }
-
       #intro{
         height: 110rem;
         background-color: white;
       }
-
     #outro{
     background-color:  #bc70a4;
     color:white;
@@ -147,14 +123,10 @@
     width: 100%;
     height: 100%;
   }
-
-
         #restart{
       display: none;
        text-align: center;
-
     }
-
     #restart a{
       color:  #C0AB8E;
       background-color: white;
@@ -174,11 +146,9 @@
       right:0;
       margin: auto;
     }
-
   </style>
 
   <style>
-
   	@media screen and (max-width: 450px){
     p{
     font-size: 200%;
@@ -188,19 +158,14 @@
     top:20rem;
     width: 100%;
   }
-
-
   #autoplay{
-    font-size: 30px;
     top:12rem;
     width: 350px;
   }
-
     .textef{
       width: 350px;
-      font-size: 18px;
+      font-size: 20px;
     }
-
     #getstarted{
       width: 100px;
       background-color: white;
@@ -213,14 +178,24 @@
       margin: auto;
       top:23rem;
     }
-
+    .questions{
+      display: none;
+      width: 20rem;
+      left:0;
+      right:0;
+      margin: auto;
+      position: absolute;
+      top:24rem;
+    }
+    button{
+      left:0;
+      right:0;
+      margin: 1px;
+      position: absolute;
+      width: auto;
+    }
 }
-
-
-
 	@media screen and (min-width: 450px){
-
-
       #autoplay{
         position: absolute;
         left:0;
@@ -232,7 +207,6 @@
       }
       .textef{
         width: 50rem;
-
       }
       #getstarted{
         width: 100px;
@@ -246,7 +220,6 @@
         margin: auto;
         top:27rem;
       }
-
       #opening{
         position: absolute;
         left:0;
@@ -255,192 +228,95 @@
         top:22rem;
         padding: 1rem;
       }
-
   }
-
-  #questions{
-    display: inline;
-  }
-
-  #ques1{
+  .questions{
     display: none;
+    width: 20rem;
   }
-
+  .btn{
+    display:none;
+    font-size: 20px;
+  }
     #demo{
     display: none;
-
   }
-
   #choice1a{
-    display: none;
-    width: 100px;
-
+      top:7rem;
   }
   #choice1b{
-    display:none;
-    width: 100px;
+      top:9rem;
   }
-
   #choice1c{
-    display: none;
-    width: 100px;
+      top:11rem;
   }
-
-  #ques2{
-    display: none;
-  }
-
   #choice2a{
-    display: none;
-    width: 100px;
+      top:7rem;
   }
-
   #choice2b{
-    display: none;
-    width: 100px;
+      top:9rem;
   }
-
-
-  #ques3{
-    display: none;
-    width: 100px;
-  }
-
   #choice3a{
-    display: none;
-    width: 100px
+      top:7rem;
   }
-
   #choice3b{
-    display: none;
-    width: 100px;
+      top:9rem;
   }
-
-  #ques4{
-    display: none;
-    width: 100px;
-  }
-
   #choice4a{
-    display: none;
-    width: 100px
+      top:7rem;
   }
-
   #choice4b{
-    display: none;
-    width: 100px;
+top:9rem;
   }
-
-  #ques5{
-    display: none;
-    width: 100px;
-  }
-
   #choice5a{
-    display: none;
-    width: 100px
+      top:7rem;
   }
-
   #choice5b{
-    display: none;
-    width: 100px;
+      top:9rem;
   }
-
-  #ques6{
-    display: none;
-    width: 100px;
-  }
-
   #choice6a{
-    display: none;
-    width: 100px
+  top:7rem;
   }
-
   #choice6b{
-    display: none;
-    width: 100px;
-  }
-
-  #ques7{
-    display: none;
-    width: 100px;
+      top:9rem;
   }
   #choice7a{
-    display: none;
-    width: 100px
+  top:7rem;
   }
-
   #choice7b{
-    display: none;
-    width: 100px;
-  }
-
-  #ques8{
-    display: none;
-    width: 100px;
+  top:9rem;
   }
   #choice8a{
-    display: none;
-    width: 100px
+  top:7rem;
   }
   #choice8b{
-    display: none;
-    width: 100px;
+  top:9rem;
   }
-
-  #ques9{
-    display: none;
-    width: 100px;
-  }
-
   #choice9a{
-    display: none;
-    width: 100px;
+  top:7rem;
   }
   #choice9b{
-    display: none;
-    width: 100px
-  }
-
-
-  #ques10{
-    display: none;
-    width: 100px;
+  top:9rem;
   }
 
   #choice10a{
-    display: none;
-    width: 100px;
+  top:7rem;
   }
   #choice10b{
-    display: none;
-    width: 100px
-  }
-
-  #ques11{
-    display: none;
-    width: 100px;
+  top:9rem;
   }
 
   #choice11a{
-    display: none;
-    width: 100px;
+  top:7rem;
   }
   #choice11b{
-    display: none;
-    width: 100px
+  top:9rem;
   }
-
 #choice11c{
-  display: none;
-  width: 100px
+  top:11rem;
 }
-
   #goodbye{
     display: none;
   }
-
-
   </style>
 
 
@@ -484,7 +360,7 @@
 
 
   <button id= "getstarted">Get started</button>
-<div id="ques1">
+<div id="ques1" class="questions">
   <p>Is he telling little lies lately?</p>
 <button id = "choice1a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice1b" type="button" class="btn btn-outline-light text-light">No</button>
@@ -495,70 +371,70 @@
 
 <!-- <button id="ques1-5">Are you ready for the next question?</button> -->
 
-<div id="ques2">
+<div id="ques2" class="questions">
   <p> Has his appearance become a priority for him lately?</p>
 <button id = "choice2a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice2b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques3">
+<div id="ques3" class="questions">
   <p>Has he brought up breaking up during a fight lately?</p>
 <button id = "choice3a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice3b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques4">
+<div id="ques4" class="questions">
   <p>Is he secretive with his technology?</p>
 <button id = "choice4a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice4b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques5">
+<div id="ques5" class="questions">
   <p>Does he accuse you of cheating?</p>
 <button id = "choice5a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice5b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques6">
+<div id="ques6" class="questions">
   <p>Is he unavailable alot & giving vague excuses?</p>
 <button id = "choice6a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice6b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques7">
+<div id="ques7" class="questions">
   <p>Has he ever cheated on you or his exes?</p>
 <button id = "choice7a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice7b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques8">
+<div id="ques8" class="questions">
   <p>Has the sex frequency dropped off?!</p>
 <button id = "choice8a" type="button" class="btn btn-outline-light text-light">No</button><br>
 <button id = "choice8b" type="button" class="btn btn-outline-light text-light">Yes</button>
       </div>
 
 
-<div id="ques9">
+<div id="ques9" class="questions">
   <p>Has his personality changed towards you? Is he nicer or does he get irritated easier?</p>
 <button id = "choice9a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice9b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques10">
+<div id="ques10" class="questions">
   <p>Does your gut think he is cheating?</p>
 <button id = "choice10a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice10b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques11">
+<div id="ques11" class="questions">
   <p>BONUS QUESTION: Can you FaceTime him w/o warning?</p>
 <button id = "choice11a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice11b" type="button" class="btn btn-outline-light text-light">No</button>
@@ -596,9 +472,6 @@
 </body>
 
     <script>
-
-
-
         var ans1 = false;
         var ans2 = false;
         var ans3 = false;
@@ -609,17 +482,12 @@
         var ans8 = false;
         var ans9 = false;
         var ans10 = false;
-
-
-
         document.getElementById("getstarted").onclick = function firstQuestion(){
         document.getElementById("getstarted").style.display = "none";
         document.getElementById("opening").style.display = "none";
         document.getElementById("ques1").style.display = "block";
         document.getElementById("choice1a").style.display = "block";
         document.getElementById("choice1b").style.display = "block";
-
-
       };
         document.getElementById("choice1a").onclick = function firstAnswer(){
         document.getElementById("ques1").style.display = "none";
@@ -628,12 +496,8 @@
         document.getElementById("ques2").style.display = "block";
         document.getElementById("choice2a").style.display = "block";
         document.getElementById("choice2b").style.display = "block";
-
         ans1 = true;
-
-
       };
-
         document.getElementById("choice1b").onclick = function firstAnswer(){
         document.getElementById("ques1").style.display = "none";
         document.getElementById("choice1a").style.display = "none";
@@ -641,15 +505,7 @@
         document.getElementById("ques2").style.display = "block";
         document.getElementById("choice2a").style.display = "block";
         document.getElementById("choice2b").style.display = "block";
-
-
-
       };
-
-
-
-
-
         document.getElementById("choice2a").onclick = function secondAnswer(){
           document.getElementById("ques3").style.display = "block";
         document.getElementById("choice3a").style.display = "block";
@@ -657,12 +513,8 @@
         document.getElementById("ques2").style.display = "none";
         document.getElementById("choice2a").style.display = "none";
         document.getElementById("choice2b").style.display = "none";
-
         ans2 = true;
-
-
       };
-
         document.getElementById("choice2b").onclick = function secondAnswer(){
           document.getElementById("ques3").style.display = "block";
         document.getElementById("choice3a").style.display = "block";
@@ -670,11 +522,8 @@
         document.getElementById("ques2").style.display = "none";
         document.getElementById("choice2a").style.display = "none";
         document.getElementById("choice2b").style.display = "none";
-
          ans2 = false;
        };
-
-
         document.getElementById("choice3a").onclick = function thirdAnswer(){
           document.getElementById("ques4").style.display = "block";
         document.getElementById("choice4a").style.display = "block";
@@ -683,9 +532,7 @@
         document.getElementById("choice3a").style.display = "none";
         document.getElementById("choice3b").style.display = "none";
         ans3 = true;
-
       };
-
         document.getElementById("choice3b").onclick = function thirdAnswer(){
           document.getElementById("ques4").style.display = "block";
         document.getElementById("choice4a").style.display = "block";
@@ -695,7 +542,6 @@
         document.getElementById("choice3b").style.display = "none";
         ans3 = false;
       };
-
         document.getElementById("choice4a").onclick = function fourthAnswer(){
           document.getElementById("ques5").style.display = "block";
         document.getElementById("choice5a").style.display = "block";
@@ -704,9 +550,7 @@
         document.getElementById("choice4a").style.display = "none";
         document.getElementById("choice4b").style.display = "none";
         ans4 = true;
-
       };
-
         document.getElementById("choice4b").onclick = function fourthAnswer(){
           document.getElementById("ques5").style.display = "block";
         document.getElementById("choice5a").style.display = "block";
@@ -716,7 +560,6 @@
         document.getElementById("choice4b").style.display = "none";
        ans4 = false;
      };
-
         document.getElementById("choice5a").onclick = function fifthAnswer(){
           document.getElementById("ques6").style.display = "block";
         document.getElementById("choice6a").style.display = "block";
@@ -725,9 +568,7 @@
         document.getElementById("choice5a").style.display = "none";
         document.getElementById("choice5b").style.display = "none";
         ans5 = true;
-
       };
-
         document.getElementById("choice5b").onclick = function fifthAnswer(){
           document.getElementById("ques6").style.display = "block";
         document.getElementById("choice6a").style.display = "block";
@@ -735,13 +576,8 @@
         document.getElementById("ques5").style.display = "none";
         document.getElementById("choice5a").style.display = "none";
         document.getElementById("choice5b").style.display = "none";
-
          ans5 = false;
-
        };
-
-
-
         document.getElementById("choice6a").onclick = function sixthAnswer(){
           document.getElementById("ques6").style.display = "none";
         document.getElementById("choice6a").style.display = "none";
@@ -750,10 +586,7 @@
         document.getElementById("choice7a").style.display = "block";
         document.getElementById("choice7b").style.display = "block";
          ans6 = true;
-
-
        };
-
         document.getElementById("choice6b").onclick = function sixthAnswer(){
           document.getElementById("ques6").style.display = "none";
         document.getElementById("choice6a").style.display = "none";
@@ -762,9 +595,7 @@
         document.getElementById("choice7a").style.display = "block";
         document.getElementById("choice7b").style.display = "block";
          ans6 = false;
-
        };
-
         document.getElementById("choice7a").onclick = function seventhAnswer(){
           document.getElementById("ques7").style.display = "none";
         document.getElementById("choice7a").style.display = "none";
@@ -773,10 +604,7 @@
         document.getElementById("choice8a").style.display = "block";
         document.getElementById("choice8b").style.display = "block";
          ans7 = true;
-
-
        };
-
         document.getElementById("choice7b").onclick = function seventhAnswer(){
           document.getElementById("ques7").style.display = "none";
         document.getElementById("choice7a").style.display = "none";
@@ -784,9 +612,7 @@
         document.getElementById("ques8").style.display = "block";
         document.getElementById("choice8a").style.display = "block";
         document.getElementById("choice8b").style.display = "block";
-
        };
-
         document.getElementById("choice8a").onclick = function eigthAnswer(){
           document.getElementById("ques8").style.display = "none";
         document.getElementById("choice8a").style.display = "none";
@@ -794,10 +620,7 @@
         document.getElementById("ques9").style.display = "block";
         document.getElementById("choice9a").style.display = "block";
         document.getElementById("choice9b").style.display = "block";
-
-
        };
-
         document.getElementById("choice8b").onclick = function eigthAnswer(){
           document.getElementById("ques8").style.display = "none";
         document.getElementById("choice8a").style.display = "none";
@@ -806,11 +629,7 @@
         document.getElementById("choice9a").style.display = "block";
         document.getElementById("choice9b").style.display = "block";
          ans8 = true;
-
-
        };
-
-
         document.getElementById("choice9a").onclick = function ninthAnswer(){
           document.getElementById("ques9").style.display = "none";
         document.getElementById("choice9a").style.display = "none";
@@ -819,9 +638,7 @@
         document.getElementById("choice10a").style.display = "block";
         document.getElementById("choice10b").style.display = "block";
          ans9 = true;
-
        };
-
         document.getElementById("choice9b").onclick = function ninthAnswer(){
           document.getElementById("ques9").style.display = "none";
         document.getElementById("choice9a").style.display = "none";
@@ -830,10 +647,7 @@
         document.getElementById("choice10a").style.display = "block";
         document.getElementById("choice10b").style.display = "block";
          ans9 = false;
-
        };
-
-
         document.getElementById("choice10a").onclick = function total(){
           document.getElementById("ques10").style.display = "none";
           document.getElementById("choice10a").style.display = "none";
@@ -842,9 +656,7 @@
           document.getElementById("choice11a").style.display = "block";
           document.getElementById("choice11b").style.display = "block";
         ans10 = true;
-
       };
-
         document.getElementById("choice10b").onclick = function total(){
           document.getElementById("ques10").style.display = "none";
           document.getElementById("choice10a").style.display = "none";
@@ -852,9 +664,7 @@
           document.getElementById("ques11").style.display = "block";
           document.getElementById("choice11a").style.display = "block";
           document.getElementById("choice11b").style.display = "block";
-
       };
-
         document.getElementById("choice11a").onclick = function total(){
           document.getElementById("ques11").style.display = "none";
           document.getElementById("choice11a").style.display = "none";
@@ -862,39 +672,30 @@
          document.getElementById("goodbye").style.display = "block";
           document.getElementById("restart").style.display = "block";
          ans11 = false;
-
                     if (ans2 === true && ans4 === true && ans5 === true &&
                   ans8 === true && ans9 === true){
           document.getElementById("demo").style.display = "block";
               document.getElementById("demo").innerHTML = "He sounds restless. He might be thinking about it!!";
                   }
-
                   if (ans4 === true && ans5 === true && ans6 === true &&
                 ans10 === true && ans11 === true){
           document.getElementById("demo").style.display = "block";
             document.getElementById("demo").innerHTML = "Active cheater!!";
                 }
-
           if (ans4 === true && ans6 === true && ans11 === true){
             document.getElementById("demo").style.display = "block";
          document.getElementById("demo").innerHTML = "He is hiding something. INVESTIGATE!";
                       }
-
             else if (ans1 === true && ans2 === true && ans5 === true &&
                          ans7 === true && ans9 === true){
             document.getElementById("demo").style.display = "block";
          document.getElementById("demo").innerHTML = "He is exhibiting shady behavior.  Look for evidence.";
                       }
-
-
                       else {
                    document.getElementById("demo").style.display = "block";
   document.getElementById("demo").innerHTML = "Not enough evidence to indict!";
-
                       }
-
               };
-
               document.getElementById("choice11b").onclick = function total(){
                 document.getElementById("ques11").style.display = "none";
                 document.getElementById("choice11a").style.display = "none";
@@ -902,41 +703,30 @@
                document.getElementById("goodbye").style.display = "block";
                document.getElementById("restart").style.display = "block";
                ans11 = true;
-
                           if (ans2 === true && ans4 === true && ans5 === true &&
                         ans8 === true && ans9 === true){
                       document.getElementById("demo").style.display = "block";
                     document.getElementById("demo").innerHTML = "He sounds restless. He might be thinking about it!!";
-
                         }
-
                         if (ans4 === true && ans5 === true && ans6 === true &&
                       ans10 === true && ans11 === true){
                     document.getElementById("demo").style.display = "block";
                   document.getElementById("demo").innerHTML = "Active cheater!!";
                       }
-
-
           if (ans4 === true && ans6 === true && ans11 === true){
             document.getElementById("demo").style.display = "block";
          document.getElementById("demo").innerHTML = "He is hiding something. INVESTIGATE!";
                       }
-
                   else if (ans1 === true && ans2 === true && ans5 === true &&
                                ans7 === true && ans9 === true){
                 document.getElementById("demo").style.display = "block";
                document.getElementById("demo").innerHTML ="He is exhibiting shady behavior.  Look for evidence."
                             }
-
-
                             else {
                     document.getElementById("demo").style.display = "block";
         document.getElementById("demo").innerHTML = "Not enough evidence to indict!";
                             }
-
                     };
-
-
     </script>
 
 
@@ -944,16 +734,13 @@
     <script> //INTRO
     $(document).ready(function(){
     	$(function(){
-
     			$("#intro").delay(1000).fadeOut("slow");
-
     	 });
     });
     </script>
     <script>
     $(document).ready(function(){
     	$(function(){
-
     			$("#outro").delay(1000).fadeIn("slow");
     	});
     });
@@ -979,17 +766,11 @@
 
     <script>
     $('#autoplay').delay(11000).textition({
-
      speed: 1,
-
      animation: 'ease-out',
-
      map: {x: 200, y: 100, z: 0},
-
      autoplay: true,
-
      interval: 3.0
-
     })
     </script>
     <script type="text/javascript" src="textition.js"></script>
