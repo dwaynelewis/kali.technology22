@@ -134,6 +134,7 @@
         #restart{
       display: none;
        text-align: center;
+         position: absolute;
     }
     #restart a{
       color: #223A5E;
@@ -154,32 +155,26 @@
       right:0;
       margin: auto;
     }
+    #demo{
+    position: absolute;
+    }
+    button{
+        color: white;
+    }
   </style>
 
   <style>
   	@media screen and (max-width: 450px){
-    p{
-    font-size: 200%;
-  }
+
   #opening{
-  margin: -25rem 1rem 1rem 1rem;
+position: absolute;
+top: 15rem;
+  }
+  #demo{
+  position: absolute;
+  top:18rem;
 
   }
-  #autoplay{
-    top:;
-    width:;
-
-  }
-
-	.textef{
-		width: 300px;
-		height: 21px;
-		text-align: center;
-		margin-left: 30px;
-		margin-top:18rem ;
-		color: white;
-
-	}
     #getstarted{
       width: 100px;
       background-color: white;
@@ -209,6 +204,9 @@
       position: absolute;
       width: auto;
     }
+    #restart{
+      top:23rem;
+    }
     span{
       position: absolute;
       top:0;
@@ -226,11 +224,12 @@
         visibility: visible;
         z-index: 1;
     }
-
+      #goodbye{
+        top:20rem;
+      }
 }
 	@media screen and (min-width: 450px){
       #autoplay{
-
         position: absolute;
         left:0;
         right:0;
@@ -253,8 +252,6 @@
           visibility: visible;
           z-index: 1;
       }
-
-
       #getstarted{
         width: 100px;
         background-color: white;
@@ -345,14 +342,12 @@ top:9rem;
   #choice9b{
   top:9rem;
   }
-
   #choice10a{
   top:7rem;
   }
   #choice10b{
   top:9rem;
   }
-
   #choice11a{
   top:7rem;
   }
@@ -364,9 +359,9 @@ top:9rem;
 }
   #goodbye{
     display: none;
+    position: absolute;
   }
   </style>
-
 
 <body>
 
@@ -384,17 +379,6 @@ top:9rem;
 
       <!-- <h1 style="text-align: center; background-color: white; color: #C0AB8E; width: 190px; margin: auto;">GIRL TALK</h1> -->
 
-    	<div id="autoplay" style="width:400px; height: 600px;">
-
-       
-
-       <div class="textef" style="">GOOGLE CONTROL</div>
-
-       <div class="textef" style="">SHOW YOUR STATUS</div>
-
-      <div class="textef" style="">STAND OUT</div>
-
-      </div>
 
 
       <h3 id="opening">THESE QUESTIONS WILL SHORTEN THE PROCESS</h3>
@@ -409,85 +393,29 @@ top:9rem;
 
   <button id= "getstarted">Get started</button>
 <div id="ques1" class="questions">
-  <p>Is he telling little lies lately?</p>
-<button id = "choice1a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice1b" type="button" class="btn btn-outline-light text-light">No</button>
+  <p>What style of website site are you interested in?</p>
+<button id = "choice1a" type="button" class="btn btn-outline-light text-light">entrepreneur</button><br>
+<button id = "choice1b" type="button" class="btn btn-outline-light text-light">business professional</button>
+
   </div>
-
-
-<h2 id= "demo"></h2>
 
 <!-- <button id="ques1-5">Are you ready for the next question?</button> -->
 
 <div id="ques2" class="questions">
-  <p> Has his appearance become a priority for him lately?</p>
-<button id = "choice2a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice2b" type="button" class="btn btn-outline-light text-light">No</button>
+  <p> What function do you want your site to perform?</p>
+<button id = "choice2a" type="button" class="btn btn-outline-light text-light">brochure/album</button><br>
+<button id = "choice2b" type="button" class="btn btn-outline-light text-light">innteract with site visitors</button>
       </div>
 
 
 <div id="ques3" class="questions">
-  <p>Has he brought up breaking up during a fight lately?</p>
+  <p>is exclusiveness/status important?</p>
 <button id = "choice3a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
 <button id = "choice3b" type="button" class="btn btn-outline-light text-light">No</button>
       </div>
 
 
-<div id="ques4" class="questions">
-  <p>Is he secretive with his technology?</p>
-<button id = "choice4a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice4b" type="button" class="btn btn-outline-light text-light">No</button>
-      </div>
-
-
-<div id="ques5" class="questions">
-  <p>Does he accuse you of cheating?</p>
-<button id = "choice5a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice5b" type="button" class="btn btn-outline-light text-light">No</button>
-      </div>
-
-
-<div id="ques6" class="questions">
-  <p>Is he unavailable alot & giving vague excuses?</p>
-<button id = "choice6a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice6b" type="button" class="btn btn-outline-light text-light">No</button>
-      </div>
-
-
-<div id="ques7" class="questions">
-  <p>Has he ever cheated on you or his exes?</p>
-<button id = "choice7a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice7b" type="button" class="btn btn-outline-light text-light">No</button>
-      </div>
-
-
-<div id="ques8" class="questions">
-  <p>Has the sex frequency dropped off?!</p>
-<button id = "choice8a" type="button" class="btn btn-outline-light text-light">No</button><br>
-<button id = "choice8b" type="button" class="btn btn-outline-light text-light">Yes</button>
-      </div>
-
-
-<div id="ques9" class="questions">
-  <p>Has his personality changed towards you? Is he nicer or does he get irritated easier?</p>
-<button id = "choice9a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice9b" type="button" class="btn btn-outline-light text-light">No</button>
-      </div>
-
-
-<div id="ques10" class="questions">
-  <p>Does your gut think he is cheating?</p>
-<button id = "choice10a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice10b" type="button" class="btn btn-outline-light text-light">No</button>
-      </div>
-
-
-<div id="ques11" class="questions">
-  <p>BONUS QUESTION: Can you FaceTime him w/o warning?</p>
-<button id = "choice11a" type="button" class="btn btn-outline-light text-light">Yes</button><br>
-<button id = "choice11b" type="button" class="btn btn-outline-light text-light">No</button>
-      </div>
-
+      <h2 id= "demo"></h2>
 
 <div id="goodbye">
   <h4>THANK YOU FOR TAKING THE QUIZ!!</h4>
@@ -523,13 +451,7 @@ top:9rem;
         var ans1 = false;
         var ans2 = false;
         var ans3 = false;
-        var ans4 = false;
-        var ans5 = false;
-        var ans6 = false;
-        var ans7 = false;
-        var ans8 = false;
-        var ans9 = false;
-        var ans10 = false;
+
         document.getElementById("getstarted").onclick = function firstQuestion(){
         document.getElementById("getstarted").style.display = "none";
         document.getElementById("opening").style.display = "none";
@@ -553,6 +475,7 @@ top:9rem;
         document.getElementById("ques2").style.display = "block";
         document.getElementById("choice2a").style.display = "block";
         document.getElementById("choice2b").style.display = "block";
+        ans1 = false;
       };
         document.getElementById("choice2a").onclick = function secondAnswer(){
           document.getElementById("ques3").style.display = "block";
@@ -572,208 +495,92 @@ top:9rem;
         document.getElementById("choice2b").style.display = "none";
          ans2 = false;
        };
-        document.getElementById("choice3a").onclick = function thirdAnswer(){
-          document.getElementById("ques4").style.display = "block";
-        document.getElementById("choice4a").style.display = "block";
-        document.getElementById("choice4b").style.display = "block";
+
+      document.getElementById("choice3a").onclick = function total(){
         document.getElementById("ques3").style.display = "none";
         document.getElementById("choice3a").style.display = "none";
         document.getElementById("choice3b").style.display = "none";
-        ans3 = true;
-      };
-        document.getElementById("choice3b").onclick = function thirdAnswer(){
-          document.getElementById("ques4").style.display = "block";
-        document.getElementById("choice4a").style.display = "block";
-        document.getElementById("choice4b").style.display = "block";
-        document.getElementById("ques3").style.display = "none";
-        document.getElementById("choice3a").style.display = "none";
-        document.getElementById("choice3b").style.display = "none";
-        ans3 = false;
-      };
-        document.getElementById("choice4a").onclick = function fourthAnswer(){
-          document.getElementById("ques5").style.display = "block";
-        document.getElementById("choice5a").style.display = "block";
-        document.getElementById("choice5b").style.display = "block";
-        document.getElementById("ques4").style.display = "none";
-        document.getElementById("choice4a").style.display = "none";
-        document.getElementById("choice4b").style.display = "none";
-        ans4 = true;
-      };
-        document.getElementById("choice4b").onclick = function fourthAnswer(){
-          document.getElementById("ques5").style.display = "block";
-        document.getElementById("choice5a").style.display = "block";
-        document.getElementById("choice5b").style.display = "block";
-        document.getElementById("ques4").style.display = "none";
-        document.getElementById("choice4a").style.display = "none";
-        document.getElementById("choice4b").style.display = "none";
-       ans4 = false;
-     };
-        document.getElementById("choice5a").onclick = function fifthAnswer(){
-          document.getElementById("ques6").style.display = "block";
-        document.getElementById("choice6a").style.display = "block";
-        document.getElementById("choice6b").style.display = "block";
-        document.getElementById("ques5").style.display = "none";
-        document.getElementById("choice5a").style.display = "none";
-        document.getElementById("choice5b").style.display = "none";
-        ans5 = true;
-      };
-        document.getElementById("choice5b").onclick = function fifthAnswer(){
-          document.getElementById("ques6").style.display = "block";
-        document.getElementById("choice6a").style.display = "block";
-        document.getElementById("choice6b").style.display = "block";
-        document.getElementById("ques5").style.display = "none";
-        document.getElementById("choice5a").style.display = "none";
-        document.getElementById("choice5b").style.display = "none";
-         ans5 = false;
-       };
-        document.getElementById("choice6a").onclick = function sixthAnswer(){
-          document.getElementById("ques6").style.display = "none";
-        document.getElementById("choice6a").style.display = "none";
-        document.getElementById("choice6b").style.display = "none";
-        document.getElementById("ques7").style.display = "block";
-        document.getElementById("choice7a").style.display = "block";
-        document.getElementById("choice7b").style.display = "block";
-         ans6 = true;
-       };
-        document.getElementById("choice6b").onclick = function sixthAnswer(){
-          document.getElementById("ques6").style.display = "none";
-        document.getElementById("choice6a").style.display = "none";
-        document.getElementById("choice6b").style.display = "none";
-        document.getElementById("ques7").style.display = "block";
-        document.getElementById("choice7a").style.display = "block";
-        document.getElementById("choice7b").style.display = "block";
-         ans6 = false;
-       };
-        document.getElementById("choice7a").onclick = function seventhAnswer(){
-          document.getElementById("ques7").style.display = "none";
-        document.getElementById("choice7a").style.display = "none";
-        document.getElementById("choice7b").style.display = "none";
-        document.getElementById("ques8").style.display = "block";
-        document.getElementById("choice8a").style.display = "block";
-        document.getElementById("choice8b").style.display = "block";
-         ans7 = true;
-       };
-        document.getElementById("choice7b").onclick = function seventhAnswer(){
-          document.getElementById("ques7").style.display = "none";
-        document.getElementById("choice7a").style.display = "none";
-        document.getElementById("choice7b").style.display = "none";
-        document.getElementById("ques8").style.display = "block";
-        document.getElementById("choice8a").style.display = "block";
-        document.getElementById("choice8b").style.display = "block";
-       };
-        document.getElementById("choice8a").onclick = function eigthAnswer(){
-          document.getElementById("ques8").style.display = "none";
-        document.getElementById("choice8a").style.display = "none";
-        document.getElementById("choice8b").style.display = "none";
-        document.getElementById("ques9").style.display = "block";
-        document.getElementById("choice9a").style.display = "block";
-        document.getElementById("choice9b").style.display = "block";
-       };
-        document.getElementById("choice8b").onclick = function eigthAnswer(){
-          document.getElementById("ques8").style.display = "none";
-        document.getElementById("choice8a").style.display = "none";
-        document.getElementById("choice8b").style.display = "none";
-        document.getElementById("ques9").style.display = "block";
-        document.getElementById("choice9a").style.display = "block";
-        document.getElementById("choice9b").style.display = "block";
-         ans8 = true;
-       };
-        document.getElementById("choice9a").onclick = function ninthAnswer(){
-          document.getElementById("ques9").style.display = "none";
-        document.getElementById("choice9a").style.display = "none";
-        document.getElementById("choice9b").style.display = "none";
-        document.getElementById("ques10").style.display = "block";
-        document.getElementById("choice10a").style.display = "block";
-        document.getElementById("choice10b").style.display = "block";
-         ans9 = true;
-       };
-        document.getElementById("choice9b").onclick = function ninthAnswer(){
-          document.getElementById("ques9").style.display = "none";
-        document.getElementById("choice9a").style.display = "none";
-        document.getElementById("choice9b").style.display = "none";
-        document.getElementById("ques10").style.display = "block";
-        document.getElementById("choice10a").style.display = "block";
-        document.getElementById("choice10b").style.display = "block";
-         ans9 = false;
-       };
-        document.getElementById("choice10a").onclick = function total(){
-          document.getElementById("ques10").style.display = "none";
-          document.getElementById("choice10a").style.display = "none";
-          document.getElementById("choice10b").style.display = "none";
-          document.getElementById("ques11").style.display = "block";
-          document.getElementById("choice11a").style.display = "block";
-          document.getElementById("choice11b").style.display = "block";
-        ans10 = true;
-      };
-        document.getElementById("choice10b").onclick = function total(){
-          document.getElementById("ques10").style.display = "none";
-          document.getElementById("choice10a").style.display = "none";
-          document.getElementById("choice10b").style.display = "none";
-          document.getElementById("ques11").style.display = "block";
-          document.getElementById("choice11a").style.display = "block";
-          document.getElementById("choice11b").style.display = "block";
-      };
-        document.getElementById("choice11a").onclick = function total(){
-          document.getElementById("ques11").style.display = "none";
-          document.getElementById("choice11a").style.display = "none";
-          document.getElementById("choice11b").style.display = "none";
-         document.getElementById("goodbye").style.display = "block";
-          document.getElementById("restart").style.display = "block";
-         ans11 = false;
-                    if (ans2 === true && ans4 === true && ans5 === true &&
-                  ans8 === true && ans9 === true){
-          document.getElementById("demo").style.display = "block";
-              document.getElementById("demo").innerHTML = "He sounds restless. He might be thinking about it!!";
-                  }
-                  if (ans4 === true && ans5 === true && ans6 === true &&
-                ans10 === true && ans11 === true){
-          document.getElementById("demo").style.display = "block";
-            document.getElementById("demo").innerHTML = "Active cheater!!";
-                }
-          if (ans4 === true && ans6 === true && ans11 === true){
-            document.getElementById("demo").style.display = "block";
-         document.getElementById("demo").innerHTML = "He is hiding something. INVESTIGATE!";
-                      }
-            else if (ans1 === true && ans2 === true && ans5 === true &&
-                         ans7 === true && ans9 === true){
-            document.getElementById("demo").style.display = "block";
-         document.getElementById("demo").innerHTML = "He is exhibiting shady behavior.  Look for evidence.";
-                      }
-                      else {
-                   document.getElementById("demo").style.display = "block";
-  document.getElementById("demo").innerHTML = "Not enough evidence to indict!";
-                      }
-              };
-              document.getElementById("choice11b").onclick = function total(){
-                document.getElementById("ques11").style.display = "none";
-                document.getElementById("choice11a").style.display = "none";
-                document.getElementById("choice11b").style.display = "none";
+       document.getElementById("goodbye").style.display = "block";
+       document.getElementById("restart").style.display = "block";
+       ans3 = true;
+       if (ans1 === true && ans2 === true && ans3 === false){
+   document.getElementById("demo").style.display = "block";
+ document.getElementById("demo").innerHTML = "entrepreneur brochure basic";
+     }
+     if (ans1 === true && ans2 === false && ans3 === false){
+ document.getElementById("demo").style.display = "block";
+document.getElementById("demo").innerHTML = "entrepreneur interactive basic";
+   }
+   if (ans1 === true && ans2 === true && ans3 === true){
+document.getElementById("demo").style.display = "block";
+document.getElementById("demo").innerHTML = "entrepreneur brochure luxury";
+ }
+ if (ans1 === true && ans2 === false && ans3 === true){
+document.getElementById("demo").style.display = "block";
+document.getElementById("demo").innerHTML = "entrepreneur interactive luxury";
+}
+if (ans1 === true && ans2 === true && ans3 === false){
+document.getElementById("demo").style.display = "block";
+document.getElementById("demo").innerHTML = "professional brochure basic";
+}
+if (ans1 === true && ans2 === true && ans3 === false){
+document.getElementById("demo").style.display = "block";
+document.getElementById("demo").innerHTML = "professional interactive basic";
+}
+if (ans1 === true && ans2 === true && ans3 === false){
+document.getElementById("demo").style.display = "block";
+document.getElementById("demo").innerHTML = "professional brochure luxury";
+}
+if (ans1 === true && ans2 === true && ans3 === false){
+document.getElementById("demo").style.display = "block";
+document.getElementById("demo").innerHTML = "professional interactive luxury";
+}
+
+
+ };
+
+
+              document.getElementById("choice3b").onclick = function total(){
+                document.getElementById("ques3").style.display = "none";
+                document.getElementById("choice3a").style.display = "none";
+                document.getElementById("choice3b").style.display = "none";
                document.getElementById("goodbye").style.display = "block";
                document.getElementById("restart").style.display = "block";
-               ans11 = true;
-                          if (ans2 === true && ans4 === true && ans5 === true &&
-                        ans8 === true && ans9 === true){
+               ans3 = false;
+                          if (ans1 === true && ans2 === true && ans3 === false){
                       document.getElementById("demo").style.display = "block";
-                    document.getElementById("demo").innerHTML = "He sounds restless. He might be thinking about it!!";
+                    document.getElementById("demo").innerHTML = "entrepreneur brochure basic";
                         }
-                        if (ans4 === true && ans5 === true && ans6 === true &&
-                      ans10 === true && ans11 === true){
+                        if (ans1 === true && ans2 === false && ans3 === false){
                     document.getElementById("demo").style.display = "block";
-                  document.getElementById("demo").innerHTML = "Active cheater!!";
+                  document.getElementById("demo").innerHTML = "entrepreneur interactive basic";
                       }
-          if (ans4 === true && ans6 === true && ans11 === true){
-            document.getElementById("demo").style.display = "block";
-         document.getElementById("demo").innerHTML = "He is hiding something. INVESTIGATE!";
-                      }
-                  else if (ans1 === true && ans2 === true && ans5 === true &&
-                               ans7 === true && ans9 === true){
+                      if (ans1 === true && ans2 === true && ans3 === true){
+                  document.getElementById("demo").style.display = "block";
+                document.getElementById("demo").innerHTML = "entrepreneur brochure luxury";
+                    }
+                    if (ans1 === true && ans2 === false && ans3 === true){
                 document.getElementById("demo").style.display = "block";
-               document.getElementById("demo").innerHTML ="He is exhibiting shady behavior.  Look for evidence."
-                            }
-                            else {
-                    document.getElementById("demo").style.display = "block";
-        document.getElementById("demo").innerHTML = "Not enough evidence to indict!";
-                            }
+              document.getElementById("demo").innerHTML = "entrepreneur interactive luxury";
+                  }
+                  if (ans1 === true && ans2 === true && ans3 === false){
+              document.getElementById("demo").style.display = "block";
+            document.getElementById("demo").innerHTML = "professional brochure basic";
+                }
+                if (ans1 === true && ans2 === true && ans3 === false){
+            document.getElementById("demo").style.display = "block";
+          document.getElementById("demo").innerHTML = "professional interactive basic";
+              }
+              if (ans1 === true && ans2 === true && ans3 === false){
+          document.getElementById("demo").style.display = "block";
+        document.getElementById("demo").innerHTML = "professional brochure luxury";
+            }
+            if (ans1 === true && ans2 === true && ans3 === false){
+        document.getElementById("demo").style.display = "block";
+      document.getElementById("demo").innerHTML = "professional interactive luxury";
+          }
+
+
                     };
     </script>
 
