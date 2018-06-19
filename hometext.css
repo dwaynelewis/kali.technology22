@@ -126,35 +126,7 @@
 		    	-ms-transform: scale(5);
 		    	transform: scale(5);
 		    }
-		    .sp-circle-link {
-		    	position: absolute;
-		    	left: 50%;
-		    	bottom: 100px;
-		    	margin-left: -50px;
-		    	text-align: center;
-		    	line-height: 78px;
-		    	width: 75px;
-		    	height: 75px;
-		    	background: #fff;
-		    	color: #3f1616;
-		    	font-size: 16px;
-		    	-webkit-border-radius: 50%;
-		    	-moz-border-radius: 50%;
-		    	border-radius: 50%;
-		    	-webkit-animation: fadeInRotate 1s linear 16s backwards;
-		    	-moz-animation: fadeInRotate 1s linear 16s backwards;
-		    	-ms-animation: fadeInRotate 1s linear 16s backwards;
-		    	animation: fadeInRotate 1s linear 16s backwards;
-		    	-webkit-transform: scale(1) rotate(0deg);
-		    	-moz-transform: scale(1) rotate(0deg);
-		    	-o-transform: scale(1) rotate(0deg);
-		    	-ms-transform: scale(1) rotate(0deg);
-		    	transform: scale(1) rotate(0deg);
-		    }
-		    .sp-circle-link:hover {
-		    	background: #85373b;
-		    	color: #fff;
-		    }
+		  
 		    /**/
 		    @-webkit-keyframes blurFadeInOut{
 		    	0%{
