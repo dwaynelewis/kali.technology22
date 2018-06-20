@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Single contact page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway:200,400'>
+
+
+
+
+		<style>
+
+		.overlay {
+		    height: 100%;
+		    width: 0;
+		    position: fixed;
+		    z-index: 1;
+		    top: 0;
+		    left: 0;
+		    background-color: rgb(0,0,0);
+		    background-color: rgba(0,0,0, 0.9);
+		    overflow-x: hidden;
+		    transition: 0.5s;
+
+		}
+
+
+		.overlay-content {
+		    position: relative;
+		    top: 25%;
+		    width: 100%;
+		    text-align: center;
+		    margin-top: 30px;
+		}
+
+		.overlay a {
+		    padding: 8px;
+		    text-decoration: none;
+		    font-size: 36px;
+		    color: white;
+		    display: block;
+		    transition: 0.3s;
+          font-family: 'Raleway', sans-serif;
+		}
+
+		.overlay a:hover, .overlay a:focus {
+		    color: #f1f1f1;
+		}
+
+		.overlay .closebtn {
+		    position: absolute;
+		    top: 20px;
+		    right: 45px;
+		    font-size: 60px;
+		}
+
+		@media screen and (max-height: 450px) {
+		  .overlay a {font-size: 20px}
+		  .overlay .closebtn {
+		    font-size: 40px;
+		    top: 15px;
+		    right: 35px;
+		  }
+		}
+		</style>
+
+
+
+<style>
+html,
+body {
+  height: 100%
+}
+
+body {
+  text-align: right;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  background: #999 url(her.jpg) center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-right: 50px
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(40, 40, 45, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: -1
+}
+
+h1 {
+  width: 100%;
+  margin: 40vh 0 3vh 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 3em
+}
+
+i {
+  display: block;
+  width: 100%;
+  margin-bottom: 4vh
+}
+
+.fa {
+  display: inline-block;
+  background: #037;
+  color: #ddd;
+  text-decoration: none;
+  padding-top: 12px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20%;
+  box-sizing: border-box;
+  margin-left: 15px;
+  box-shadow: 0 -50px 0 0 rgba(0, 0, 0, 0) inset;
+  transition: all 0.4s;
+}
+
+.fa:hover {
+  color: #fff;
+  box-shadow: 0 -50px 0 0 rgba(0, 0, 0, 0.5) inset
+}
+
+.fa:nth-of-type(2) {
+  background: #08c
+}
+
+.fa:nth-of-type(3) {
+  background: #d10
+}
+
+.fa:nth-of-type(4) {
+  background: #eb0
+}
+
+.fa:nth-of-type(5) {
+  background: #0c6
+}
+</style>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html,
+body {
+  height: 100%
+}
+
+body {
+  text-align: right;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  background: #999 url(modern.jpg) center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-right: 50px
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(40, 40, 45, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: -1
+}
+
+h1 {
+  width: 100%;
+  margin: 40vh 0 3vh 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 3em
+}
+
+i {
+  display: block;
+  width: 100%;
+  margin-bottom: 4vh
+}
+
+.fa {
+  display: inline-block;
+  background: #037;
+  color: #ddd;
+  text-decoration: none;
+  padding-top: 12px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20%;
+  box-sizing: border-box;
+  margin-left: 15px;
+  box-shadow: 0 -50px 0 0 rgba(0, 0, 0, 0) inset;
+  transition: all 0.4s;
+}
+
+.fa:hover {
+  color: #fff;
+  box-shadow: 0 -50px 0 0 rgba(0, 0, 0, 0.5) inset
+}
+
+.fa:nth-of-type(2) {
+  background: #08c
+}
+
+.fa:nth-of-type(3) {
+  background: #d10
+}
+
+.fa:nth-of-type(4) {
+  background: #eb0
+}
+
+.fa:nth-of-type(5) {
+  background: #0c6
+}
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Your Name Here</h1>
+<i>Profession and Title</i>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-pinterest"></a>
+
+<div style="font-size: 12px;  text-align: center;  color: #666;  background:rgba(0,0,0,0.7);  width: 100vw;  position: absolute;  bottom: 0px;  opacity: 0.9;padding:5px 0;">KALI</div>
+
+
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="aboutme.html">ABOUT</a>
+			<a href="work.html">WORK</a>
+			<a href="home.html">HOME</a>
+		</div>
+	</div>
+
+
+  	<span style="position: absolute; top:0; left:0; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  <script>
+  function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+  }
+
+  function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
