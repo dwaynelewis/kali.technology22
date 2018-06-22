@@ -227,13 +227,13 @@ img {
     a{
       text-decoration: none;
       color:white;
-      font-size: 26px;
+      font-size: 20px;
     }
     #logom{
       height: 12vh;
       width: 24.35vw;
       text-align: center;
-      margin-top: 4rem;
+      margin-top: 35rem;
       z-index: 1;
     }
       .time{
@@ -251,6 +251,7 @@ img {
         left:0;
         right:0;
         z-index: 1;
+        color:black;
       }
                                           .video-container video {
                                         display: block;
@@ -258,7 +259,7 @@ img {
                                       }
                                       .video-container {
                                         position: absolute;
-                                        top:12rem;
+                                        top:10rem;
                                         /* outline: 1px solid #dadada; */
                                         &:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
                                         &:nth-of-type(2) { width: 50%; }
@@ -270,6 +271,310 @@ img {
       }
 }
 </style>
+
+<!-- TEXT -->
+<style>
+
+
+.container{
+  width: 100%;
+  position: relative;
+  overflow:hidden;
+}
+
+a {
+  text-decoration:none;
+}
+
+h1.main,p.demos {
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s;
+}
+.sp-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+
+
+}
+.sp-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+
+}
+.sp-container h3 {
+  position: absolute;
+  top: 50%;
+  line-height: 100px;
+  height: 90px;
+  margin-top: -50px;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-animation: blurFadeInOut 3s ease-in backwards;
+  -moz-animation: blurFadeInOut 3s ease-in backwards;
+  -ms-animation: blurFadeInOut 3s ease-in backwards;
+  animation: blurFadeInOut 3s ease-in backwards;
+}
+.sp-container h3.frame-1 {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+
+}
+.sp-container h3.frame-2 {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.sp-container h3.frame-3 {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.sp-container h3.frame-4 {
+  font-size: 40px;
+  -webkit-animation-delay: 9s;
+  -moz-animation-delay: 9s;
+  -ms-animation-delay: 9s;
+  animation-delay: 9s;
+}
+.sp-container h3.frame-5 {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+  color: transparent;
+  text-shadow: 0px 0px 1px #fff;
+}
+.sp-container h3.frame-5 span {
+  -webkit-animation: blurFadeIn 3s ease-in 12s backwards;
+  -moz-animation: blurFadeIn 1s ease-in 12s backwards;
+  -ms-animation: blurFadeIn 3s ease-in 12s backwards;
+  animation: blurFadeIn 3s ease-in 12s backwards;
+  color: transparent;
+  text-shadow: 0px 0px 1px #fff;
+}
+.sp-container h3.frame-5 span:nth-child(2) {
+  -webkit-animation-delay: 13s;
+  -moz-animation-delay: 13s;
+  -ms-animation-delay: 13s;
+  animation-delay: 13s;
+}
+.sp-container h3.frame-5 span:nth-child(3) {
+  -webkit-animation-delay: 14s;
+  -moz-animation-delay: 14s;
+  -ms-animation-delay: 14s;
+  animation-delay: 14s;
+}
+.sp-globe {
+  position: absolute;
+  width: 282px;
+  height: 273px;
+  left: 50%;
+  top: 50%;
+  margin: -137px 0 0 -141px;
+  background: transparent url(http://web-sonick.zz.mu/images/sl/globe.png) no-repeat top left;
+  -webkit-animation: fadeInBack 3.6s linear 14s backwards;
+  -moz-animation: fadeInBack 3.6s linear 14s backwards;
+  -ms-animation: fadeInBack 3.6s linear 14s backwards;
+  animation: fadeInBack 3.6s linear 14s backwards;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+  -webkit-transform: scale(5);
+  -moz-transform: scale(5);
+  -o-transform: scale(5);
+  -ms-transform: scale(5);
+  transform: scale(5);
+}
+/**/
+@-webkit-keyframes blurFadeInOut{
+  0%{
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -webkit-transform: scale(1.3);
+  }
+  20%,75%{
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -webkit-transform: scale(1);
+  }
+  100%{
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    -webkit-transform: scale(0);
+  }
+}
+@-webkit-keyframes blurFadeIn{
+  0%{
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -webkit-transform: scale(1.3);
+  }
+  50%{
+    opacity: 0.5;
+    text-shadow: 0px 0px 10px #fff;
+    -webkit-transform: scale(1.1);
+  }
+  100%{
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -webkit-transform: scale(1);
+  }
+}
+@-webkit-keyframes fadeInBack{
+  0%{
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  50%{
+    opacity: 0.4;
+    -webkit-transform: scale(2);
+  }
+  100%{
+    opacity: 0.2;
+    -webkit-transform: scale(5);
+  }
+}
+@-webkit-keyframes fadeInRotate{
+  0%{
+    opacity: 0;
+    -webkit-transform: scale(0) rotate(360deg);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: scale(1) rotate(0deg);
+  }
+}
+/**/
+@-moz-keyframes blurFadeInOut{
+  0%{
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -moz-transform: scale(1.3);
+  }
+  20%,75%{
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -moz-transform: scale(1);
+  }
+  100%{
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    -moz-transform: scale(0);
+  }
+}
+@-moz-keyframes blurFadeIn{
+  0%{
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -moz-transform: scale(1.3);
+  }
+  100%{
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -moz-transform: scale(1);
+  }
+}
+@-moz-keyframes fadeInBack{
+  0%{
+    opacity: 0;
+    -moz-transform: scale(0);
+  }
+  50%{
+    opacity: 0.4;
+    -moz-transform: scale(2);
+  }
+  100%{
+    opacity: 0.2;
+    -moz-transform: scale(5);
+  }
+}
+@-moz-keyframes fadeInRotate{
+  0%{
+    opacity: 0;
+    -moz-transform: scale(0) rotate(360deg);
+  }
+  100%{
+    opacity: 1;
+    -moz-transform: scale(1) rotate(0deg);
+  }
+}
+/**/
+@keyframes blurFadeInOut{
+  0%{
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    transform: scale(1.3);
+  }
+  20%,75%{
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    transform: scale(1);
+  }
+  100%{
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    transform: scale(0);
+  }
+}
+@keyframes blurFadeIn{
+  0%{
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    transform: scale(1.3);
+  }
+  50%{
+    opacity: 0.5;
+    text-shadow: 0px 0px 10px #fff;
+    transform: scale(1.1);
+  }
+  100%{
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    transform: scale(1);
+  }
+}
+@keyframes fadeInBack{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  50%{
+    opacity: 0.4;
+    transform: scale(2);
+  }
+  100%{
+    opacity: 0.2;
+    transform: scale(5);
+  }
+}
+@keyframes fadeInRotate{
+  0%{
+    opacity: 0;
+    transform: scale(0) rotate(360deg);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+</style>
+
 
 </head>
 <body>
@@ -298,15 +603,28 @@ img {
     <div id="outro">
   <div id="mobile">
   <a id="top" href="aboutus.html" class="intro animated bounceInUp" style="position: absolute; top:85%; left: 5%;">ABOUT US</a>
-  <a  id="top" href="themes.html" class="intro animated rotateInDownRight" style="position: absolute; top:5%; right: 5%;">THEMES</a>
-  <a  id="bott" href="faq.html" class="intro animated rotateInDownLeft" style="position: absolute; top:5%; left: 5%;">FAQ</a>
+  <a  id="top" href="themes.html" class="intro animated bounceInDown" style="position: absolute; top:5%; right: 5%;">THEMES</a>
+  <a  id="bott" href="faq.html" class="intro animated bounceInDown" style="position: absolute; top:5%; left: 5%;">FAQ</a>
   <a id="bott" href="contact.html" class="intro animated bounceInUp" style="position: absolute; top:85%; right: 5%;">CONTACT</a>
 
 
 
-    <img id="logom" src="kaliwhite.png" class="intro animated zoomIn" alt="Kali logo">
+    <img id="logom" src="kalilogo.png" class="intro animated zoomIn" alt="Kali logo">
 
+    <div class="container">
 
+        <div class="sp-container">
+            <div class="sp-content">
+      <div class="sp-globe"></div>
+    <h3 class="frame-1">You are your brand</h3>
+
+    <h3 class="frame-2">Monetize yourname.com</h3>
+
+    <h3 class="frame-3">Contact Us</h3>
+
+    <h3 class="frame-4">Now!</h3>
+
+    <h3 class="frame-5"><span>Affordable prices.</span> <span>Look good.</span> <span>Monetize.</span></h3>
 
 
 
