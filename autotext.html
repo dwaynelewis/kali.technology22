@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Text Animation </title>
+
+
+
+      <link rel="stylesheet" href="autotext.css">
+
+
+</head>
+
+<body>
+
+  <div class="page">
+
+  <div id="home-news">
+    <div class="home_header">
+      <strong>Spend</strong>
+      <span>your time with us</span>
+    </div>
+    <div class="home_header">
+      <strong>Music</strong>
+      <span>you love only a click away </span>
+    </div>
+    <div class="home_header">
+      <span>explore. listen.</span>
+      <strong>share</strong>
+    </div>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+    <script>
+
+    function switchClass(i) {
+       var lis = $('#home-news > div');
+       lis.eq(i).removeClass('home_header_on');
+       lis.eq(i).removeClass('home_header_out');
+        lis.eq(i = ++i % lis.length).addClass('home_header_on');
+        lis.eq(i = ++i % lis.length).addClass('home_header_out');
+        setTimeout(function() {
+            switchClass(i);
+        }, 3500);
+    }
+
+    $(window).load(function() {
+       switchClass(-1);
+    });
+  </script>
+
+
+
+
+</body>
+
+</html>
