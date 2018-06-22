@@ -50,15 +50,14 @@
                 #intro{
                   height: 100rem;
                         text-align: center;
-                background-color:black;
+                background-color:white;
                             }
 	@media screen and (max-width: 450px){
     #intro{
       height: 100rem;
             text-align: center;
-    background-color:#181818;
-    padding-left: .75rem;
-    padding-right: .75rem;
+    background-color:;
+
                 }
                             #sun{
                               height:7rem;
@@ -73,14 +72,14 @@
                                   top: 9rem;
                                 }
                                 h2{
-                                  color: white;
+                                  color: ;
                                 }
                                 #p1{
                                     position: absolute;
                                     left:0;
                                     right:0;
                                     margin: auto;
-                                    top:20rem;
+                                    top:18rem;
                                     font-size: 24px;
                                 }
                                 #p2{
@@ -88,7 +87,7 @@
                                   left:0;
                                   right:0;
                                   margin: auto;
-                                  top:23rem;
+                                  top:20rem;
                                   font-size: 24px;
 
                                 }
@@ -97,7 +96,7 @@
                                   left:0;
                                   right:0;
                                   margin: auto;
-                                  top:26rem;
+                                  top:22rem;
                                   font-size: 24px;
                                 }
                                 #p4{
@@ -105,7 +104,7 @@
                                   left:0;
                                   right:0;
                                   margin: auto;
-                                  top:29rem;
+                                  top:24rem;
                                   font-size: 24px;
                                 }
                                 #p5{
@@ -113,7 +112,7 @@
                                   left:0;
                                   right:0;
                                   margin: auto;
-                                    top:32rem;
+                                    top:26rem;
                                   font-size:24px;
                                 }
                                 #p6{
@@ -121,7 +120,7 @@
                                   left:0;
                                   right:0;
                                   margin: auto;
-                                  top:35rem;
+                                  top:28rem;
                                   font-size:24px;
                                 }
                               }
@@ -209,9 +208,7 @@ img {
 }
 #outro{
   display: none;
-  -webkit-animation-duration: 7s;
-    -webkit-animation-delay: 1s;
-    -webkit-animation-iteration-count: 1;
+
 }
 </style>
 
@@ -226,13 +223,13 @@ img {
       display: none;
     }
     #outro{
-        background-color:#C00000 ;
+        background-color:#181818 ;
         height: 100%;
     }
     a{
       text-decoration: none;
       color:white;
-      font-size: 20px;
+      font-size: 14px;
     }
     #logom{
       height: 9vh;
@@ -276,7 +273,8 @@ img {
       }
 
       #s2{
-          font-size: 20px;
+          font-size: 15px;
+          color: darkorange;
           position: absolute;
           left:2rem;
           right:2rem;
@@ -286,6 +284,19 @@ img {
             -webkit-animation-delay: 1s;
             -webkit-animation-iteration-count: 1;
       }
+
+.bg {
+    /* The image used */
+    background-image: url("LA.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -302,6 +313,9 @@ img {
 
 
   <div id="intro">
+
+<div class="bg"></div>
+
 
     <img src="kalisun.png" id="sun" class="intro animated rollIn">
 
@@ -346,7 +360,7 @@ img {
 
 
 
-        <div id="s2" class="intro animated slideInRight">CONTROL YOUR NARRATIVE ON THE WORLDWIDE WEB.</div>
+        <div id="s2" class="intro animated flash">CONTROL YOUR NARRATIVE ON THE WORLDWIDE WEB.</div>
 
 
 

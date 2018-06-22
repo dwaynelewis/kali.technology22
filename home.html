@@ -65,49 +65,23 @@
 
 
       <style>
-      *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-          /* font-family: 'Anton', sans-serif; */
-          font-family: 'Poppins', sans-serif;
-      }
-      body, html {
-          height: 100rem;
-          margin: 0;
-        position: relative;
-      }
-      img {
-        position: absolute;
-        left:0;
-        right:0;
-        margin: auto;
-      }
-      #outro{
-        display: none;
-        -webkit-animation-duration: 3s;
-          -webkit-animation-delay: 1s;
-          -webkit-animation-iteration-count: 1;
-      }
-      </style>
-
-      <style>
       	@media screen and (max-width: 450px){
           body, html {
               height: 100%;
               margin: 0;
+
           }
           #desktop{
             display: none;
           }
           #outro{
-              background-color:#C00000 ;
+              background-color:#181818 ;
               height: 100%;
           }
           a{
             text-decoration: none;
             color:white;
-            font-size: 20px;
+            font-size: 14px;
           }
           #logom{
             height: 9vh;
@@ -139,7 +113,7 @@
                                             }
                                             .video-container {
                                               position: absolute;
-                                              top:16rem;
+                                              top:8rem;
                                               /* outline: 1px solid #dadada; */
                                               &:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
                                               &:nth-of-type(2) { width: 50%; }
@@ -149,9 +123,24 @@
             #vid{
               display: none;
             }
+
+            #s2{
+                font-size: 15px;
+                color: darkorange;
+                position: absolute;
+                left:2rem;
+                right:2rem;
+                margin: auto;
+                top:24rem;
+                -webkit-animation-duration: 2s;
+                  -webkit-animation-delay: 1s;
+                  -webkit-animation-iteration-count: 1;
+            }
+
+
+
       }
       </style>
-
       </head>
 <body>
 
@@ -198,6 +187,9 @@
 
 
       <script src="pitch.js" async></script>
+
+
+              <div id="s2" class="intro animated flash">CONTROL YOUR NARRATIVE ON THE WORLDWIDE WEB.</div>
 
 
 
