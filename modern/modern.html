@@ -69,7 +69,7 @@
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 100%;
 }
 
 @media (max-width:991px) {
@@ -190,6 +190,9 @@ right: 2rem;
   color: #ffffff;
   outline: none;
 }
+#myCarousel{
+  height: 100rem;
+}
 </style>
 </head>
 
@@ -218,7 +221,7 @@ right: 2rem;
   </nav>
 
   <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
-    <div class="carousel-inner" role="listbox">
+    <div class="carousel-inner" style="height: 100%; role="listbox">
       <div class="item active background a"></div>
       <div class="item background b"></div>
       <div class="item background c"></div>
