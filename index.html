@@ -57,6 +57,8 @@
       height: 100rem;
             text-align: center;
     background-color:#181818;
+    padding-left: .75rem;
+    padding-right: .75rem;
                 }
                             #sun{
                               height:7rem;
@@ -88,6 +90,7 @@
                                   margin: auto;
                                   top:23rem;
                                   font-size: 24px;
+
                                 }
                                 #p3{
                                   position: absolute;
@@ -206,7 +209,7 @@ img {
 }
 #outro{
   display: none;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 7s;
     -webkit-animation-delay: 1s;
     -webkit-animation-iteration-count: 1;
 }
@@ -217,8 +220,7 @@ img {
     body, html {
         height: 100%;
         margin: 0;
-        padding-left: .75rem;
-        padding-right: .75rem;
+
     }
     #desktop{
       display: none;
@@ -272,46 +274,19 @@ img {
       #vid{
         display: none;
       }
-      #s1{
 
-          position: absolute;
-          left:0;
-          right:0;
-        margin: auto;
-          top:22rem;
-      }
       #s2{
           font-size: 14px;
           position: absolute;
-          left:0;
-          right:0;
+          left:2rem;
+          right:2rem;
           margin: auto;
           top:24rem;
+          -webkit-animation-duration: 2s;
+            -webkit-animation-delay: 1s;
+            -webkit-animation-iteration-count: 1;
       }
-      #s3{
-          font-size: 14px;
-          position: absolute;
-          left:0;
-          right:0;
-          margin: auto;
-          top:26rem;
-      }
-      #s4{
-          font-size: 14px;
-          position: absolute;
-          left:0;
-          right:0;
-          margin: auto;
-          top:28rem;
-      }
-      #s5{
-          font-size: 14px;
-          position: absolute;
-          left:0;
-          right:0;
-          margin: auto;
-          top:30rem;
-      }
+
 
 
 }
@@ -370,12 +345,8 @@ img {
 <script src="pitch.js" async></script>
 
 
-      <div id="s1">GOOGLE ME!</div>
-        <div id="s2">CONTROL YOUR NARRATIVE ON THE WORLDWIDE WEB.</div>
-           <div id="s3">USE AS A DIGITAL RESUME.</div>
-           <div id="s4">MONETIZE YOUR BRAND.</div>
-            <div id="s5">KEEP FOREVER.</div>
 
+        <div id="s2" class="intro animated slideInRight">CONTROL YOUR NARRATIVE ON THE WORLDWIDE WEB.</div>
 
 
 
@@ -417,21 +388,21 @@ img {
     <script> //INTRO
   $(document).ready(function(){
       $(function(){
-          $("#intro").delay(5000).fadeOut("slow");
+          $("#intro").delay(4000).fadeOut("slow");
        });
    });
    </script>
    <script>
   $(document).ready(function(){
       $(function(){
-          $("#outro").delay(5500).fadeIn("slow");
+          $("#outro").delay(4500).fadeIn("slow");
       });
   });
   </script>
   <script>
  $(document).ready(function(){
      $(function(){
-         $("#vid").delay(6000).fadeIn("slow");
+         $("#vid").delay(5000).fadeIn("slow");
      });
  });
  </script>
@@ -451,6 +422,11 @@ img {
 	function myStopFunction() {
 	    clearInterval(myVar);
 	}
+</script>
+
+<script>
+
+
 </script>
 
 
