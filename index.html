@@ -196,6 +196,7 @@ body, html {
     height: 100rem;
     margin: 0;
   position: relative;
+  text-align: center;
 }
 img {
   position: absolute;
@@ -216,6 +217,8 @@ img {
     body, html {
         height: 100%;
         margin: 0;
+        padding-left: .75rem;
+        padding-right: .75rem;
     }
     #desktop{
       display: none;
@@ -269,6 +272,48 @@ img {
       #vid{
         display: none;
       }
+      #s1{
+
+          position: absolute;
+          left:0;
+          right:0;
+        margin: auto;
+          top:22rem;
+      }
+      #s2{
+          font-size: 14px;
+          position: absolute;
+          left:0;
+          right:0;
+          margin: auto;
+          top:24rem;
+      }
+      #s3{
+          font-size: 14px;
+          position: absolute;
+          left:0;
+          right:0;
+          margin: auto;
+          top:26rem;
+      }
+      #s4{
+          font-size: 14px;
+          position: absolute;
+          left:0;
+          right:0;
+          margin: auto;
+          top:28rem;
+      }
+      #s5{
+          font-size: 14px;
+          position: absolute;
+          left:0;
+          right:0;
+          margin: auto;
+          top:30rem;
+      }
+
+
 }
 </style>
 
@@ -325,25 +370,12 @@ img {
 <script src="pitch.js" async></script>
 
 
-  <div id="home-news">
-    <div class="home_header">
-      <strong>Control</strong>
-      <span>your narrative. keep forever.</span>
-    </div>
+      <div id="s1">GOOGLE ME!</div>
+        <div id="s2">CONTROL YOUR NARRATIVE ON THE WORLDWIDE WEB.</div>
+           <div id="s3">USE AS A DIGITAL RESUME.</div>
+           <div id="s4">MONETIZE YOUR BRAND.</div>
+            <div id="s5">KEEP FOREVER.</div>
 
-    <div class="home_header">
-      <strong>Monetize</strong>
-      <span>your personal brand. </span>
-    </div>
-
-    <div class="home_header">
-      <span>use as a digital</span>
-      <strong>resume.</strong>
-
-    </div>
-  </div>
-
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
 
@@ -420,25 +452,6 @@ img {
 	    clearInterval(myVar);
 	}
 </script>
-
-<!-- autotext -->
-    <script>
-
-    function switchClass(i) {
-       var lis = $('#home-news > div');
-       lis.eq(i).removeClass('home_header_on');
-       lis.eq(i).removeClass('home_header_out');
-        lis.eq(i = ++i % lis.length).addClass('home_header_on');
-        lis.eq(i = ++i % lis.length).addClass('home_header_out');
-        setTimeout(function() {
-            switchClass(i);
-        }, 3500);
-    }
-
-    $(window).load(function() {
-       switchClass(-1);
-    });
-  </script>
 
 
 </body>
