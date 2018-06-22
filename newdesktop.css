@@ -44,17 +44,17 @@
 
 
 #kali{
-    margin-top: 5%;
+    margin-top: 6%;
     margin-left: 5%;
     position:absolute;
     top:0;
     left:0;
     width:7rem;
     height:7rem;
-		 background:red;
-		/* opacity: 0.8; */
+		 background:white;
+		 opacity: 0.8;
 		padding: 10px 20px 10px 22px;
-		border-radius: 15%;
+		border-radius: 5%;
 }
 
 #nav2{
@@ -75,9 +75,9 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-	/* opacity: 0.7; */
-	  background:red;
-	border-radius: 15%;
+	 opacity: 0.8;
+	  background:white;
+	border-radius: 5%;
 }
 
 .nav a{
@@ -116,7 +116,11 @@ nav#nav2 a{
 	    color:darkred;
 	  }
 
+	video loop autoplay muted playsinline{
+		height: 100%;
+		width: 100%;
 
+	}
 
 
 }
