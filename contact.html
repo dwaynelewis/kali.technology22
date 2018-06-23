@@ -77,8 +77,9 @@ span{
 
   #outro{
     display: none;
-              background-color: #6f9fd8;
+
             height: 100%;
+             background: rgba(0, 0, 0, 0.5);
         }
 
         #logoi{
@@ -153,6 +154,22 @@ span{
         display: none;
       }
 
+      .bg {
+          /* The image used */
+          background-image: url("LA.jpg");
+
+          /* Full height */
+          height: 100%;
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .transparency{
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+      }
 
 
     .video-container video {
@@ -174,29 +191,41 @@ span{
 
 #logom{
   position: absolute;
-  top:4rem;
+  top:30rem;
   left:0;
   right:0;
   margin: auto;
-    height: 17vh;
-    width:28vw;
+    height: 8.5vh;
+    width:14vw;
     visibility: visible;
     z-index: 1;
-    background-color: inherit;
+
 }
 
-  #momail{
+  #fb{
     position: absolute;
     width: 150px;
     top:30rem;
-    left:0;
-    right:0;
+    left:12rem;
     margin: auto;
-    background-color: inherit;
     font-size: 26px;
     color: white;
   }
-  #icon{
+  #ig{
+    position: absolute;
+    top:30rem;
+    left:16rem;
+    color: white;
+    font-size: 40px;
+    opacity: .9;
+    padding: .5rem;
+    border-radius: 95%;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay:1.5s;
+    -webkit-animation-iteration-count: 1;
+
+  }
+  #email{
         position: absolute;
         width: 150px;
         top:30rem;
@@ -213,11 +242,11 @@ span{
   #time{
     position: absolute;
     width: 150px;
-    top:15rem;
+    top:2rem;
     left:0;
     right:0;
     margin: auto;
-    color: #6f9fd8;
+    color:white ;
     font-size: 1.5rem;
 
   }
@@ -280,16 +309,15 @@ span{
       -webkit-animation-duration: 2s;
       -webkit-animation-delay:1s;
       -webkit-animation-iteration-count: 1;
-       font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
     }
 
 
-      #momail{
+      #fb{
         position: absolute;
         top:22rem;
         left:53rem;
         color: white;
-        background-color: black;
         font-size: 40px;
         opacity: .9;
         padding: .5rem;
@@ -297,7 +325,20 @@ span{
         -webkit-animation-duration: 2s;
         -webkit-animation-delay:1.5s;
         -webkit-animation-iteration-count: 1;
-         font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      #ig{
+        position: absolute;
+        top:22rem;
+        left:55rem;
+        color: white;
+        font-size: 40px;
+        opacity: .9;
+        padding: .5rem;
+        border-radius: 95%;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-delay:1.5s;
+        -webkit-animation-iteration-count: 1;
+
       }
       h2{
         font-size: 35px;
@@ -354,9 +395,11 @@ span{
 
         <div id="mob">
 
+          <div class="bg">
+            <div class="transparency">
       <img id="logom" src="kaliwhite.png" class="intro animated zoomInDown" alt="Kali logo">
 
-
+<!--
 <div class="video-container">
   <video loop autoplay muted playsinline>
     <source src="office.webm" type="video/webm">
@@ -366,17 +409,19 @@ span{
 
 
 
-</div>
+</div> -->
 
 
   <span style="font-size:30px;cursor:pointer;position: absolute;" onclick="openNav()">&#9776;</span>
 
 
   	<div class="time"><p id="time" ></p></div>
-
-<a href="mailto:info@kali.technology" id="momail">EMAIL US</a>
-<a href="mailto:info@kali.technology" id="icon" class="intro animated bounceInUp"><i style="style=" class="fa">&#xf0e0;</i></a>
-
+<!--
+<a href="mailto:info@kali.technology" id="fb" class="intro animated bounceInUp"><i style="style=" class="fa fa-facebook-official"></i></a>
+<a href="mailto:info@kali.technology" id="email" class="intro animated bounceInUp"><i style="style=" class="fa">&#xf0e0;</i></a>
+<a href="mailto:info@kali.technology" id="ig" class="intro animated bounceInUp"><i class="fa fa-instagram"></i> -->
+</div>
+</div>
 </div>
 
 <div id="desk">
