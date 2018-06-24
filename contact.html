@@ -212,7 +212,7 @@ span{
     left:5rem;
     margin: auto;
     font-size: 26px;
-    color: white;
+    color: ;
     -webkit-animation-duration: 2s;
     -webkit-animation-delay:2.5s;
     -webkit-animation-iteration-count: 1;
@@ -221,7 +221,7 @@ span{
     position: absolute;
     top:18rem;
     left:10rem;
-    color: white;
+    color: white
     font-size: 40px;
     opacity: .9;
     padding: .5rem;
@@ -278,6 +278,22 @@ span{
       #mob{
         display: none;
       }
+      .bg {
+          /* The image used */
+          background-image: url("LA.jpg");
+
+          /* Full height */
+          height: 100%;
+
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .transparency{
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+      }
     .br{
       position: absolute;
       top:40rem;
@@ -289,10 +305,10 @@ span{
 
     #logom{
       position: absolute;
-      top:2rem;
-      left:2rem;
-        height: 20vh;
-        width:28vw;
+      top:-10rem;
+      left:-8rem;
+        height: 10vh;
+        width:14vw;
         visibility: visible;
         z-index: 1;
         -webkit-animation-duration: 2s;
@@ -301,13 +317,6 @@ span{
     }
 
 
-    span{
-    	top:1rem;
-      color: ;
-    	width: 100%;
-    	text-align: center;
-    	font-size: 24px;
-    }
 
     #email{
       position: absolute;
@@ -325,7 +334,7 @@ span{
         position: absolute;
         top:22rem;
         left:53rem;
-        color: white;
+        color: ;
         opacity: .9;
         padding: .5rem;
         border-radius: 95%;
@@ -337,7 +346,7 @@ span{
         position: absolute;
         top:22rem;
         left:55rem;
-        color: white;
+        color: ;
         opacity: .9;
         padding: .5rem;
         border-radius: 95%;
@@ -350,36 +359,6 @@ span{
         font-size: 35px;
         top:18rem;
       }
-
-      #p1{
-          position: absolute;
-          left:8rem;
-      }
-      #p2{
-        position: absolute;
-        left:21rem;
-      }
-      #p3{
-        position: absolute;
-        left:34.5rem;
-      }
-      #p4{
-        position: absolute;
-        left:40rem;
-      }
-      #p5{
-        position: absolute;
-        left:56.5rem;
-      }
-      #p6{
-        position: absolute;
-        left:65rem;
-      }
-      #p7{
-        position: absolute;
-        left:76rem;
-      }
-
 
   }
 
@@ -405,17 +384,6 @@ span{
             <div class="transparency">
       <img id="logom" src="kaliwhite.png" class="intro animated bounceInUp" alt="Kali logo">
 
-<!--
-<div class="video-container">
-  <video loop autoplay muted playsinline>
-    <source src="office.webm" type="video/webm">
-      <source src="office.mp4" type="video/mp4">
-      <source src="office.ogg" type="video/ogg">
-  </video>
-
-
-
-</div> -->
 
 
   <span style="font-size:30px;cursor:pointer;position: absolute;" onclick="openNav()">&#9776;</span>
@@ -433,45 +401,21 @@ span{
 <div id="desk">
 
 
-        <img id="logom" src="kalilogor.png" class="intro animated zoomInDown" alt="Kali logo">
+            <div class="bg">
+        <img id="logom" src="kalilogo.png" class="intro animated zoomInDown" alt="Kali logo">
+
+          	<div class="time"><p id="time" ></p></div>
+
+        <a href="mailto:info@kali.technology" id="fb" class="intro animated bounceInUp"><i style="  font-size: 40px;" class="fa fa-facebook-official"></i></a>
+        <a href="mailto:info@kali.technology" id="email" class="intro animated bounceInUp"><i style="  font-size: 40px;" class="fa">&#xf0e0;</i></a>
+        <a href="mailto:info@kali.technology" id="ig" class="intro animated bounceInUp"><i style="  font-size: 40px;" class="fa fa-instagram"></i>
 
 
-  <div class="video-container">
-    <video loop autoplay muted playsinline>
-      <source src="office.webm" type="video/webm">
-        <source src="office.mp4" type="video/mp4">
-        <source src="office.ogg" type="video/ogg">
-    </video>
-
-
-
-        <h2 id="p1" class="intro animated slideInLeft">LOOKING</h2>
-          <h2 id="p2" class="intro animated slideInLeft">FORWARD</h2>
-            <h2 id="p3" class="intro animated slideInLeft">TO</h2>
-            <h2 id="p4" class="intro animated slideInRight">DEVELOPING</h2>
-            <h2 id="p5" class="intro animated slideInLeft">YOUR</h2>
-                  <h2 id="p6" class="intro animated slideInRight">DIGITAL</h2>
-                    <h2 id="p7" class="intro animated slideInRight">BRAND</h2>
-                    <h2 id="email" class="intro animated bounceInUp">EMAIL US</h2>
-  <a href="mailto:info@kali.technology.com" id="momail" class="intro animated bounceInUp"><i style="style=" class="fa"> &#xf0e0;</i></a>
-
-
-  <span style="font-size:30px;cursor:pointer;position: absolute;" onclick="openNav()">&#9776;</span>
-
+</div>
 </div>
 
 </div>
 
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="aboutus.html">About</a>
-    <a href="faq.html">FAQ</a>
-    <a href="themes.html">Themes</a>
-      <a href="home.html">Home</a>
-  </div>
-</div>
-</div>
 
 <script>
 function openNav() {
