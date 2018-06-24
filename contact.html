@@ -4,9 +4,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
+ -->
 
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -119,13 +119,13 @@ span{
         		    padding: 8px;
         		    text-decoration: none;
         		    font-size: 36px;
-        		    color:black;
+        		    color: black;
         		    display: block;
         		    transition: 0.3s;
         		}
 
         		.overlay a:hover, .overlay a:focus {
-        		    color: red;
+        		    color: purple;
         		}
 
         		.overlay .closebtn {
@@ -143,6 +143,7 @@ span{
         		    right: 35px;
         		  }
         		}
+
 
 
 
@@ -259,7 +260,7 @@ span{
     font-size: 1.5rem;
 
   }
-span{
+.navi{
   color:white;
   position: absolute;
   top:0;
@@ -370,16 +371,16 @@ span{
       <div class="ph">+2 1 3 2 7 7 8 1 1 8 </p></div>
 
 
+        <a href="home.html" style="font-size:30px;cursor:pointer" class="navi"  >&#9776;</a>
 
-  <span style="font-size:30px;cursor:pointer;position: absolute;" onclick="openNav()">&#9776;</span>
 
 
   	<div class="time"><p id="time" ></p></div>
 
-<a href="mailto:info@kali.technology" id="fb" class="intro animated bounceInUp"><i style="  font-size: 40px;" class="fa fa-facebook-official"></i></a>
+<a href="https://www.facebook.com/Kalitechnology-181198399253312/" id="fb" class="intro animated bounceInUp"><i style="  font-size: 40px;" class="fa fa-facebook-official"></i></a>
 <a href="mailto:info@kali.technology" id="email" class="intro animated bounceInUp"><i style="  font-size: 40px;" class="fa">&#xf0e0;</i></a>
-<a href="mailto:info@kali.technology" id="ig" class="intro animated bounceInUp"><i style="  font-size: 40px;" class="fa fa-instagram"></i>
-</div>
+<a href="https://www.instagram.com/kali.technology/" id="ig" class="intro animated bounceInUp"><i style="  font-size: 40px;" class="fa fa-instagram"></i>
+ </div>
 </div>
 </div>
 
@@ -406,11 +407,12 @@ span{
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
 }
-
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 </script>
+
+
 
 
 
