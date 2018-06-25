@@ -70,13 +70,13 @@
 }
 #nav2 a:link, a:visited {
 
-    color: darkred;
+    color:white;
     padding: 5px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 	 opacity: 0.8;
-	  background:white;
+	  background:darkred;
 	border-radius: 5%;
 }
 
