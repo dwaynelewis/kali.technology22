@@ -15,13 +15,14 @@ body {
 }
 
 body {
-	background: red;
-	color: #fff;
+
+	color: red;
+  text-align: center;
 }
 
 .bg {
     /* The image used */
-    background-image: url("shirtguy.jpg");
+    background-image: url("fullim.jpg");
 
     /* Full height */
     height: 100%;
@@ -31,36 +32,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1{
+margin-top: 1rem;
 
-.component {
-	position: relative;
-	margin-bottom: 3em;
-	height: 15em;
-	background: rgba(0,0,0,0.05);
-	font-family: 'Lato', Arial, sans-serif;
 }
 
-.component > h2 {
-	position: absolute;
-	overflow: hidden;
-	width: 100%;
-	text-align: center;
-	text-transform: uppercase;
-	white-space: nowrap;
-	font-weight: 300;
-	font-style: italic;
-	font-size: 12em;
-	opacity: 0.5;
-	cursor: default;
-}
 
 .cn-button {
 	position: absolute;
 	top: 100%;
 	left: 50%;
 	z-index: 11;
-	margin-top: 37rem;
-	margin-left: 6.4rem;
+	margin-top: -24rem;
+	margin-left: -2.25em;
 	padding-top: 0;
 	width: 4.5em;
 	height: 4.5em;
@@ -82,8 +66,8 @@ body {
 	top: 100%;
 	left: 50%;
 	z-index: 10;
-	margin-top: 27.5rem;
-	margin-left: -4rem;
+	margin-top: -34rem;
+	margin-left: -13.5em;
 	width: 27em;
 	height: 27em;
 	border-radius: 50%;
@@ -364,38 +348,3 @@ body {
 		line-height: 3em;
 	}
 }
-
-	@media screen and (min-width: 450px) and (min-height: 850px){
-
-    .cn-button {
-      margin-top: 1rem;
-    	margin-left: 9.4rem;
-      width: 5.5em;
-    	height: 5.5em;
-    }
-
-    .csstransforms .cn-wrapper {
-      margin-top: -8.3rem;
-      margin-left: 0rem;
-
-    }
-
-  }
-}
-
-  	@media screen and (max-width: 450px){
-
-      .cn-button {
-        margin-top: 3rem;
-      	margin-left: 17.4rem;
-        width: 5.5em;
-      	height: 5.5em;
-      }
-
-      .csstransforms .cn-wrapper {
-        margin-top: -6.35rem;
-        margin-left: 8rem;
-
-      }
-
-    }
