@@ -364,3 +364,38 @@ body {
 		line-height: 3em;
 	}
 }
+
+	@media screen and (min-width: 450px) and (min-height: 850px){
+
+    .cn-button {
+      margin-top: 1rem;
+    	margin-left: 9.4rem;
+      width: 5.5em;
+    	height: 5.5em;
+    }
+
+    .csstransforms .cn-wrapper {
+      margin-top: -8.3rem;
+      margin-left: 0rem;
+
+    }
+
+  }
+}
+
+  	@media screen and (max-width: 450px){
+
+      .cn-button {
+        margin-top: 3rem;
+      	margin-left: 17.4rem;
+        width: 5.5em;
+      	height: 5.5em;
+      }
+
+      .csstransforms .cn-wrapper {
+        margin-top: -6.35rem;
+        margin-left: 8rem;
+
+      }
+
+    }
