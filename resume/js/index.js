@@ -1,172 +1,158 @@
-$(document).ready(function() {
+(function(){
 
-  // import view port library function
-  jQuery.extend(verge);
+	var button = document.getElementById('cn-button'),
+    wrapper = document.getElementById('cn-wrapper');
 
-  // smooth scrolling of viewport to target
-  $('a[href^="#"]').click(function(event) {
-    event.preventDefault();
-    $('html,body').animate({
-      scrollTop: $(this.hash).offset().top - 50
-    }, 900);
-  });
+    //open and close menu when the button is clicked
+	var open = false;
+	button.addEventListener('click', handler, false);
 
-  $('#down').click(function() {
-    $('html,body').animate({
-      scrollTop: $('#about').offset().top - 50
-    }, 900);
-  });
+	function handler(){
+	  if(!open){
+	    this.innerHTML = "Close";
+	    classie.add(wrapper, 'opened-nav');
+	  }
+	  else{
+	    this.innerHTML = "Menu";
+		classie.remove(wrapper, 'opened-nav');
+	  }
+	  open = !open;
+	}
+	function closeWrapper(){
+		classie.remove(wrapper, 'opened-nav');
+	}
 
-  var currentTime = new Date();
-  var year = currentTime.getFullYear();
+})();
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            /*!
+ * classie - class helper functions
+ * from bonzo https://github.com/ded/bonzo
+ * 
+ * classie.has( elem, 'my-class' ) -> true/false
+ * classie.add( elem, 'my-new-class' )
+ * classie.remove( elem, 'my-unwanted-class' )
+ * classie.toggle( elem, 'my-class' )
+ */
 
-  // data for the portfolio cards front and back
-  var projectData = [{
-      title: 'Quotes',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/zipline-build-a-random-quote-machine" target="_blank"><i>Build a Random Quote Machine</i></a>. The user is able to show a new random quote and send that quote to Twitter. <strong>Quotes</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Graphics Editor:</strong> Gimp, pixlr.com<br> <strong>Images:</strong> lorempixel.com<br> <strong>Fonts:</strong> Font-awesome<br> <strong>Data:</strong> random famous quotes API',
+/*jshint browser: true, strict: true, undef: true */
+/*global define: false */
 
-      image: ['http://2am.ninja/img/quotes.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/dojjre'],
-        ['Live Site', 'fa-link', 'http://2am.ninja/quotes/']
-      ]
-    }, {
-      title: 'Twitch TV',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/zipline-use-the-twitchtv-json-api" target="_blank"><i>Use the Twitchtv JSON API</i></a>. A user can see if Free Code Camp is currently streaming on Twitch.tv.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Fonts:</strong> Ubuntu Mono<br> <strong>Data:</strong> Twitchtv API',
+( function( window ) {
 
-      image: ['http://2am.ninja/img/twitch3.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/jrEBgq']
-  //      ,['Live Site', 'fa-link', 'http://2am.ninja/twitch/']
-      ]
-    }, {
-      title: 'Wiki Search',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/zipline-build-a-wikipedia-viewer" target="_blank"><i>Build a Wikipedia Viewer</i></a>. A user can search Wikipedia entries in a search box and see the resulting Wikipedia entries.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Graphics Editor:</strong> pixlr.com<br> <strong>Images:</strong> unsplash.com<br> <strong>Data:</strong> Wikipedia API',
+'use strict';
 
-      image: ['http://2am.ninja/img/wiki.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/rVRwor']
-      ]
-    }, {
-      title: 'Pomodoro Timer',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/zipline-build-a-pomodoro-clock" target="_blank"><i>Build a Pomodoro Clock</i></a>. A user can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed. <strong>Pomodoro Timer</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, HTML5 Canvas, CSS3, Javascript, jQuery, ion.sound<br> <strong>Layout:</strong> Bootstrap, HTML5 Canvas<br> <strong>Fonts:</strong> IcoMoon',
+// class helper functions from bonzo https://github.com/ded/bonzo
 
-      image: ['http://2am.ninja/img/timer.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/WvVZyM'],
-        ['Live Site', 'fa-link', 'http://2am.ninja/timer/']
-      ]
-    }, {
-      title: 'Local Weather',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/zipline-show-the-local-weather" target="_blank"><i>Show the Local Weather</i></a>. A user can see the weather in my current location.. <strong>Local Weather</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Images:</strong> flickr.com<br> <strong>Fonts:</strong> Climacons, Open Sans<br> <strong>Data:</strong> Open Weather Map API, IP-API.com Geolocation API',
+function classReg( className ) {
+  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+}
 
-      image: ['http://2am.ninja/img/weather.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://codepen.io/MutantSpore/full/oXaoxb/']
-      ]
-    },
-    /*                    
-                        {
-         title: 'Camper News',
-         text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/zipline-stylize-stories-on-camper-news" target="_blank"><i>Stylize Stories on Camper News</i></a>. The user can browse recent posts from Camper News.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap, Masonary<br> <strong>Graphics Editor:</strong> Gimp, pixlr.com<br> <strong>Images:</strong> unsplash.com<br>  <strong>Data:</strong> Free Code Camp news API',
+// classList support for class management
+// altho to be fair, the api sucks because it won't accept multiple classes at once
+var hasClass, addClass, removeClass;
 
-         image: ['http://2am.ninja/img/news.jpg'],
-         site: [
-           ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/vOvBqY']
-         ]
-       }, 
-     */
-    {
-      title: 'Bar Graph',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/visualize-data-with-a-bar-chart" target="_blank"><i>Visualize Data with a Bar Chart </i></a>. The user can see US Gross Domestic Product by quarter, over time, with a mouse over tooltip.</p> <strong>Code:</strong> HTML5, CSS3, D3, SVG, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap',
-
-      image: ['http://2am.ninja/img/bar-graph.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/PNJMpg']
-      ]
-    }, {
-      title: 'Heat Map',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/visualize-data-with-a-heat-map" target="_blank"><i>Visualize Data with a Heat Map</i></a>. The user can view a heat map with data represented both on the Y and X axis, with mouse over tooltip.</p> <strong>Code:</strong> HTML5, CSS3, D3, SVG, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap',
-
-      image: ['http://2am.ninja/img/heat-map.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/VeKNEa']
-      ]
-    },
-    /*                 
-                     {
-      title: 'Force Graph',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/show-relationships-with-a-force-directed-graph" target="_blank"><i>Show Relationships with a Force Directed Graph</i></a>. The user can see a Force-directed Graph that shows which campers are posting links on Camper News to which domains.</p> <strong>Code:</strong> HTML5, CSS3, D3, SVG, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br>  <strong>Data:</strong> Free Code Camp news API',
-
-      image: ['http://2am.ninja/img/force-graph.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/KVdbMO']
-      ]
-    }, 
-    
-    */
-    {
-      title: 'Tic-Tac-Toe',
-      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/build-a-tic-tac-toe-game" target="_blank"><i>Build a Tic Tac Toe Game</i></a>. The user can play a game of Tic Tac Toe with the computer.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Materialize.css',
-
-      image: ['http://2am.ninja/img/ttt.jpg'],
-      site: [
-        ['CodePen', 'fa-codepen', 'https://s.codepen.io/MutantSpore/debug/jWWYLo']
-      ]
+if ( 'classList' in document.documentElement ) {
+  hasClass = function( elem, c ) {
+    return elem.classList.contains( c );
+  };
+  addClass = function( elem, c ) {
+    elem.classList.add( c );
+  };
+  removeClass = function( elem, c ) {
+    elem.classList.remove( c );
+  };
+}
+else {
+  hasClass = function( elem, c ) {
+    return classReg( c ).test( elem.className );
+  };
+  addClass = function( elem, c ) {
+    if ( !hasClass( elem, c ) ) {
+      elem.className = elem.className + ' ' + c;
     }
-  ];
+  };
+  removeClass = function( elem, c ) {
+    elem.className = elem.className.replace( classReg( c ), ' ' );
+  };
+}
 
-  // add listener to all the cards for click flipping
-  function addListener() {
-    var cards = document.querySelectorAll(".card.effect_click");
+function toggleClass( elem, c ) {
+  var fn = hasClass( elem, c ) ? removeClass : addClass;
+  fn( elem, c );
+}
 
-    for (var i = 0; i < cards.length; i++) {
-      clickListener(cards[i]);
+var classie = {
+  // full names
+  hasClass: hasClass,
+  addClass: addClass,
+  removeClass: removeClass,
+  toggleClass: toggleClass,
+  // short names
+  has: hasClass,
+  add: addClass,
+  remove: removeClass,
+  toggle: toggleClass
+};
+
+// transport
+if ( typeof define === 'function' && define.amd ) {
+  // AMD
+  define( classie );
+} else {
+  // browser global
+  window.classie = classie;
+}
+
+})( window );
+// EventListener | @jon_neal | //github.com/jonathantneal/EventListener
+!window.addEventListener && window.Element && (function () {
+    function addToPrototype(name, method) {
+        Window.prototype[name] = HTMLDocument.prototype[name] = Element.prototype[name] = method;
     }
-
-    function clickListener(card) {
-      card.addEventListener("click", function() {
-        this.classList.toggle("flipped");
-      });
-    }
-  }
-
-  // create, populate and show portfolio project cards
-  function showProjectCards() {
-    var html = '';
-
-    projectData.forEach(function(project) {
-      html += '<div class="col-sm-6 col-md-4">';
-      html += '<div class="card effect_click"><div class="card_front">';
-      html += '<figure><img class="img-responsive" src="' + project.image[0] + '">';
-      html += '<figcaption class="project-title">';
-      html += project.title;
-      html += '</figcaption></figure></div>';
-
-      html += '<div class="card_back"><figure>';
-      html += '<div class="project-title">' + project.title + '</div>';
-      html += '<figcaption">';
-      html += '<div class="project-body">' + project.text + '</div>';
-      html += '<div><a data-toggle="tooltip" title="' + project.site[0][0] + '" data-placement="top" href="' + project.site[0][2] + '" target="_blank" class="btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0"><i class="fa ' + project.site[0][1] + '" aria-hidden="true"></i></a>';
-
-      if (typeof project.site[1] !== 'undefined') {
-        html += '<a data-toggle="tooltip" title="' + project.site[1][0] + '" data-placement="top" href="' + project.site[1][2] + '" target="_blank" class="btn btn-primary btn-lg btn-circle btn-lnk btn-lnk1"><i class="fa ' + project.site[1][1] + '" aria-hidden="true"></i></a>';
-      }
-
-      html += '</div></figcaption></figure></div>';
-      html += '</div>';
-      html += '</div>';
+ 
+    var registry = [];
+ 
+    addToPrototype("addEventListener", function (type, listener) {
+        var target = this;
+ 
+        registry.unshift({
+            __listener: function (event) {
+                event.currentTarget = target;
+                event.pageX = event.clientX + document.documentElement.scrollLeft;
+                event.pageY = event.clientY + document.documentElement.scrollTop;
+                event.preventDefault = function () { event.returnValue = false };
+                event.relatedTarget = event.fromElement || null;
+                event.stopPropagation = function () { event.cancelBubble = true };
+                event.relatedTarget = event.fromElement || null;
+                event.target = event.srcElement || target;
+                event.timeStamp = +new Date;
+ 
+                listener.call(target, event);
+            },
+            listener: listener,
+            target: target,
+            type: type
+        });
+ 
+        this.attachEvent("on" + type, registry[0].__listener);
     });
-
-    $('#theProjects').append(html);
-    addListener();
-  }
-
-  showProjectCards();
-  $(".copyright").append("<span>© " + year + " Bruce Young. All rights reserved</span>");
-
-  // turn on bootstrap tooltips
-  $('[data-toggle="tooltip"]').tooltip();
-
-  
-});
+ 
+    addToPrototype("removeEventListener", function (type, listener) {
+        for (var index = 0, length = registry.length; index < length; ++index) {
+            if (registry[index].target == this && registry[index].type == type && registry[index].listener == listener) {
+                return this.detachEvent("on" + type, registry.splice(index, 1)[0].__listener);
+            }
+        }
+    });
+ 
+    addToPrototype("dispatchEvent", function (eventObject) {
+        try {
+            return this.fireEvent("on" + eventObject.type, eventObject);
+        } catch (error) {
+            for (var index = 0, length = registry.length; index < length; ++index) {
+                if (registry[index].target == this && registry[index].type == eventObject.type) {
+                    registry[index].call(this, eventObject);
+                }
+            }
+        }
+    });
+})();
