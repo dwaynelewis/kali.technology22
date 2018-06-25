@@ -256,10 +256,10 @@ html, body {
   height: 100%;
 }
 .section.section-1 .left-part {
-  background-image: url("shirtguy.jpg");
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/2side-pagi-1.jpg");
 }
 .section.section-1 .bg-part {
-  background-image: url("shirtguy.jpg");
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/2side-pagi-1.jpg");
 }
 .section.section-2 .left-part {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/scr-split-2.jpg");
