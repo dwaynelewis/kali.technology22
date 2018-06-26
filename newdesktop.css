@@ -84,8 +84,8 @@
 	/* color:white; */
 }
 #nav2 a:hover, a:active {
-    background-color:red;
-		color: black;
+    background-color:white;
+		color: darkred;
 }
 
 nav#nav2 a{
