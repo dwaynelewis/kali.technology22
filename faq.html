@@ -167,7 +167,7 @@
       padding: 5px;
       border-radius: 25%;
     }
-    }
+
   </style>
 
   <style>
@@ -289,11 +289,50 @@ position: absolute;
       }
 }
 	@media screen and (min-width: 450px){
+
+    				#nav2{
+    				    margin-top: 5%;
+    				    margin-left: 26%;
+    				    position:absolute;
+    				    top:-2rem;
+    				    left:0;
+    				    width:800px;
+    				    height:20px;
+    				    font-size: 17px;
+    					text-align: center;
+    				}
+    				#nav2 a:link, a:visited {
+
+    				    color:white;
+    				    padding: 5px 50px;
+    				    text-align: center;
+    				    text-decoration: none;
+    				    display: inline-block;
+    					 opacity: 0.8;
+    					  background:darkred;
+    					border-radius: 5%;
+    				}
+
+    				.nav a{
+    					/* color:white; */
+    				}
+    				#nav2 a:hover, a:active {
+    				    background-color:white;
+    						color: darkred;
+    				}
+
+    				nav#nav2 a{
+    					height: 32px;
+    				}
+    span{
+      display: none;
+    }
+
       #logom{
         position: absolute;
         top:4rem;
-        left:0rem;
-        right: 0;
+        left:1rem;
+        /* right: 0; */
         margin: auto;
           height: 10vh;
           width:14vw;
@@ -349,7 +388,6 @@ position: absolute;
   right:0;
   margin: auto;
   }
-
   #link1{
     position: absolute;
     top:32rem;
@@ -389,9 +427,7 @@ position: absolute;
     left: 43rem;
       display: none;
         font-size: 32px;
-
   }
-
   p{
     margin: 25px;
     font-size: 30px;
@@ -446,9 +482,12 @@ position: absolute;
         <div id="outro">
   <img id="logom" src="kalilogor.png" class="intro animated zoomInDown" alt="Kali logo">
 
-      <!-- <h1 style="text-align: center; background-color: white; color: #C0AB8E; width: 190px; margin: auto;">GIRL TALK</h1> -->
-
-
+  					  <nav id="nav2">
+  					    <a id="abu" href="home.html"title="navi4">HOME</a>
+  					  	<a href="themes.html" title="navi5">THEMES</a>
+  					  	<a href="faq.html" title="navi5">FAQ</a>
+  					  		<a id="con" href="contact.html" title="navi6">CONTACT</a>
+  					  	</nav>
 
       <h3 id="opening">These questions will help identify templates that we can customize for you.</h3>
 
@@ -520,6 +559,12 @@ position: absolute;
     <a href="contact.html">Contact</a>
      <a href="themes.html">Themes</a>
       <a href="home.html">Home</a>
+
+
+
+    <a href="mailto:info@kali.technology" id="email"><i style=" color:black; font-size: 60px;" class="fa">&#xf282;</i></a>
+
+
   </div>
 </div>
 
@@ -585,7 +630,6 @@ position: absolute;
         document.getElementById("ques3").style.display = "none";
         document.getElementById("choice3a").style.display = "none";
         document.getElementById("choice3b").style.display = "none";
-
        document.getElementById("restart").style.display = "block";
        ans3 = true;
        if (ans1 === true && ans2 === true && ans3 === false){
@@ -635,7 +679,6 @@ document.getElementById("demo").innerHTML = "Based off of your responses we sugg
                 document.getElementById("ques3").style.display = "none";
                 document.getElementById("choice3a").style.display = "none";
                 document.getElementById("choice3b").style.display = "none";
-
                document.getElementById("restart").style.display = "block";
                ans3 = false;
                if (ans1 === true && ans2 === true && ans3 === false){
@@ -714,20 +757,6 @@ document.getElementById("demo").innerHTML = "Based off of your responses we sugg
     </script>
 
 
-
-
-
-
-    <script>
-    $('#autoplay').delay(11000).textition({
-     speed: 1,
-     animation: 'ease-out',
-     map: {x: 200, y: 100, z: 0},
-     autoplay: true,
-     interval: 3.0
-    })
-    </script>
-    <script type="text/javascript" src="textition.js"></script>
 
 
 
