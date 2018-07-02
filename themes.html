@@ -1,696 +1,100 @@
-
-
 <!DOCTYPE html>
 <html lang="en" >
 
 <head>
   <meta charset="UTF-8">
-  <title>THEMES</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+  <title>About Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '237333853713432');
-  fbq('track', 'PageView');
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+      <link rel="stylesheet" href="aboutus.css">
+
+    <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript">
+   $(document).ready(function() {
+      $().introtzikas();
+   });
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=237333853713432&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-
-<style>
-* {
-  box-sizing: border-box;
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.hide {
-  display: none;
-}
-html,
-body {
-  height: 100%;
-}
-#frame{
-  background-color: white;
-  margin: 0;
-  color: #212121;
-  transition: background-color 1s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-  -webkit-transform: perspective(600px);
-          transform: perspective(600px);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  will-change: transform;
-  height: 100%;
-}
-.is-open {
-  color: white;
-  background-color: #212121;
-}
-.is-open .square {
-  padding: 0;
-}
-.is-open .card {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.is-open .card:hover {
-  mix-blend-mode: normal;
-  opacity: 1;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-}
-.is-open .copy-wrap {
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-}
-.is-open .title {
-  color: white;
-  mix-blend-mode: normal;
-}
-.is-open .btn:hover {
-  background-color: #212121;
-  color: white;
-}
-.is-open .btn:hover .btn-icon {
-  fill: white;
-}
-.square {
-  cursor: pointer;
-  border: solid 0px transparent;
-  padding: 120px;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: linear-gradient(230deg, black, red, white);
-  background-clip: content-box;
-  background-size: 400% 400%;
-  border-color: currentColor;
-  -webkit-animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
-          animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
-  transition: padding 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-  will-change: transform;
-}
-@-webkit-keyframes partytime {
-  0% {
-    background-position: 83% 0%;
-  }
-  50% {
-    background-position: 18% 100%;
-  }
-  100% {
-    background-position: 83% 0%;
-  }
-}
-@keyframes partytime {
-  0% {
-    background-position: 83% 0%;
-  }
-  50% {
-    background-position: 18% 100%;
-  }
-  100% {
-    background-position: 83% 0%;
-  }
-}
-.card {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  transition: box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  transition: transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 1.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-filter 1.25s cubic-bezier(0.215, 0.61, 0.355, 1);
-  -webkit-transform: perspective(1600px) translate3d(0, 0, 0) scale(0.5);
-          transform: perspective(1600px) translate3d(0, 0, 0) scale(0.5);
-  will-change: transform;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 400;
-}
-.card:hover {
-  box-shadow: 0 0 75px rgba(0, 0, 0, 0.2), 0 5px 20px rgba(0, 0, 0, 0.2);
-  mix-blend-mode: hard-light;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  opacity: 0.8;
-}
-.card-title-wrap {
-  -webkit-transform: perspective(1600px) translate3d(0, 0, 100px);
-          transform: perspective(1600px) translate3d(0, 0, 100px);
-  position: relative;
-  z-index: 200;
-  transition: -webkit-transform 0.25s linear;
-  transition: transform 0.25s linear;
-  transition: transform 0.25s linear, -webkit-transform 0.25s linear;
-}
-.card-img1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("theme1c.jpg");
-  will-change: transform;
-  -webkit-transform: perspective(600px);
-          transform: perspective(600px);
-  z-index: 100;
-}
-.card-img2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("theme2.jpg");
-  will-change: transform;
-  -webkit-transform: perspective(600px);
-          transform: perspective(600px);
-  z-index: 100;
-}
-.card-img3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("theme3c.jpg");
-  will-change: transform;
-  -webkit-transform: perspective(600px);
-          transform: perspective(600px);
-  z-index: 100;
-}
-.card-img4 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("LA.jpg");
-  will-change: transform;
-  -webkit-transform: perspective(600px);
-          transform: perspective(600px);
-  z-index: 100;
-}
-.card-img5 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("torso.jpg");
-  will-change: transform;
-  -webkit-transform: perspective(600px);
-          transform: perspective(600px);
-  z-index: 100;
-}
-.card-img6 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-image: url("elegance/ele.jpg");
-  will-change: transform;
-  -webkit-transform: perspective(600px);
-          transform: perspective(600px);
-  z-index: 100;
-}
-.btn {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  transition: all 0.25s ease-in-out;
-  border: 0;
-  background-color: black;
-  padding: 12px 24px;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  mix-blend-mode: overlay;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8) 0 4px 12px rgba(0, 0, 0, 0.9);
-  will-change: transform;
-  cursor: pointer;
-  z-index: 900;
-  margin-top: 60px;
-}
-.btn:active,
-.btn:focus {
-  outline: none;
-}
-.btn:hover {
-  background-color: white;
-  mix-blend-mode: normal;
-  color: #212121;
-}
-.btn:hover .btn-icon {
-  fill: black;
-}
-.btn-icon {
-  fill: white;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  transition: all 0.25s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-}
-.title {
-  font-size: 120px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 900;
-  overflow: hidden;
-  color: black;
-  mix-blend-mode: overlay;
-}
-.name,
-.copyright {
-  text-transform: uppercase;
-  color: currentColor;
-  position: absolute;
-  left: 50%;
-  margin: 0;
-  padding: 0;
-  transition: all 0.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-  -webkit-transform: translate3d(-50%, 0, 0);
-          transform: translate3d(-50%, 0, 0);
-  overflow: hidden;
-  font-size: 16px;
-  font-weight: 800;
-  letter-spacing: 0.4em;
-}
-.name {
-  top: 53px;
-}
-.copy-wrap {
-  display: block;
-  transition: all 0.7s 0s ease-in-out;
-  position: relative;
-  color: white;
-}
-.copyright {
-  bottom: 20px;
-  overflow: hidden;
-  height: 72px;
-  line-height: 60px;
-  position: fixed;
-}
-.copyright .copy-wrap:before {
-  content: "";
-  width: 15px;
-  height: 2px;
-  background-color: currentColor;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-}
-a{
-text-decoration: none;
-color: white;
-}
-</style>
-
-<style>
-/* menu code */
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-}
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-</style>
 </head>
-
 <body>
 
 
-  <div id="frame">
-    <h1 class="name">
-  	<span class="copy-wrap">
-  		DWAYNE R. LEWIS
-    	</span>
-  </h1>
 
-  <div class="square"></div>
-
-  <div class="card">
-  	<div class="card-title-wrap">
-  		<h1 class="title">
-  			<span class="copy-wrap">
-  				  <a href="http://kali.digital/" class="links" id="link1">CLASSIC</a>
-  			</span>
-  		</h1>
-  		<button class="btn hide">
-  			View
-  		</button>
-  	</div>
-  	<div class="card-img3"></div>
-  </div>
-
-  <h2 class="copyright">
-      <!-- <a href="home.html" class="hlinks" style="font-size: 4em; color:darkred;">HOME</a> -->
-  	<span class="copy-wrap">
-        KALI
-  	</span>
-  </h2>
-  </div>
+    <header>
+    <nav>
+      <!-- <h1>KALI<a href="http://anaislab.com/" target="_blank">DIGITAL</a></h1> -->
+        <img id="logoma" src="kaliwhite.png"  alt="Kali logo">
 
 
 
-  <div id="frame">
-    <h1 class="name">
-  	<span class="copy-wrap">
-  		DWAYNE R. LEWIS
-    	</span>
-  </h1>
+      <ul>
+        <li>
 
-  <div class="square"></div>
+          </div>
 
-  <div class="card">
-  	<div class="card-title-wrap">
-  		<h1 class="title">
-  			<span class="copy-wrap">
-  				  <a href="modern/modern.html" class="links" id="link1">MODERN</a>
-  			</span>
-  		</h1>
-  		<button class="btn hide">
-  			View
-  		</button>
-  	</div>
-  	<div class="card-img2"></div>
-  </div>
 
-  <h2 class="copyright">
-     <!-- <a href="home.html" class="links" id="link1" style="color:darkred;">HOME</a> -->
-  	<span class="copy-wrap">
-        KALI
-  	</span>
-  </h2>
+          <span style="cursor:pointer; color:white; font-size:4rem;" onclick="openNav()">&#9776;</span>
+        </li>
+
+      </ul>
+    </nav>
+    <nav id="small">
+        <!-- <h1>KALI<a href="http://anaislab.com/" target="_blank">DIGITAL</a></h1> -->
+          <img id="logoma" src="kalilogo.png"  alt="Kali logo">
+      <ul>
+        <li>
+            <span style="cursor:pointer;color:black;  font-size:4rem;" onclick="openNav()">&#9776;</span>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <div id="content">
+  
   </div>
 
 
 
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+
+      <a href="faq.html">FAQ</a>
+       <a href="aboutus.html">About Us</a>
+         <a href="home.html">Home</a>
+
+
+
+      <script  src="js/index.js"></script>
 
 
 
 
 
-  <div id="frame">
-    <h1 class="name">
-  	<span class="copy-wrap">
-  		KALI DIGITAL
-    	</span>
-  </h1>
-
-  <div class="square"></div>
-
-  <div class="card">
-  	<div class="card-title-wrap">
-  		<h1 class="title">
-  			<span class="copy-wrap">
-  				  <a href="funky/index.html" class="links" id="link1" style="color:	#DC143C;">CREATIVE</a>
-  			</span>
-  		</h1>
-  		<button class="btn hide">
-  			View
-  		</button>
-  	</div>
-  	<div class="card-img1"></div>
-  </div>
-
-  <h2 class="copyright">
-
-   <!-- <a href="home.html" class="links" id="link1" style="color:	#DC143C;">HOME</a> -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/jquery.velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/velocity.ui.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/jquery.blast.js'></script>
 
 
 
-  	<span class="copy-wrap">
-
-  	</span>
-  </h2>
+    <script  src="homepage.js"></script>
 
 
 
+        <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
 
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="frame">
-  <h1 class="name">
-	<span class="copy-wrap">
-	KALI
-  	</span>
-</h1>
-
-<div class="square"></div>
-
-<div class="card">
-	<div class="card-title-wrap">
-		<h1 class="title">
-			<span class="copy-wrap">
-			  <a href="minimal.html" class="links" id="link1" style="color:black;">MINIMAL</a>
-			</span>
-		</h1>
-		<button class="btn hide">
-			View
-		</button>
-	</div>
-	<div class="card-img4"></div>
-</div>
-
-<h2 class="copyright">
-   <!-- <a href="home.html" class="links" id="link1" style="color:darkred;">HOME</a> -->
-	<span class="copy-wrap">
-        KALI
-	</span>
-</h2>
-</div>
-
-
-
-<div id="frame">
-  <h1 class="name">
-	<span class="copy-wrap">
-	KALI
-  	</span>
-</h1>
-
-<div class="square"></div>
-
-<div class="card">
-	<div class="card-title-wrap">
-		<h1 class="title">
-			<span class="copy-wrap">
-			  <a href="resume/index.html" class="links" id="link1" style="color:red; font-size:6rem;">PORTFOLIO</a>
-			</span>
-		</h1>
-		<button class="btn hide">
-			View
-		</button>
-	</div>
-	<div class="card-img5"></div>
-</div>
-
-<h2 class="copyright">
-   <!-- <a href="home.html" class="links" id="link1" style="color:darkred;">HOME</a> -->
-	<span class="copy-wrap">
-        KALI
-	</span>
-</h2>
-</div>
-
-
-
-<div id="frame">
-  <h1 class="name">
-	<span class="copy-wrap">
-	KALI
-  	</span>
-</h1>
-
-<div class="square"></div>
-
-<div class="card">
-	<div class="card-title-wrap">
-		<h1 class="title">
-			<span class="copy-wrap">
-			  <a href="elegance/index.html" class="links" id="link1" style="color:red; font-size:6rem;">DIGITAL</a>
-			</span>
-		</h1>
-		<button class="btn hide">
-			View
-		</button>
-	</div>
-	<div class="card-img6"></div>
-</div>
-
-<h2 class="copyright">
-   <!-- <a href="home.html" class="links" id="link1" style="color:darkred;">HOME</a> -->
-	<span class="copy-wrap">
-        KALI
-	</span>
-</h2>
-</div>
-
-
-
-<div style="height: 75px; text-align: center; width:100%;">
-
-
- <a href="home.html" class="links" id="link1" style="color:darkred; height: 75px; font-size:3em;">HOME</a>
-</div>
-
-
-
-
-<script>
-$(function () {
-  var EASE = Power4.easeOut;
-  var Engine = {
-    ui : {
-      initBtn : function() {
-        var card = $('.card, .btn');
-        var body = $('#frame');
-        var btn = $('.btn');
-        card.on('click', function() {
-          if (body.hasClass('is-open')) {
-            body.removeClass('is-open');
-            btn.html('View');
-          } else {
-              body.addClass('is-open');
-              btn.html('close');
-            TweenMax.set('.card', {clearProps: 'all'});
-          }
-        })
-      },
-      initHover : function(e) {
-        $(document).on( "mousemove", ".card", function(e) {
-          if ($('body').hasClass('is-open')) {
-            e.preventDefault();
-            // $('.card').attr('style', '').children('.card-title-wrap').attr('style', '');
-          } else {
-            var halfW = (this.clientWidth / 2);
-            var halfH = (this.clientHeight / 2);
-            var coorX = (halfW - (event.pageX - this.offsetLeft));
-            var coorY = (halfH - (event.pageY - this.offsetTop));
-            var degX  = ( ( coorY / halfH ) * 10 ) + 'deg'; // max. degree = 10
-            var degY  = ( ( coorX / halfW ) * -10 ) + 'deg'; // max. degree = 10
-            $(this).css('transform', function() {
-              return 'perspective(1600px) translate3d(0, 0px, 0) scale(0.6) rotateX('+ degX +') rotateY('+ degY +')';
-            }).children('.card-title-wrap').css( 'transform', function() {
-              return 'perspective(1600px) translate3d(0, 0, 200px) rotateX('+ degX +') rotateY('+ degY +')';
-            });
-          }
-        }).on( "mouseout", ".card", function() {
-          $(this).removeAttr('style').children('.card-title-wrap').removeAttr('style');
-        });
-      }
-    }
-  };
-  Engine.ui.initBtn();
-  Engine.ui.initHover();
-})
-</script>
 
 </body>
+
 </html>

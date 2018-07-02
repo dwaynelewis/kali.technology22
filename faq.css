@@ -1,0 +1,181 @@
+
+html{
+  color: white;
+}
+#opening{
+position: absolute;
+top: 30rem;
+font-size: 4rem;
+}
+#demo{
+top:48rem;
+font-size: 3rem;
+
+position: absolute;
+}
+#getstarted{
+  width: 100px;
+  background-color: white;
+  color:#181818;
+  padding: 3px;
+  font-size: 200%;
+  position: absolute;
+  left:0;
+  right:0;
+  margin: auto;
+  top:60rem;
+  border-radius: 5%;
+}
+.questions{
+  display: none;
+  width: 20rem;
+  left:0;
+  right:0;
+  margin: auto;
+  position: absolute;
+  top:24rem;
+}
+button{
+  left:0;
+  right:0;
+  margin: 1px;
+  position: absolute;
+  width: 10rem;
+  color: white;
+  font-size: 3rem;
+}
+#restart{
+  display: none;
+  position: absolute;
+  top:40rem;
+  left:0;
+  right:0;
+  margin: auto;
+}
+  #goodbye{
+    top:28rem;
+    left:0rem;
+    right: 0;
+    margin: auto;
+  }
+  #link1{
+    position: absolute;
+    top:70rem;
+    left:0rem;
+    right: 0;
+    margin: auto;
+      display: none;
+
+  }
+  #link2{
+    position: absolute;
+    top:75rem;
+    left:0rem;
+    right: 0;
+    margin: auto;
+      display: none;
+
+  }
+  #link3{
+    position: absolute;
+    top:80rem;
+    left:0rem;
+    right: 0;
+    margin: auto;
+      display: none;
+
+  }
+  #link4{
+    position: absolute;
+    top:65rem;
+    left:0rem;
+    right: 0;
+    margin: auto;
+      display: none;
+
+  }
+  #link5{
+    position: absolute;
+    top:60rem;
+    left:0rem;
+    right: 0;
+    margin: auto;
+      display: none;
+
+  }
+  p{
+    font-size: 60px;
+  }
+
+
+  .btn{
+    display:none;
+    font-size:3rem;
+  }
+    #demo{
+    display: none;
+  }
+  #choice1a{
+      top:30rem;
+  }
+  #choice1b{
+      top:36rem;
+  }
+  #choice2a{
+      top:30rem;
+  }
+  #choice2b{
+      top:36rem;
+  }
+  #choice3a{
+      top:30rem;
+  }
+  #choice3b{
+      top:36rem;
+  }
+    #goodbye{
+    display: none;
+    position: absolute;
+  }
+  a{
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+
+  	@media screen and (min-width: 450px){
+
+      #opening{
+        font-size: 3rem;
+        top: 17rem;
+      }
+      #getstarted{
+        top: 30rem;
+      }
+      #fcontact{
+        top:5rem;
+        left: 75rem;
+        width: 30rem;
+      }
+      #fph{
+        top:7rem;
+        width: 30rem;
+        color: #C80000;
+      }
+      .ftime{
+        display: none;
+      }
+      #flogom{
+        top:9rem;
+      }
+      .questions{
+        top:12rem;
+      }
+      button{
+        width: 30rem;
+        color: black;
+      }
+      span{
+        font-size: 3rem;
+      }
+    }

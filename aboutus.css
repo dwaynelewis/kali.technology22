@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,500);
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }{
+  margin:
+}
+body{
+  background-color: #C80000;
+}
+nav {
+  background: #181818;
+  overflow: auto;
+  padding: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+nav img {
+  color: #eee;
+  height: 9vh;
+  width: 18.35vw;
+  float: left;
+}
+
+nav img>a {
+  color: #3ab4a6;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: all 200ms linear;
+}
+
+nav img>a:hover {
+  background: none;
+  color: #C18055;
+}
+
+ul {
+  text-align: center;
+  float: center;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  margin: 0 10px;
+  color: #eee;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: bold;
+  transition: all 200ms linear;
+}
+
+nav a:hover,
+nav#small a:hover {
+  color: #C18055;
+  background: #fff;
+}
+
+nav#small {
+  background: #fff;
+  padding: 20px 40px;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 2px 2px #fff;
+}
+
+nav#small img,
+nav#small a {
+  color: #333;
+}
+
+nav#small img {
+  font-size: 38px;
+}
+
+nav#small img>a {
+  color: #C18055;
+}
+
+nav#small img>a:hover {
+  color: #3ab4a6;
+}
+
+div#content {
+  height: 2200px;
+  padding-left: 2em;
+  padding-right: 2rem;
+  /* background: url('https://s-media-cache-ak0.pinimg.com/originals/03/95/6f/03956fed74537b3d7b0858e9a814748d.jpg')repeat 0 0; */
+  opacity: 0.9;
+}
+
+div#content h2 {
+  color: #fff;
+  font-weight: bold;
+  transform: rotate(-10deg);
+  line-height: 60px;
+  font-size: 48px;
+  text-transform: uppercase;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 10%;
+  bottom: 10%;
+  text-shadow: 2px 2px 2px #333;
+  font-family: 'Pacifico', cursive;
+}
+
+div#content h2:before {
+  display: inline-block;
+  background: url('http://www.menoftheras.com/wp-content/gallery/test/arrow.png')no-repeat 0 0;
+  background-size: cover;
+  width: 239px;
+  height: 200px;
+  content: "";
+  transform: rotate(-80deg);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    padding: 20px;
+  }
+  nav img {
+    display: block;
+    float: none;
+    text-align: center;
+    padding: 20px;
+  }
+  nav ul {
+    float: none;
+    padding: 20px;
+  }
+  div#content h2 {
+    width: 30%;
+  }
+  nav#small {
+    padding: 20px;
+  }
+  nav#small ul {
+    padding: 5px;
+  }
+  nav#small img {
+    padding: 10px;
+    height: 9vh;
+    width: 18.35vw;
+    margin-bottom: 5px;
+  }
+  nav#small a {
+    font-weight: normal;
+  }
+}
+
+h3{
+  font-size: 6rem;
+  display: inline;
+  color: white;
+  margin-right: 2rem;
+}
+
+
+p{
+  font-size: 3rem;
+  display: inline;
+}
+article{
+  margin-top: 3rem;
+}

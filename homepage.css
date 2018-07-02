@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+body {
+    text-align: center;
+  background-color: #181818;
+    width: 100vw;
+    margin:  0 auto;
+    font-family: Jura, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+#intro{
+  height: 100vh;
+        text-align: center;
+background-color: #181818;
+            }
+            h4{
+              position: absolute;
+              top:80rem;
+              left:0;
+              right:0;
+              font-size: 4rem;
+             margin:50px;
+             color: red;
+            }
+
+      #logode{
+        display: none;
+      }
+
+            #outro{
+              display: none;
+            }
+#sun{
+  height: 6vh;
+  width: 12vw;
+  position: absolute;
+  top:15rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+#logom{
+  height: 9vh;
+  width: 18.35vw;
+  position: absolute;
+  top:24rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+#autoplay{
+  position: absolute;
+  top:38rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+	.textef{
+		width: 80%;
+		height: 21px;
+		text-align: center;
+		margin-left: 30px;
+		margin-top: 100px;
+	  font-size: 3rem;
+
+	  border-radius: 15%;
+		color:white;
+
+	}
+  .time{
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    top:82rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #time{
+    position: absolute;
+    left:0;
+    right:0;
+    z-index: 1;
+    color:white;
+  }
+#contact{
+  position: absolute;
+  top:90rem;
+  left: 0;
+  background-color:;
+  height: 10rem;
+  width:100vw;
+}
+i{
+  font-size:200%;
+  margin: 1rem;
+}
+
+#ph{
+  position: absolute;
+  top:97rem;
+  left: 0;
+  font-size: 3rem;
+  color:white;
+  height: 10rem;
+  width:100vw;
+}
+#vid{
+  top:40rem;
+}
+
+#flogom{
+  height: 9vh;
+  width: 18.35vw;
+  position: absolute;
+  top:15rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+#fph{
+  position: absolute;
+  top:95rem;
+  left: 0;
+  font-size: 3rem;
+  color:white;
+  height: 10rem;
+  width:100vw;
+}
+#fcontact{
+  position: absolute;
+  top:87rem;
+  left: 0;
+  background-color:;
+  height: 10rem;
+  width:100vw;
+}
+
+.ftime{
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+  top:8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#ftime{
+  position: absolute;
+  left:0;
+  right:0;
+  z-index: 1;
+  color:white;
+  font-size: 3rem;
+}
+
+
+
+#logoma{
+  height: 9vh;
+  width: 18.35vw;
+  position: absolute;
+  top:10rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+#acontact{
+position: absolute;
+top:22rem;
+left: 0;
+background-color:;
+height: 10rem;
+width:100vw;
+}
+
+#aph{
+  position: absolute;
+  top:28rem;
+  left: 0;
+  font-size: 3rem;
+  color:white;
+  height: 10rem;
+  width:100vw;
+}
+
+section{
+  position: absolute;
+  top:32rem;
+  width: 100vw;
+
+}
+
+
+.video-container video {
+display: block;
+width: 100%;
+}
+.video-container {
+  width:100vw;
+position: absolute;
+top:8rem;
+/* outline: 1px solid #dadada; */
+&:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
+&:nth-of-type(2) { width: 50%; }
+&:nth-of-type(3) { width: 75%; }
+&:nth-of-type(4) { width: 100%; }
+/* }
+#vid{
+display: none;
+} */
+}
+
+  /* INDEX.html */
+	@media screen and (min-width: 450px){
+#mobile{
+  display:none;
+}
+#intro{
+  text-align: left;
+}
+h4{
+  top:40rem;
+  left: 1rem;
+  right: auto;
+}
+
+
+#logode{
+  display: block;
+  height: 9vh;
+  width: 18.35vw;
+  position: absolute;
+  top:20rem;
+  left: 3rem;
+}
+#contactintrodesk{
+  position: absolute;
+  top:30rem;
+  left: 3rem;
+  height: 10rem;
+  width:100vw;
+  background-color: yellow;
+}
+#phintrodesk{
+    background-color: yellow;
+  position: absolute;
+  top:30rem;
+  left: 3rem;
+  font-size: 3rem;
+  color:white;
+  height: 3rem;
+  width:100vw;
+}
+
+
+.nav2{
+    margin-top: 5%;
+    margin-left: 26%;
+    position:absolute;
+    top:5rem;
+    left:0;
+    width:800px;
+    height:20px;
+    color: black;
+    font-size: 17px;
+	text-align: center;
+}
+.nav2 a:link, a:visited {
+
+    color: red;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	opacity: 0.7;
+	background-color:#181818;
+	border-radius: 15%;
+}
+
+.nav a{
+	/* color:white; */
+}
+.nav2 a:hover, a:active {
+    background-color:red;
+		color: #0e194c;
+}
+
+nav.nav2 a{
+	height: 32px;
+}
+
+.kali{
+    margin-top: 5%;
+    margin-left: 5%;
+    position:absolute;
+    top:5rem;
+    left:0;
+    width:7rem;
+    height:7rem;
+		opacity: 0.8;
+		padding: 10px 20px 10px 22px;
+		border-radius: 15%;
+}
+
+#nav{
+  width: 10rem;
+}
+
+#contactdesk{
+  position: absolute;
+  top:50rem;
+  left: 0;
+
+  height: 10rem;
+  width:100vw;
+}
+i{
+  font-size:200%;
+  margin: 1rem;
+}
+
+#phdesk{
+  position: absolute;
+  top:47rem;
+  left: 0;
+  font-size: 3rem;
+  color:#C80000;
+  height: 10rem;
+  width:100vw;
+}
+
+  }

@@ -1,596 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 
 <head>
-	   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title>About Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2134066253497343');
-  fbq('track', 'PageView');
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+      <link rel="stylesheet" href="aboutus.css">
+
+    <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript">
+   $(document).ready(function() {
+      $().introtzikas();
+   });
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2134066253497343&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-
-    <title>ABOUT US</title>
-
-		<style>
-    *{
-        font-family: 'PT Sans', sans-serif;
-    }
-body, html {
-    height: 1031px;
-    margin: 0;
-		color: white;
-}
-		span{
-			position: absolute;
-			top:0;
-			left:0;
-		}
-			#intro{
-				height: 110rem;
-				background-color: white;
-			}
-						  #outro{
-						    display: none;
-							  /* background-image: url("redburst.jpg"); */
-								background-color:#6b5b95;
-								height: 100%;
-								margin:0;
-						        }
-					p{
-						position: absolute;
-					}
-					#sp{
-						top:0;
-						left:0;
-						width: 10%;
-						position: absolute;
-						color:white ;
-						font-size: 24px;
-}
-	</style>
-
-
-
-	  <style>
-	  @keyframes spinner {
-	    100% {
-	      transform: rotate(3600deg);
-	    }
-	  }
-	  .loading-container {
-	    margin: 0 auto;
-	    text-align: center;
-	    position: relative;
-	    top: 50vh;
-	    transform: translateY(-50%);
-	  }
-	  .spinner {
-	    display: inline-block;
-	    width: 100px;
-	    height: 100px;
-	    background: url('http://i.imgur.com/oSHLAzp.png') center center;
-	    background-size: contain;
-	    transition-origin: 50% 50%;
-	    animation: spinner 3s infinite alternate ease-in-out;
-	  }
-	  .spinner-center {
-	    display: inline-block;
-	    position: absolute;
-	    margin-left: -100px;
-	    width: 100px;
-	    height: 100px;
-	    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
-	    background-size: contain;
-	    content: '';
-	  }
-	</style>
-
-
-
-<style>
-@media screen and (max-width: 450px) {
-* {
-		margin: 0 auto;
-		border: 0;
-		padding: 0;
-		box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-	}
-#sp{
-	top:0;
-	left:0;
-	width: 10%;
-	color:white ;
-	font-size: 24px;
-}
-#logom{
-	height: 12vh;
-}
-		.overlay {
-		    height: 100%;
-		    width: 0;
-		    position: fixed;
-		    z-index: 1;
-		    top: 0;
-		    left: 0;
-		    background-color: white;
-				opacity: .8;
-		    overflow-x: hidden;
-		    transition: 0.5s;
-		}
-		.overlay-content {
-		    position: relative;
-		    top: 25%;
-		    width: 100%;
-		    text-align: center;
-		    margin-top: 30px;
-		}
-		.overlay a {
-		    padding: 8px;
-		    text-decoration: none;
-		    font-size: 36px;
-		    color: #6b5b95;
-		    display: block;
-		    transition: 0.3s;
-		}
-		.overlay a:hover, .overlay a:focus {
-		    color: purple;
-		}
-		.overlay .closebtn {
-		    position: absolute;
-		    top: 20px;
-		    right: 45px;
-		    font-size: 60px;
-		}
-		@media screen and (max-height: 450px) {
-		  .overlay a {font-size: 20px}
-		  .overlay .closebtn {
-		    font-size: 40px;
-		    top: 15px;
-		    right: 35px;
-		  }
-		}
-	}
-</style>
-
-
-<style>
-			@media screen and (min-width: 450px) {
-
-				#nav2{
-				    margin-top: 5%;
-				    margin-left: 26%;
-				    position:absolute;
-				    top:-2rem;
-				    left:0;
-				    width:800px;
-				    height:20px;
-				    font-size: 17px;
-					text-align: center;
-				}
-				#nav2 a:link, a:visited {
-
-				    color:white;
-				    padding: 5px 50px;
-				    text-align: center;
-				    text-decoration: none;
-				    display: inline-block;
-					 opacity: 0.8;
-					  background:darkred;
-					border-radius: 5%;
-				}
-
-				.nav a{
-					/* color:white; */
-				}
-				#nav2 a:hover, a:active {
-				    background-color:white;
-						color: darkred;
-				}
-
-				nav#nav2 a{
-					height: 32px;
-				}
-				span{
-					display: none;
-				}
-
-
-
-
-
-				    #outro{
-				        /* The image used */
-				       	background-color:#6b5b95;
-				        /* Full height */
-				        height: 100%;
-				        /* Center and scale the image nicely */
-				        background-position: center;
-				        background-repeat: no-repeat;
-				        background-size: cover;
-				    }
-						#logom{
-							  width: 12.175vw;
-							height:8.5vh;
-							margin-top: 1rem;
-							margin-left: -65rem;
-						}
-#sp{
-	top:0;
-	left:0;
-	width: 10%;
-	color:white ;
-	font-size: 24px;
-}
-				.overlay {
-				    height: 100%;
-				    width: 0;
-				    position: fixed;
-				    z-index: 1;
-				    top: 0;
-				    left: 0;
-				    background-color: white;
-				   opacity: .8;
-				    overflow-x: hidden;
-				    transition: 0.5s;
-				}
-				.overlay-content {
-				    position: relative;
-				    top: 25%;
-				    width: 100%;
-				    text-align: center;
-				    margin-top: 30px;
-				}
-				.overlay a {
-				    padding: 8px;
-				    text-decoration: none;
-				    font-size: 36px;
-				    color: black;
-				    display: block;
-				    transition: 0.3s;
-				}
-				.overlay a:hover, .overlay a:focus {
-				    color: purple;
-				}
-				.overlay .closebtn {
-				    position: absolute;
-				    top: 20px;
-				    right: 45px;
-				    font-size: 60px;
-				}
-				@media screen and (max-height: 450px) {
-				  .overlay a {font-size: 20px}
-				  .overlay .closebtn {
-				    font-size: 40px;
-				    top: 15px;
-				    right: 35px;
-				  }
-				}
-}
-</style>
-
-<style>
-    #logom{
-
-      text-align: center;
-      z-index: 1;
-			-webkit-animation-duration: 2s;
-			-webkit-animation-delay: 2s;
-			-webkit-animation-iteration-count: 1;
-    }
-#wrapper{
-  width: 100%;
-  height: 100%;
-  /* font-family: 'Roboto', sans-serif; */
-  /*transition for the background color*/
-  -webkit-transition: background-color 500ms;
-   -moz-transition: background-color 700ms;
-   -o-transition: background-color 700ms;
-   transition: background-color 700ms;
-	 text-align: center;
-}
-/*color classes to be applied to "#wrapper" by the js*/
-.colorOne{
-  background-color: #BF3F3F;
-}
-.colorTwo{
-  background-color: #59A57F;
-}
-.colorThree{
-  background-color: black;
-}
-.colorFour{
-  background-color: #7FBF3F;
-}
-/*layout styles not really relevant to this demo*/
-header{
-  width: 100%;
-  color: white;
-  background-color: #191919;
-  text-align: center;
-  padding: 1em 0 1em 0;
-  margin-bottom: 100px;
-}
-h2{
-  font-size: .7em;
-  padding-top: .5em;
-}
-.item{
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  height: 650px;
-  padding: 0rem 50rem 10px 0;
-}
-h1{
-  color: white;
-  display: inline-block;
-  width: 32%;
-  vertical-align: top;
-  font-size: 10em;
-  font-weight: 700;
-}
-p{
-  width: 64%;
-  display: inline-block;
-  color: white;
-  line-height: 170%;
-  font-size: 1.1em;
-  font-weight: 300;
-}
-@media screen and (max-width: 550px) {
-  h1{
-    display: block;
-    width: 90%;
-    margin-left: 3%;
-  }
-  p{
-    display: block;
-    width: 90%;
-    margin-left: 3%;
-  }
-  header{
-    margin-bottom: 30px;
-  }
-	.item{
-	  width: 100%;
-	  max-width: 600px;
-	  margin: 0 auto;
-	  height: 750px;
-	  padding: 0px 0 10px 0;
-	}
-}
-</style>
-
 </head>
-
 <body>
 
 
 
-
-	<div id="intro">
-
-	    <div class="loading-container">
-	    <div class="spinner"></div>
-	    <div class="spinner-center"></div>
-	  </div>
-	</div>
-
-	<div id="outro">
-				<div id="desktop">
+    <header>
+    <nav>
+      <!-- <h1>KALI<a href="http://anaislab.com/" target="_blank">DIGITAL</a></h1> -->
+        <img id="logoma" src="kaliwhite.png"  alt="Kali logo">
 
 
 
+      <ul>
+        <li>
 
-				<section id="wrapper" class="colorOne">
-
-				<header>
-
-					  <nav id="nav2">
-					    <a id="abu" href="home.html"title="navi4">HOME</a>
-					  	<a href="themes.html" title="navi5">THEMES</a>
-					  	<a href="faq.html" title="navi5">FAQ</a>
-					  		<a id="con" href="contact.html" title="navi6">CONTACT</a>
-					  	</nav>
-					<img id="logom" src="kaliwhite.png" class="intro animated bounceIn" alt="Kali logo">
-
-				</header>
-
-				<article class="item">
-					<h1>01</h1>
-					<p>
-						Kali is a group of multidisciplinary designers, programmers (mad scientists),
-						and students of human nature inspired by art and every day beauty. Our first venture into personal websites began when we noticed
-						social media influencers not monetizing their brand potential. Existing site builders are creating designs created for companies not individuals.
-						Using one of the given templates would have been doing our customers a disservice. We decided to create something that showed personality.
-						It worked. After designing websites for friends their financial success was inspirational. If you're in need let Kali step in and take control.
-
-					</p>
-				</article>
-
-				<article class="item">
-					<h1>02</h1>
-					<p>
-						Kali specializes in designing killer websites.  Whether you want to go for a minimalistic look or have all the colors
- 					 splashing across the screen, our designers are here for you! Unlike other companies we offer you different versions for mobile
- 					 & desktop. Studies show users have different user experience expectations for each platform.
- 						You can choose from our unique templates, which are sold in limited quantities.
- 						This will include your own images and content and a personal url ex. www.johnsmith.com.
- 					 You can also order a fully customized site if exhibiting your status is key. We will work with you to create something from special.
-
-					</p>
-				</article>
-
-				<article class="item">
-					 <h1>03</h1>
-					 <p>
- 					We are in the age of everything digital, it’s simply more efficient to view someone’s work from our phones before doing business with them. Websites are forever while simultaneously being able to update whenever you would like.
-						Think of having your personal website as a high end resume. You’re able to control the narrative.
-						All of your past and future endeavors in one place. Websites replace the tedious look of a resume by allowing you to incorporate pictures, videos, and whatever else you would like to showcase your brand.
-						Websites allow you to have visually stimulating content to show clientele with a quick google search!
-
- 					</p>
-				</article>
-
-				<article class="item">
-					 <h1>04</h1>
-					 <p>
-						 We are creative people, and also people that like to do an outstanding job. Expect a project using a template to last ten business days and
- 						a fully customized site to take 6 weeks - that's not to say it can't be done quicker, we just prefer to under
- 						promise and over deliver than let you down. We always work in a timely fashion, but we hate to be rushed.
-	 				</p>
-				</article>
-
-				</section>
+          </div>
 
 
+          <span style="cursor:pointer; color:white; font-size:4rem;" onclick="openNav()">&#9776;</span>
+        </li>
+
+      </ul>
+    </nav>
+    <nav id="small">
+        <!-- <h1>KALI<a href="http://anaislab.com/" target="_blank">DIGITAL</a></h1> -->
+          <img id="logoma" src="kalilogo.png"  alt="Kali logo">
+      <ul>
+        <li>
+            <span style="cursor:pointer;color:black;  font-size:4rem;" onclick="openNav()">&#9776;</span>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <div id="content">
+    <!-- <h2>Brand</h2> -->
+
+    				<article class="item i1">
+    					<h3 >Who</h3>
+    					<p>
+    						Kali is a group of multidisciplinary designers, programmers (mad scientists),
+    						and students of human nature inspired by art and every day beauty. Our first venture into personal websites began when we noticed
+    						social media influencers not monetizing their brand potential. Existing site builders are creating designs created for companies not individuals.
+    						Using one of the given templates would have been doing our customers a disservice. We decided to create something that showed personality.
+    						It worked. After designing websites for friends their financial success was inspirational. If you're in need let Kali step in and take control.
+
+    					</p>
+    				</article>
+
+    				<article class="item i2">
+    					<h3>What</h3>
+    					<p>
+    						Kali specializes in designing killer websites.  Whether you want to go for a minimalistic look or have all the colors
+     					 splashing across the screen, our designers are here for you! Unlike other companies we offer you different versions for mobile
+     					 & desktop. Studies show users have different user experience expectations for each platform.
+     						You can choose from our unique templates, which are sold in limited quantities.
+     						This will include your own images and content and a personal url ex. www.johnsmith.com.
+     					 You can also order a fully customized site if exhibiting your status is key. We will work with you to create something from special.
+
+    					</p>
+    				</article>
+
+    				<article class="item i3">
+    					 <h3>Why</h3>
+    					 <p>
+     					We are in the age of everything digital, it’s simply more efficient to view someone’s work from our phones before doing business with them. Websites are forever while simultaneously being able to update whenever you would like.
+    						Think of having your personal website as a high end resume. You’re able to control the narrative.
+    						All of your past and future endeavors in one place. Websites replace the tedious look of a resume by allowing you to incorporate pictures, videos, and whatever else you would like to showcase your brand.
+    						Websites allow you to have visually stimulating content to show clientele with a quick google search!
+
+     					</p>
+    				</article>
+
+    				<article class="item i4">
+    					 <h3>How</h3>
+    					 <p>
+    						 We are creative people, and also people that like to do an outstanding job. Expect a project using a template to last ten business days and
+     						a fully customized site to take 6 weeks - that's not to say it can't be done quicker, we just prefer to under
+     						promise and over deliver than let you down. We always work in a timely fashion, but we hate to be rushed.
+    	 				</p>
+    				</article>
+
+    				</section>
+  </div>
 
 
 
-					</div>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+
+      <a href="faq.html">FAQ</a>
+       <a href="themes/index.html">Themes</a>
+         <a href="home.html">Home</a>
 
 
-														<div id="myNav" class="overlay">
-														  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-														  <div class="overlay-content">
-														    <a href="faq.html">FAQ</a>
-														    <a href="contact.html">Contact</a>
-																 <a href="themes.html">Themes</a>
-																  <a href="home.html">Home</a>
-														  </div>
-														</div>
 
-														<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <script  src="js/index.js"></script>
 
 
-								</div>
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/jquery.velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/velocity.ui.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/jquery.blast.js'></script>
+
+
+
+    <script  src="homepage.js"></script>
+
+
+
+        <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+
 
 </body>
 
 </html>
-
-<script> //INTRO
-$(document).ready(function(){
-	$(function(){
-			$("#intro").delay(1000).fadeOut("slow");
-	 });
-});
-</script>
-<script>
-$(document).ready(function(){
-	$(function(){
-			$("#outro").delay(1000).fadeIn("slow");
-	});
-});
-</script>
-
-<script>
-$(window).scroll(function() {
-  if ($(this).scrollTop() <= 450) {
-    $('#wrapper').addClass('colorOne')
-      .removeClass('colorTwo');
-  } else if ($(this).scrollTop() <= 1000) {
-    $('#wrapper').addClass('colorTwo')
-      .removeClass('colorThree');
-  } else if ($(this).scrollTop() <= 1500) {
-    $('#wrapper').addClass('colorThree')
-      .removeClass('colorFour');
-  } else if ($(this).scrollTop() <= 1850) {
-    $('#wrapper').addClass('colorFour')
-      .removeClass('colorFive');
-  } else {
-    $('#wrapper').addClass('colorOne')
-  }
-});
-</script>
-
-
-<script>
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-</script>
-
-
-
-</body>
-</html>
-
-<!--
-<section id="wrapper" class="colorOne">
-
-<header>
-	<img id="logom" src="kaliwhite.png" class="intro animated bounceIn" alt="Kali logo">
-
-</header>
-
-<article class="item">
-	<h1>01</h1>
-	<p>
-		Kali is a group of multidisciplinary designers, programmers (mad scientists),
-		and students of human nature inspired by art and every day beauty. Our first venture into personal websites began when we noticed
-		social media influencers not monetizing their brand potential. Existing site builders are creating designs created for companies not individuals.
-		Using one of the given templates would have been doing our customers a disservice. We decided to create something that showed personality.
-		It worked. After designing websites for friends their financial success was inspirational. If you're in need let Kali step in and take control.
-	</p>
-</article>
-
-<article class="item">
-	<h1>02</h1>
-	<p>
-	 Kali specializes in designing killer websites.  Whether you want to go for a minimalistic look or have all the colors
-	 splashing across the screen, our designers are here for you! Unlike other companies we offer you different versions for mobile
-	 & desktop. Studies show users have different user experience expectations for each platform. We design with that in mind.
-		You can choose from our unique templates, which are sold in limited quantities. You don't have to worry about not standing out.
-		This will include your own images and content and a personal url ex. www.johnsmith.com.
-	 You can also order a fully customized site if exhibiting your status is key. We will work with you to create something from scratch
-		and can recreate your personal version of any effect or theme you see on the web or in an app. Just ask.
-	 </thead>
-	</p>
-</article>
-
-<article class="item">
-	 <h1>03</h1>
-	 <p>
-Pricing on our homemade templates vary by design but are affordable.<br>
-
-Custom websites are billed by the amount of hours it takes
-to build. We tailor everything to your exact requirement.
-	</p>
-</article>
-
-<article class="item">
-	 <h1>04</h1>
-	 <p>
-		We are creative people, and also people that like to do an outstanding job. Expect a project using a template to last ten business days and
-		a fully customized site to take 6 weeks - that's not to say it can't be done quicker, we just prefer to under
-		promise and over deliver than let you down. We always work in a timely fashion, but we hate to be rushed.
-	</p>
-</article>
-
-</section>
- -->
