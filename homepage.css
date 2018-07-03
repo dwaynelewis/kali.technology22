@@ -3,19 +3,20 @@ body {
     text-align: center;
   background-color: #181818;
     width: 100vw;
+    height: 100vh;
     margin:  0 auto;
     font-family: Jura, Helvetica, sans-serif;
   font-size: 1rem;
 }
 #intro{
   height: 100vh;
-        text-align: center;
+
 background-color: #181818;
             }
             h4{
               position: absolute;
-              top:75%;
-              left:0;
+              top:65%;
+              left: 0;
               right:0;
               font-size: 2rem;
              margin:50px;
@@ -152,7 +153,7 @@ width: 100%;
 .video-container {
   width:100vw;
 position: absolute;
-top:8rem;
+top:0;
 /* outline: 1px solid #dadada; */
 &:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
 &:nth-of-type(2) { width: 50%; }
@@ -170,4 +171,14 @@ display: none;
     #desktop{
       display: none;
     }
+}
+
+
+@media only screen and (min-width: 768px) {
+  #mobile{
+    display: none;
+  }
+  #opvid{
+    width: 80%;
+  }
 }

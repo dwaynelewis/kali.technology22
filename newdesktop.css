@@ -18,29 +18,15 @@
     position:relative;
 }
 
-
-		.intro1{
-			color: white;
-			text-align: center;
-			font-size: 5vw;
-
-		}
-
-
-
-		h1{
-			display: block;
-			margin: 2px auto;
-			width: 90%;
-	font-size: 20vw;
-		}
-		.intro2{
-
-
-		}
-	h2{
-			font-size: 6vh;;
-	}
+h4{
+	position: absolute;
+	top:45%;
+left: auto;
+	right:3%;
+	font-size: 2rem;
+ margin:50px;
+ color: red;
+}
 
 
 #kali{
