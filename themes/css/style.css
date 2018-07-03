@@ -1,4 +1,8 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+p{
+  font-size: 2rem;
+}
 .container {
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
@@ -38,6 +42,7 @@
 .content a {
   color: inherit;
   text-decoration: none;
+  font-size: 3rem;
 }
 .content a:hover {
   border-bottom: 0.1em solid;
