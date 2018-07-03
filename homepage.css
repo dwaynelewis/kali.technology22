@@ -123,18 +123,15 @@ i{
 
 #acontact{
 position: absolute;
-top:22rem;
-left: 0;
-background-color:;
-height: 10rem;
+top:50%;
 width:100vw;
 }
 
 #aph{
   position: absolute;
-  top:28rem;
-  left: 0;
-  font-size: 3rem;
+  top:47%;
+  left: 15%;
+  font-size: 1.5rem;
   color:white;
   height: 10rem;
   width:100vw;
