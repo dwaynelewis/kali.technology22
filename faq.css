@@ -4,8 +4,8 @@ html{
 }
 #opening{
 position: absolute;
-top: 30rem;
-font-size: 4rem;
+top: 30%;
+font-size: 1.5rem;
 }
 #demo{
 top:48rem;
@@ -18,12 +18,12 @@ position: absolute;
   background-color: white;
   color:#181818;
   padding: 3px;
-  font-size: 200%;
+  font-size: 130%;
   position: absolute;
   left:0;
   right:0;
   margin: auto;
-  top:60rem;
+  top:55%;
   border-radius: 5%;
 }
 .questions{
@@ -110,7 +110,7 @@ button{
 
   .btn{
     display:none;
-    font-size:3rem;
+    font-size:1.5rem;
   }
     #demo{
     display: none;
@@ -139,9 +139,58 @@ button{
   }
   a{
     color: white;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-decoration: none;
   }
+
+  #flogom{
+    height: 9vh;
+    width: 18.35vw;
+    position: absolute;
+    top:20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+  }
+
+  #fph{
+    position: absolute;
+    top:92%;
+    left: 0;
+    font-size: 1.5rem;
+    color:white;
+    height: 10rem;
+    width:100vw;
+  }
+  #fcontact{
+    position: absolute;
+    top:84%;
+    left: 0;
+    background-color:;
+    height: 10rem;
+    width:100vw;
+  }
+
+  .ftime{
+    text-align: center;
+    position: absolute;
+    top:5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #ftime{
+    position: absolute;
+    left:0;
+    right:0;
+    z-index: 1;
+    color:white;
+    font-size: 1.5rem;
+  }
+
+
+
 /*
 @media screen and (min-width: 480px) {
       #opening{

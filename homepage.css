@@ -110,55 +110,6 @@ i{
   top:25%;
 }
 
-#flogom{
-  height: 9vh;
-  width: 18.35vw;
-  position: absolute;
-  top:15rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 1;
-}
-
-#fph{
-  position: absolute;
-  top:95rem;
-  left: 0;
-  font-size: 3rem;
-  color:white;
-  height: 10rem;
-  width:100vw;
-}
-#fcontact{
-  position: absolute;
-  top:87rem;
-  left: 0;
-  background-color:;
-  height: 10rem;
-  width:100vw;
-}
-
-.ftime{
-  font-size: 3rem;
-  text-align: center;
-  position: absolute;
-  top:8rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-#ftime{
-  position: absolute;
-  left:0;
-  right:0;
-  z-index: 1;
-  color:white;
-  font-size: 3rem;
-}
-
-
-
 #logoma{
   height: 9vh;
   width: 18.35vw;
