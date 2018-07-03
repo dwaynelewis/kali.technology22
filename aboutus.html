@@ -3,119 +3,177 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>About Us</title>
+  <title>homepage</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <link rel="stylesheet" href="homepage.css"> -->
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-      <link rel="stylesheet" href="aboutus.css">
 
-    <link rel="stylesheet" href="menu.css">
+    <!-- <link rel="stylesheet" href="menu.css"> -->
+
+
     <script type="text/javascript">
    $(document).ready(function() {
       $().introtzikas();
    });
 </script>
+<style>
+.navbar.is-fixed {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 40; }
+  .navbar.is-fixed .navbar-menu {
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 3.25rem);
+    overflow: auto; }
+    .navbar.is-fixed .navbar-menu::before {
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+      content: "";
+      display: block;
+      height: 10px;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 3.25rem; }
+.hero.has-background-sand {background: rgba(0, 0, 0, .04);}
+
+
+
+
+body{
+  color: white;
+}
+
+
+  #alogom{
+    height: 9vh;
+    width: 18.35vw;
+
+  }
+/*
+  h3{
+    font-size: 2rem;
+    display: inline;
+    color: red;
+    margin-right: 2rem;
+  } */
+
+</style>
 </head>
 <body>
 
 
 
-    <header>
-    <nav>
-      <!-- <h1>KALI<a href="http://anaislab.com/" target="_blank">DIGITAL</a></h1> -->
-        <img id="logoma" src="kaliwhite.png"  alt="Kali logo">
+<!--
+      <img id="alogom" src="kalilogor.png" class="intro animated zoomIn" alt="Kali logo">
 
 
 
-      <ul>
-        <li>
 
+<div id="acontact">
+
+ <a href="https://www.facebook.com/Kalitechnology-181198399253312/" id="fb" class="intro animated slideInLeft"><i style="color:#C80000;  font-size: 24px;" class="fa fa-facebook-official"></i></a>
+ <a href="mailto:info@kali.technology" id="email" class="intro animated slideInRight"><i style=" color:#C80000 ; font-size: 24px;" class="fa">&#xf0e0;</i></a>
+ <a href="https://www.instagram.com/kali.technology/" id="ig" class="intro animated slideInRight"><i style="color:#C80000; font-size: 24px;" class="fa fa-instagram"></i>
+
+</div>
+<div id="aph">T:+1-213-277-8118</div>
+
+
+
+</div>
+</div>
+<span style="cursor:pointer;" onclick="openNav()">&#9776;</span>
+</div>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="aboutus.html">About Us</a>
+     <a href="themes.html">Themes</a>
+    <a href="home.html">Home</a>
+ -->
+
+    <body>
+
+        <section class="hero is-primary is-fullheight" id="cover">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <div class="column is-6 is-offset-3">
+              <h1 class="title">title</h1>
+              <!-- <img id="alogom" src="kalilogor.png" class="title" alt="Kali logo"> -->
+
+              <h2 class="subtitle">
+                +213-277-8118
+              </h2>
+            </div>
           </div>
+        </div>
 
+      </section>
 
-          <span style="cursor:pointer; color:white; font-size:4rem;" onclick="openNav()">&#9776;</span>
-        </li>
+      <nav id="navbar-sticky" class="navbar has-shadow navbar-sticky is-dark">
+        <div class="navbar-brand">
 
-      </ul>
-    </nav>
-    <nav id="small">
-        <!-- <h1>KALI<a href="http://anaislab.com/" target="_blank">DIGITAL</a></h1> -->
-          <img id="logoma" src="kalilogo.png"  alt="Kali logo">
-      <ul>
-        <li>
-            <span style="cursor:pointer;color:black;  font-size:4rem;" onclick="openNav()">&#9776;</span>
-        </li>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" data-scroll href="#why-us">Why Us</a>
+            <a class="navbar-item" data-scroll href="#benefits">Benefits</a>
+            <a class="navbar-item" data-scroll href="#features">Features</a>
+            <a class="navbar-item" data-scroll href="#how-it-works">How it works?</a>
+          </div>
+        </div>
+      </nav>
 
-      </ul>
-    </nav>
-  </header>
-  <div id="content">
-    <!-- <h2>Brand</h2> -->
+      <section id="why-us" class="hero is-large has-background-sand">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Large title
+            </h1>
+            <h2 class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae ullamcorper augue. Cras dapibus, quam ac aliquet fermentum,
+              odio diam condimentum nibh, id viverra diam dolor at massa. Donec maximus tortor sit amet ipsum malesuada posuere.
+              Aenean facilisis non erat eu porta. Nunc vehicula porttitor risus, in faucibus lectus placerat at. Pellentesque
+              rhoncus maximus ex vel egestas.
+            </h2>
+          </div>
+        </div>
+      </section>
 
-    				<article class="item i1">
-    					<h3 >Who</h3>
-    					<p>
-    						Kali is a group of multidisciplinary designers, programmers (mad scientists),
-    						and students of human nature inspired by art and every day beauty. Our first venture into personal websites began when we noticed
-    						social media influencers not monetizing their brand potential. Existing site builders are creating designs created for companies not individuals.
-    						Using one of the given templates would have been doing our customers a disservice. We decided to create something that showed personality.
-    						It worked. After designing websites for friends their financial success was inspirational. If you're in need let Kali step in and take control.
-
-    					</p>
-    				</article>
-
-    				<article class="item i2">
-    					<h3>What</h3>
-    					<p>
-    						Kali specializes in designing killer websites.  Whether you want to go for a minimalistic look or have all the colors
-     					 splashing across the screen, our designers are here for you! Unlike other companies we offer you different versions for mobile
-     					 & desktop. Studies show users have different user experience expectations for each platform.
-     						You can choose from our unique templates, which are sold in limited quantities.
-     						This will include your own images and content and a personal url ex. www.johnsmith.com.
-     					 You can also order a fully customized site if exhibiting your status is key. We will work with you to create something from special.
-
-    					</p>
-    				</article>
-
-    				<article class="item i3">
-    					 <h3>Why</h3>
-    					 <p>
-     					We are in the age of everything digital, it’s simply more efficient to view someone’s work from our phones before doing business with them. Websites are forever while simultaneously being able to update whenever you would like.
-    						Think of having your personal website as a high end resume. You’re able to control the narrative.
-    						All of your past and future endeavors in one place. Websites replace the tedious look of a resume by allowing you to incorporate pictures, videos, and whatever else you would like to showcase your brand.
-    						Websites allow you to have visually stimulating content to show clientele with a quick google search!
-
-     					</p>
-    				</article>
-
-    				<article class="item i4">
-    					 <h3>How</h3>
-    					 <p>
-    						 We are creative people, and also people that like to do an outstanding job. Expect a project using a template to last ten business days and
-     						a fully customized site to take 6 weeks - that's not to say it can't be done quicker, we just prefer to under
-     						promise and over deliver than let you down. We always work in a timely fashion, but we hate to be rushed.
-    	 				</p>
-    				</article>
-
-    				</section>
-  </div>
+      <section id="benefits" class="hero is-large">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Benefits
+            </h1>
+            <h2 class="subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae ullamcorper augue. Cras dapibus, quam ac aliquet fermentum,
+              odio diam condimentum nibh, id viverra diam dolor at massa. Donec maximus tortor sit amet ipsum malesuada posuere.
+              Aenean facilisis non erat eu porta. Nunc vehicula porttitor risus, in faucibus lectus placerat at. Pellentesque
+              rhoncus maximus ex vel egestas.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <script src='https://cferdinandi.github.io/smooth-scroll/dist/js/smooth-scroll.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js'></script>
 
 
 
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
 
-      <a href="faq.html">FAQ</a>
-       <a href="themes/index.html">Themes</a>
-         <a href="home.html">Home</a>
-
-
-
-      <script  src="js/index.js"></script>
+</div>
 
 
 
@@ -132,6 +190,7 @@
 
 
 
+
         <script>
         function openNav() {
             document.getElementById("myNav").style.width = "100%";
@@ -140,6 +199,24 @@
             document.getElementById("myNav").style.width = "0%";
         }
         </script>
+
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        console.log($(window).scrollTop())
+        if ($(window).scrollTop() > $('#cover').height()) {
+            $('#navbar-sticky').addClass('is-fixed');
+        }
+        if ($(window).scrollTop() < $('#cover').height()) {
+            $('#navbar-sticky').removeClass('is-fixed');
+        }
+    });
+});
+var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+
 
 
 </body>
