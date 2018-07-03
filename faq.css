@@ -8,8 +8,8 @@ top: 30%;
 font-size: 1.5rem;
 }
 #demo{
-top:48rem;
-font-size: 3rem;
+top:40%;
+font-size: 1.5rem;
 
 position: absolute;
 }
@@ -33,7 +33,7 @@ position: absolute;
   right:0;
   margin: auto;
   position: absolute;
-  top:24rem;
+  top:30%;
 }
 button{
   left:0;
@@ -60,7 +60,7 @@ button{
   }
   #link1{
     position: absolute;
-    top:70rem;
+    top:60%;
     left:0rem;
     right: 0;
     margin: auto;
@@ -69,7 +69,7 @@ button{
   }
   #link2{
     position: absolute;
-    top:75rem;
+    top:65%;
     left:0rem;
     right: 0;
     margin: auto;
@@ -78,7 +78,7 @@ button{
   }
   #link3{
     position: absolute;
-    top:80rem;
+    top:70%;
     left:0rem;
     right: 0;
     margin: auto;
@@ -87,7 +87,7 @@ button{
   }
   #link4{
     position: absolute;
-    top:65rem;
+    top:75%;
     left:0rem;
     right: 0;
     margin: auto;
@@ -96,7 +96,7 @@ button{
   }
   #link5{
     position: absolute;
-    top:60rem;
+    top:80%;
     left:0rem;
     right: 0;
     margin: auto;
@@ -104,7 +104,7 @@ button{
 
   }
   p{
-    font-size: 60px;
+    font-size: 1.5rem;
   }
 
 
@@ -116,22 +116,22 @@ button{
     display: none;
   }
   #choice1a{
-      top:32rem;
+      top:60%;
   }
   #choice1b{
-      top:38rem;
+      top:65%;
   }
   #choice2a{
-      top:32rem;
+      top:60%;
   }
   #choice2b{
-      top:38rem;
+      top:65%;
   }
   #choice3a{
-      top:32rem;
+      top:60%;
   }
   #choice3b{
-      top:38rem;
+      top:65%;
   }
     #goodbye{
     display: none;
@@ -156,7 +156,7 @@ button{
 
   #fph{
     position: absolute;
-    top:92%;
+    top:95%;
     left: 0;
     font-size: 1.5rem;
     color:white;
@@ -165,7 +165,7 @@ button{
   }
   #fcontact{
     position: absolute;
-    top:84%;
+    top:85.5%;
     left: 0;
     background-color:;
     height: 10rem;
@@ -175,7 +175,7 @@ button{
   .ftime{
     text-align: center;
     position: absolute;
-    top:5%;
+    top:8%;
     left: 0;
     right: 0;
     margin: auto;
