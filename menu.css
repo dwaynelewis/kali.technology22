@@ -3,7 +3,7 @@ span{
   top:0;
   left: 0rem;
   color: white;
-  font-size:7rem;
+  font-size:2.5rem;
   right: 0;
 }
 
@@ -33,7 +33,7 @@ span{
         		.overlay a {
         		    padding: 8px;
         		    text-decoration: none;
-        		    font-size: 8rem;
+        		    font-size: 3rem;
         		    color: black;
         		    display: block;
         		    transition: 0.3s;
@@ -55,5 +55,5 @@ span{
         		    right: 35px;
 
         		  }
-            
+
         		}

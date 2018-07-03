@@ -40,7 +40,7 @@ button{
   right:0;
   margin: 1px;
   position: absolute;
-  width: 10rem;
+  width: 20rem;
   color: white;
   font-size: 3rem;
 }
@@ -116,22 +116,22 @@ button{
     display: none;
   }
   #choice1a{
-      top:30rem;
+      top:32rem;
   }
   #choice1b{
-      top:36rem;
+      top:38rem;
   }
   #choice2a{
-      top:30rem;
+      top:32rem;
   }
   #choice2b{
-      top:36rem;
+      top:38rem;
   }
   #choice3a{
-      top:30rem;
+      top:32rem;
   }
   #choice3b{
-      top:36rem;
+      top:38rem;
   }
     #goodbye{
     display: none;
@@ -142,9 +142,8 @@ button{
     font-size: 3rem;
     text-decoration: none;
   }
-
-  	/* @media screen and (min-width: 450px){
-
+/*
+@media screen and (min-width: 480px) {
       #opening{
         font-size: 3rem;
         top: 17rem;
