@@ -6,10 +6,14 @@ html{
 position: absolute;
 top: 30%;
 font-size: 1.5rem;
+left: 0;
+right: 0;
 }
 #demo{
 top:40%;
 font-size: 1.5rem;
+left: 0;
+right: 0;
 
 position: absolute;
 }
@@ -111,6 +115,7 @@ button{
   .btn{
     display:none;
     font-size:1.5rem;
+
   }
     #demo{
     display: none;
@@ -191,9 +196,14 @@ button{
 
 
 
-/*
+
 @media screen and (min-width: 480px) {
-      #opening{
+
+
+  .btn{
+    left:40%;
+  }
+      /* #opening{
         font-size: 3rem;
         top: 17rem;
       }
@@ -225,5 +235,5 @@ button{
       }
       span{
         font-size: 3rem;
-      }
-    } */
+      } */
+    }
