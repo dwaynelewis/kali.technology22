@@ -14,7 +14,7 @@ background-color: #181818;
             }
             h4{
               position: absolute;
-              top:70%;
+              top:75%;
               left:0;
               right:0;
               font-size: 2rem;
@@ -43,7 +43,7 @@ background-color: #181818;
   height: 9vh;
   width: 18.35vw;
   position: absolute;
-  top:16%;
+  top:18%;
   left: 0;
   right: 0;
   margin: auto;
@@ -101,7 +101,7 @@ i{
   position: absolute;
   top:77%;
   left: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color:white;
   height: 10rem;
   width:100vw;
