@@ -47,7 +47,7 @@ button{
 #restart{
   display: none;
   position: absolute;
-  top:40rem;
+  top:33%;
   left:0;
   right:0;
   margin: auto;
@@ -116,19 +116,19 @@ button{
     display: none;
   }
   #choice1a{
-      top:60%;
+      top:55%;
   }
   #choice1b{
       top:65%;
   }
   #choice2a{
-      top:60%;
+      top:55%;
   }
   #choice2b{
       top:65%;
   }
   #choice3a{
-      top:60%;
+      top:55%;
   }
   #choice3b{
       top:65%;
