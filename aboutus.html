@@ -1,149 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>About Us</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-      <link rel="stylesheet" href="aboutus.css">
-
-    <link rel="stylesheet" href="menu.css">
-    <script type="text/javascript">
-   $(document).ready(function() {
-      $().introtzikas();
-   });
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+<script type="text/javascript">
+$(document).ready(function() {
+  $().introtzikas();
+});
 </script>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
 </head>
 <body>
 
-
-
-    <header>
-    <nav>
-      <!-- <h1>KALI<a href="http://anaislab.com/" target="_blank">DIGITAL</a></h1> -->
-        <img id="logoma" src="kaliwhite.png"  alt="Kali logo">
-
-
-
-      <ul>
-        <li>
-
-          </div>
-
-
-          <span style="cursor:pointer; color:white; font-size:4rem;" onclick="openNav()">&#9776;</span>
-        </li>
-
-      </ul>
-    </nav>
-    <nav id="small">
-        <!-- <h1>KALI<a href="http://anaislab.com/" target="_blank">DIGITAL</a></h1> -->
-          <img id="logoma" src="kalilogo.png"  alt="Kali logo">
-      <ul>
-        <li>
-            <span style="cursor:pointer;color:black;  font-size:4rem;" onclick="openNav()">&#9776;</span>
-        </li>
-
-      </ul>
-    </nav>
-  </header>
-  <div id="content">
-    <!-- <h2>Brand</h2> -->
-
-    				<article class="item i1">
-    					<h3 >Who</h3>
-    					<p>
-    						Kali is a group of multidisciplinary designers, programmers (mad scientists),
-    						and students of human nature inspired by art and every day beauty. Our first venture into personal websites began when we noticed
-    						social media influencers not monetizing their brand potential. Existing site builders are creating designs created for companies not individuals.
-    						Using one of the given templates would have been doing our customers a disservice. We decided to create something that showed personality.
-    						It worked. After designing websites for friends their financial success was inspirational. If you're in need let Kali step in and take control.
-
-    					</p>
-    				</article>
-
-    				<article class="item i2">
-    					<h3>What</h3>
-    					<p>
-    						Kali specializes in designing killer websites.  Whether you want to go for a minimalistic look or have all the colors
-     					 splashing across the screen, our designers are here for you! Unlike other companies we offer you different versions for mobile
-     					 & desktop. Studies show users have different user experience expectations for each platform.
-     						You can choose from our unique templates, which are sold in limited quantities.
-     						This will include your own images and content and a personal url ex. www.johnsmith.com.
-     					 You can also order a fully customized site if exhibiting your status is key. We will work with you to create something from special.
-
-    					</p>
-    				</article>
-
-    				<article class="item i3">
-    					 <h3>Why</h3>
-    					 <p>
-     					We are in the age of everything digital, it’s simply more efficient to view someone’s work from our phones before doing business with them. Websites are forever while simultaneously being able to update whenever you would like.
-    						Think of having your personal website as a high end resume. You’re able to control the narrative.
-    						All of your past and future endeavors in one place. Websites replace the tedious look of a resume by allowing you to incorporate pictures, videos, and whatever else you would like to showcase your brand.
-    						Websites allow you to have visually stimulating content to show clientele with a quick google search!
-
-     					</p>
-    				</article>
-
-    				<article class="item i4">
-    					 <h3>How</h3>
-    					 <p>
-    						 We are creative people, and also people that like to do an outstanding job. Expect a project using a template to last ten business days and
-     						a fully customized site to take 6 weeks - that's not to say it can't be done quicker, we just prefer to under
-     						promise and over deliver than let you down. We always work in a timely fashion, but we hate to be rushed.
-    	 				</p>
-    				</article>
-
-    				</section>
-  </div>
-
-
-
-  <div id="myNav" class="overlay" >
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-
-      <a href="faq.html" style="font-size:8rem;">FAQ</a>
-       <a href="themes/index.html" style="font-size:8rem;">Themes</a>
-         <a href="homenn.html" style="font-size:8rem;">Home</a>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
 </div>
 
+
+<div id="content">
+  <!-- <h2>Brand</h2> -->
+
+          <article class="item i1">
+            <h3 >Who</h3>
+            <p>
+              Kali is a group of multidisciplinary designers, programmers (mad scientists),
+              and students of human nature inspired by art and every day beauty. Our first venture into personal websites began when we noticed
+              social media influencers not monetizing their brand potential. Existing site builders are creating designs created for companies not individuals.
+              Using one of the given templates would have been doing our customers a disservice. We decided to create something that showed personality.
+              It worked. After designing websites for friends their financial success was inspirational. If you're in need let Kali step in and take control.
+
+            </p>
+          </article>
+
+          <article class="item i2">
+            <h3>What</h3>
+            <p>
+              Kali specializes in designing killer websites.  Whether you want to go for a minimalistic look or have all the colors
+             splashing across the screen, our designers are here for you! Unlike other companies we offer you different versions for mobile
+             & desktop. Studies show users have different user experience expectations for each platform.
+              You can choose from our unique templates, which are sold in limited quantities.
+              This will include your own images and content and a personal url ex. www.johnsmith.com.
+             You can also order a fully customized site if exhibiting your status is key. We will work with you to create something from special.
+
+            </p>
+          </article>
+
+          <article class="item i3">
+             <h3>Why</h3>
+             <p>
+            We are in the age of everything digital, it’s simply more efficient to view someone’s work from our phones before doing business with them. Websites are forever while simultaneously being able to update whenever you would like.
+              Think of having your personal website as a high end resume. You’re able to control the narrative.
+              All of your past and future endeavors in one place. Websites replace the tedious look of a resume by allowing you to incorporate pictures, videos, and whatever else you would like to showcase your brand.
+              Websites allow you to have visually stimulating content to show clientele with a quick google search!
+
+            </p>
+          </article>
+
+          <article class="item i4">
+             <h3>How</h3>
+             <p>
+               We are creative people, and also people that like to do an outstanding job. Expect a project using a template to last ten business days and
+              a fully customized site to take 6 weeks - that's not to say it can't be done quicker, we just prefer to under
+              promise and over deliver than let you down. We always work in a timely fashion, but we hate to be rushed.
+            </p>
+          </article>
+
+          </section>
 </div>
-      <script  src="js/index.js"></script>
 
 
 
-
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/jquery.velocity.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/velocity.ui.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/jquery.blast.js'></script>
-
-
-
-        <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-        </script>
-
-
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/jquery.velocity.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/velocity.ui.js'></script>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/jquery.blast.js'></script>
 
 
             <script  src="homepage.js"></script>
-
-
 </body>
-
 </html>
