@@ -40,6 +40,7 @@ span{
         		    display: block;
         		    transition: 0.3s;
                   font-family: Jura, Helvetica, sans-serif;
+                  text-transform: uppercase;
         		}
         		.overlay a:hover, .overlay a:focus {
         		    color: navy;
