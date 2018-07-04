@@ -37,6 +37,7 @@ span{
         		    color: black;
         		    display: block;
         		    transition: 0.3s;
+                  font-family: Jura, Helvetica, sans-serif;
         		}
         		.overlay a:hover, .overlay a:focus {
         		    color: navy;

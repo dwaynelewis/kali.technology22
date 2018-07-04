@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Open+Sans";
+s.googleapis.com/css?family=Open+Sans";
 
 p{
   font-size: 2rem;
@@ -53,4 +53,5 @@ p{
 
 body {
   margin: 0;
+    font-family: Jura, Helvetica, sans-serif;
 }

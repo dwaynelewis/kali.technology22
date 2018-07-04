@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,500);
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +8,7 @@
 }
 body{
   background-color: #C80000;
+    font-family: Jura, Helvetica, sans-serif;
 }
 nav {
   background: #181818;
