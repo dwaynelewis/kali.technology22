@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/nicolasjengler/pen/XNYBrg.
+A Pen created at CodePen.io. You can find this one at https://codepen.io/Murtaxa/pen/egrRbN.
 
- Extremely experimental pure CSS horizontal scroll demo based on https://css-tricks.com/pure-css-horizontal-scrolling/
+ 
