@@ -196,15 +196,28 @@ button{
     font-size: 1.5rem;
   }
 
-
+.desnav{
+  display: none;
+}
 
 
 @media screen and (min-width: 480px) {
 
-
+a{
+  margin-right: 3rem;
+}
   .btn{
     left:40%;
   }
+  span{
+    display: none;
+  }
+
+  .desnav{
+    display: block;
+    margin-top: 2rem;
+  }
+
       /* #opening{
         font-size: 3rem;
         top: 17rem;
