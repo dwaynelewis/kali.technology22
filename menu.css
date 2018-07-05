@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Jura');
+
 
 span{
   position: absolute;
@@ -39,7 +39,7 @@ span{
         		    color: black;
         		    display: block;
         		    transition: 0.3s;
-                  font-family: Jura, Helvetica, sans-serif;
+                font-family: 'Maven Pro', sans-serif;
                   text-transform: uppercase;
         		}
         		.overlay a:hover, .overlay a:focus {

@@ -5,7 +5,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin:  0 auto;
-    font-family: Jura, Helvetica, sans-serif;
+    font-family: 'Maven Pro', sans-serif;
   font-size: 1rem;
 }
 #intro{
@@ -19,6 +19,7 @@ background-color: #181818;
               left: 0;
               right:0;
               font-size: 2rem;
+              font-weight: normal;
              margin:50px;
              color: red;
             }
