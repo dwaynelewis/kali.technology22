@@ -42,7 +42,9 @@ body {
   border: 0;
   overflow-x: hidden;
   transition: color 0.5s ease;
-  color: BLUE;
+  color: white;
+  background-color: red;
+  opacity: .7;
 }
 .slides-nav button:after {
   content: '';
@@ -56,7 +58,7 @@ body {
 }
 .slides-nav button:hover {
   cursor: pointer;
-  color: rgba(17, 17, 17, 0.75);
+  color:black;
   transition: color 0.5s ease;
 }
 .slides-nav button:hover:after {
