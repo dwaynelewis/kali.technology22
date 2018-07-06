@@ -233,6 +233,8 @@ p{
   font-size: 3rem;
   display: inline;
   color: white;
+
+  text-transform: capitalize;
 }
 article{
   margin-top: 3rem;
