@@ -22,12 +22,18 @@
     <link rel="stylesheet" href="menu.css">
 
     <style>
+
+
+
     	@media screen and (min-width: 450px){
+
+
     #mobile{
       display:none;
     }
-     #intro{
-    }
+
+
+
      #logode{
       height: 9vh;
       width: 18.35vw;
@@ -37,40 +43,45 @@
     }
     #contactintrodesk{
       position: absolute;
-      top:30rem;
-      left: 3rem;
+      top:20rem;
+      right: 10%;
       height: 10rem;
-      width:100vw;
-      background-color: yellow;
+      width:20vw;
+
     }
     #phintrodesk{
-        background-color: yellow;
+
       position: absolute;
-      top:30rem;
-      left: 3rem;
-      font-size: 3rem;
+      top:48rem;
+      left: 54rem;
+      font-size: 2rem;
       color:white;
       height: 3rem;
-      width:100vw;
+      width:40vw;
     }
+
     .nav2{
         margin-top: 5%;
+        margin-left: 20%;
         position:absolute;
         top:5rem;
         left:0;
-        width:100vw;
+        width:70vw;
         height:20px;
         color: black;
-        font-size: 1.5rem;
+        font-size: 2rem;
     	text-align: center;
     }
     .nav2 a:link, a:visited {
+
         color: white;
         padding: 5px 50px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
+
     }
+
     .nav a{
     	/* color:white; */
     }
@@ -78,9 +89,11 @@
         background-color:red;
     		color: #0e194c;
     }
+
     nav.nav2 a{
     	height: 32px;
     }
+
     .kali{
         margin-top: 5%;
         margin-left: 5%;
@@ -93,13 +106,16 @@
     		padding: 10px 20px 10px 22px;
     		border-radius: 15%;
     }
+
     #nav{
-      width: 20rem;
+      width: 10rem;
     }
+
     #contactdesk{
       position: absolute;
       top:50rem;
       left: 0;
+
       height: 10rem;
       width:100vw;
     }
@@ -107,11 +123,12 @@
       font-size:200%;
       margin: 1rem;
     }
+
     #phdesk{
       position: absolute;
       top:47rem;
       left: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
       color:#C80000;
       height: 10rem;
       width:100vw;
@@ -162,6 +179,9 @@
     transform: translateX(-100%);
     }
     }
+
+
+
 </style>
 
 </head>
@@ -180,18 +200,21 @@
                         	</div>
 
 
-                      <!-- <img id="logode" src="kalilogor.png" class="intro animated zoomIn" alt="Kali logo"> -->
+                       <img id="logode" src="kalilogor.png" class="intro animated zoomIn" alt="Kali logo">
 
-                              <!-- <div id="contactintrodesk">
-                               <a href="https://www.facebook.com/Kalitechnology-181198399253312/" id="fb" class="intro animated slideInLeft"><i style="color:#C80000;  font-size: 75px;" class="fa fa-facebook-official"></i></a>
-                               <a href="mailto:info@kali.technology" id="email" class="intro animated slideInRight"><i style=" color:#C80000 ; font-size: 75px;" class="fa">&#xf0e0;</i></a>
-                               <a href="https://www.instagram.com/kali.technology/" id="ig" class="intro animated slideInRight"><i style="color:#C80000; font-size: 75px;" class="fa fa-instagram"></i>
-                              </div>
-                              <div id="phintrodesk">T:+1-213-277-8118</div>
- -->
+                               <ul id="contactintrodesk">
+                             <li><h4>ENTER</h4></li><br><br>
+
+                               <li><a href="https://www.facebook.com/Kalitechnology-181198399253312/" id="fb" class="intro animated slideInLeft"><i style=" color:#C80000 ; font-size: 40px;"class="fa fa-facebook-official"></i></a></li>
+                               <li><a href="mailto:info@kali.technology" id="email" class="intro animated slideInRight"><i style=" color:#C80000 ; font-size: 40px;" class="fa">&#xf0e0;</i></a></li>
+                               <li><a href="https://www.instagram.com/kali.technology/" id="ig" class="intro animated slideInRight"><i style="color:#C80000; font-size: 40px;" class="fa fa-instagram"></i></li>
+                              <br><li style="color:white; font-size:1.5rem; text-decoration:none;">T:+1-213-277-8118</li>
+                              </ul>
+
+<h4 id="enter">ENTER</h4>
 
 
-                          <h4>ENTER</h4>
+
 
 </div>
 <div id="outro">
@@ -257,12 +280,12 @@
 
         		<img src="kaliwhite.png" id="sunmain" class="kali">
 
-        <ul class="nav2">
-          <li><a href="aboutus.html" id="nav" >ABOUT US</a></li>
-            <li><a href="how.html" style="color:#C80000 ;">HOW WE WORK</a></li>
-        	<li><a href="faq.html" id="nav">THEME RECOMMENDATIONS</a></li>
-          <li><a href="themes.html" id="nav"  style="color:#C80000 ;">THEMES</a></li>
-        </ul>
+        <nav class="nav2">
+          <a href="aboutus.html" id="nav" style="color:#C80000 ;">ABOUT US</a>
+            <a href="how.html" >HOW WE WORK</a>
+        	<a href="faq.html" id="nav">THEME RECOMMENDATIONS</a>
+          <a href="themes.html" id="nav"  style="color:#C80000 ;">THEMES</a>
+        	</nav>
 
           <div id="contactdesk">
 
@@ -303,23 +326,33 @@
         </script>
 
 
-                                 <script>
+                                 <!-- <script>
                                  $(document).ready(function(){
                                      $("h4").click(function(){
                                          $(this).fadeOut();
                                      });
                                  });
-                                 </script>
+                                 </script> -->
 
 
                                  <script> //INTRO
                                $(document).ready(function(){
-                                   $("h4").click(function(){
+                                   $("#enter").click(function(){
                                        $("#intro").delay(700).fadeOut("slow");
                                        $("#outro").delay(1200).fadeIn("slow");
                                    });
                                });
                                </script>
+
+
+                                                                <!-- <script> //INTRO
+                                                              $(document).ready(function(){
+                                                                  $("h4").click(function(){
+                                                                      $("#intro").delay(700).fadeOut("slow");
+                                                                      $("#outro").delay(1200).fadeIn("slow");
+                                                                  });
+                                                              });
+                                                              </script> -->
 
 <script>
                                   	 //CLOCK
@@ -337,6 +370,7 @@
 
                                     <script>
                                     let video = document.getElementById('container');
+
                                     const setVideoDimensions = () => {
                                       if (window.innerWidth / window.innerHeight > 16 / 9) {
                                         video.style.width = '100vw';
@@ -346,8 +380,10 @@
                                         video.style.height = '100vh';
                                       }
                                     };
+
                                     window.onresize = setVideoDimensions;
                                     setVideoDimensions();
+
                                     </script>
 
 
