@@ -141,6 +141,7 @@ span{
 @media (min-width: 54em) {
   .slide__title {
     font-size: 2em;
+    margin-top: 30%;
   }
 }
 .slide__title .title-line {
