@@ -110,7 +110,7 @@ h5 {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	background-image: url(http://marinamarques.pt/img/preloader.gif);
+	background-image: url(head.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: -100px 0 0 -100px;
@@ -885,9 +885,10 @@ div.button-weblink {
 .testimionals-bg {
 	width: 100%;
 	height: auto;
-	background: url(http://marinamarques.pt/img/mm_testimionals.jpg) no-repeat top center scroll;
+	 /* background: url("head".jpg) no-repeat top center scroll;
 	background-size: cover;
-	-o-background-size: cover;
+	-o-background-size: cover; */
+
 }
 
 .testimionals-bg-opacity {
