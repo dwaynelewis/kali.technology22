@@ -6,7 +6,7 @@ body {
 }
 span{
   background-color: black;
-  
+
 }
 
 .slides-nav {
@@ -140,7 +140,7 @@ span{
 }
 @media (min-width: 54em) {
   .slide__title {
-    font-size: 5em;
+    font-size: 2em;
   }
 }
 .slide__title .title-line {
@@ -218,4 +218,11 @@ span{
 .is-sliding .slide__img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .slide__title {
+    margin-top: 25rem;
+  }
 }
