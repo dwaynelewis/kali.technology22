@@ -1,0 +1,240 @@
+
+
+.loaders-container {
+  padding: 20px;
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+  font-size: 0;
+}
+.loaders-container .container {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 25%;
+  height: 140px;
+}
+
+.box {
+  position: relative;
+  box-sizing: border-box;
+  border: 4px solid #FFF;
+  width: 80px;
+  height: 80px;
+  -webkit-animation: spin 3s infinite linear;
+          animation: spin 3s infinite linear;
+}
+.box:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border: 4px solid #FFF;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: pulse 1.5s infinite ease;
+          animation: pulse 1.5s infinite ease;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+  width: 60px;
+  height: 4px;
+  background: #FFF;
+  -webkit-animation: spin 1.5s infinite ease;
+          animation: spin 1.5s infinite ease;
+}
+.line:nth-of-type(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.line:nth-of-type(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.line:nth-of-type(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.circle {
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #FFF;
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+
+.wave {
+  margin-top: 15px;
+  float: left;
+  width: 18px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid #FFF;
+  margin-left: -2px;
+  -webkit-animation: slide 0.6s infinite linear;
+          animation: slide 0.6s infinite linear;
+}
+.wave:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.wave:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.wave:nth-child(2n+1) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.circleloader {
+  position: absolute;
+  box-sizing: border-box;
+  top: 50%;
+  margin-top: -10px;
+  border-radius: 16px;
+  width: 80px;
+  height: 20px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.circleloader:before {
+  content: '';
+  position: absolute;
+  border-radius: 16px;
+  width: 20px;
+  height: 12px;
+  left: 0;
+  background: #FFF;
+  -webkit-animation: push 1s infinite linear;
+          animation: push 1s infinite linear;
+}
+
+.switchbox {
+  position: relative;
+  height: 80px;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+}
+.switchbox .switch {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  background: #FFF;
+  border-radius: 20px;
+  -webkit-animation: cross 2s infinite linear;
+          animation: cross 2s infinite linear;
+}
+.switchbox .switch:nth-of-type(2) {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.bouncybox {
+  height: 100px;
+  width: 40px;
+  margin-left: 20px;
+}
+.bouncybox .bouncy {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ecf0f1;
+  -webkit-animation: bouncy 2s infinite ease-in-out;
+          animation: bouncy 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bouncy {
+  40% {
+    height: 40px;
+  }
+  50% {
+    -webkit-transform: translate(0, 65px);
+            transform: translate(0, 65px);
+    height: 34px;
+    border-radius: 20px;
+  }
+  65% {
+    height: 40px;
+  }
+}
+
+@keyframes bouncy {
+  40% {
+    height: 40px;
+  }
+  50% {
+    -webkit-transform: translate(0, 65px);
+            transform: translate(0, 65px);
+    height: 34px;
+    border-radius: 20px;
+  }
+  65% {
+    height: 40px;
+  }
+}
+@-webkit-keyframes push {
+  50% {
+    left: 56px;
+  }
+}
+@keyframes push {
+  50% {
+    left: 56px;
+  }
+}
+@-webkit-keyframes slide {
+  50% {
+    margin-top: 25px;
+  }
+}
+@keyframes slide {
+  50% {
+    margin-top: 25px;
+  }
+}
+@-webkit-keyframes pulse {
+  50% {
+    border-width: 30px;
+  }
+}
+@keyframes pulse {
+  50% {
+    border-width: 30px;
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes cross {
+  50% {
+    margin-left: 60px;
+  }
+}
+@keyframes cross {
+  50% {
+    margin-left: 60px;
+  }
+}
