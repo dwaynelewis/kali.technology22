@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Jura');
 body {
     text-align: center;
-  background-color: #181818;
     width: 100vw;
     height: 100vh;
     margin:  0 auto;
@@ -172,6 +171,9 @@ display: none;
     #desktop{
       display: none;
     }
+    body{
+        background-color: #181818;
+    }
 }
 
 
@@ -181,5 +183,20 @@ display: none;
   }
   #opvid{
     width: 55%;
+  }
+  #fb{
+    position: absolute;
+    top:15rem;
+    left: 5rem;
+  }
+  #ig{
+    position: absolute;
+    top:15rem;
+    left: 18rem;
+  }
+  #email{
+    position: absolute;
+    top:15rem;
+    left: 12rem;
   }
 }

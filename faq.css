@@ -5,6 +5,9 @@ html{
     text-transform: uppercase;
 
 }
+body{
+  background-color:#181818; 
+}
 #opening{
 position: absolute;
 top: 30%;
