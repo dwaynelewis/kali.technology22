@@ -1,0 +1,428 @@
+<html>
+<head>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>CONTACT</title>
+
+
+<style>
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+        font-family: 'Droid Sans Mono', monospace;
+}
+a{
+  text-decoration:none;
+      font-family: 'Droid Sans Mono', monospace;
+}
+
+span{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+  @keyframes spinner {
+    100% {
+      transform: rotate(3600deg);
+    }
+  }
+
+  .loading-container {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+
+  }
+
+  .spinner {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/oSHLAzp.png') center center;
+    background-size: contain;
+    transition-origin: 50% 50%;
+    animation: spinner 3s infinite alternate ease-in-out;
+  }
+  .spinner-center {
+    display: inline-block;
+    position: absolute;
+    margin-left: -100px;
+    width: 100px;
+    height: 100px;
+    background: url('http://i.imgur.com/u0BC2ZR.png') center center;
+    background-size: contain;
+    content: '';
+  }
+
+  #intro{
+    height: 1500px;
+    background-color: white;
+  }
+
+
+  #outro{
+    display: none;
+                background-color: #292b36;
+            height: 100%;
+        }
+
+        #logoi{
+        height: 12vh;
+        width: 24.35vw;
+        position: absolute;
+        top:7rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        }
+
+
+
+        		.overlay {
+        		    height: 100%;
+        		    width: 0;
+        		    position: fixed;
+        		    z-index: 1;
+        		    top: 0;
+        		    left: 0;
+        		    background-color: black;
+        				opacity: .7;
+        		    overflow-x: hidden;
+        		    transition: 0.5s;
+        		}
+
+        		.overlay-content {
+        		    position: relative;
+        		    top: 25%;
+        		    width: 100%;
+        		    text-align: center;
+        		    margin-top: 30px;
+        		}
+
+        		.overlay a {
+        		    padding: 8px;
+        		    text-decoration: none;
+        		    font-size: 36px;
+        		    color: hotpink;
+        		    display: block;
+        		    transition: 0.3s;
+        		}
+
+        		.overlay a:hover, .overlay a:focus {
+        		    color: red;
+        		}
+
+        		.overlay .closebtn {
+        		    position: absolute;
+        		    top: 20px;
+        		    right: 45px;
+        		    font-size: 60px;
+        		}
+
+        		@media screen and (max-height: 450px) {
+        		  .overlay a {font-size: 20px}
+        		  .overlay .closebtn {
+        		    font-size: 40px;
+        		    top: 15px;
+        		    right: 35px;
+        		  }
+        		}
+
+
+
+
+	@media screen and (max-width: 1100px){
+
+
+      #desk{
+        display: none;
+      }
+
+
+
+    .video-container video {
+  display: block;
+  width: 100%;
+}
+
+.video-container {
+  position: absolute;
+  top:15rem;
+  /* outline: 1px solid #dadada; */
+  &:nth-of-type(1) { width: 25%; } /* first video instance, and so on */
+  &:nth-of-type(2) { width: 50%; }
+  &:nth-of-type(3) { width: 75%; }
+  &:nth-of-type(4) { width: 100%; }
+}
+
+
+#name{
+  position: absolute;
+  color:#FF00FF;
+  top:21%;
+  left:25%;
+  -webkit-animation-duration: .75s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-iteration-count: 1;
+   text-shadow: 2px 4px black;
+}
+
+
+span{
+  color:white;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin: auto;
+}
+
+
+
+}
+    </style>
+
+    <style>
+    @media screen and (min-width: 450px){
+
+
+
+      #mob{
+        display: none;
+      }
+    .br{
+      position: absolute;
+      top:40rem;
+      left:2%;
+      font-size: 7rem;
+      color:;
+    }
+
+
+    #name{
+      position: absolute;
+      color:#FF00FF;
+      top:10%;
+      left:10%;
+      -webkit-animation-duration: .75s;
+      -webkit-animation-delay: 0.5s;
+      -webkit-animation-iteration-count: 1;
+       text-shadow: 2px 4px black;
+       font-size: 5rem;
+    }
+
+
+    span{
+    	top:1rem;
+      color: ;
+    	width: 100%;
+    	text-align: center;
+    	font-size: 24px;
+    }
+
+    #email{
+      position: absolute;
+      width: 300px;
+      top:22rem;
+      left:41rem;
+      font-size: 40px;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-delay:1s;
+      -webkit-animation-iteration-count: 1;
+       font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+
+      #momail{
+        position: absolute;
+        top:22rem;
+        left:53rem;
+        color: white;
+        background-color: black;
+        font-size: 40px;
+        opacity: .9;
+        padding: .5rem;
+        border-radius: 95%;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-delay:1.5s;
+        -webkit-animation-iteration-count: 1;
+         font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+      h2{
+        font-size: 35px;
+        top:18rem;
+      }
+
+      #p1{
+          position: absolute;
+          left:8rem;
+      }
+      #p2{
+        position: absolute;
+        left:21rem;
+      }
+      #p3{
+        position: absolute;
+        left:34.5rem;
+      }
+      #p4{
+        position: absolute;
+        left:40rem;
+      }
+      #p5{
+        position: absolute;
+        left:56.5rem;
+      }
+      #p6{
+        position: absolute;
+        left:65rem;
+      }
+      #p7{
+        position: absolute;
+        left:76rem;
+      }
+
+
+  }
+
+    </style>
+</head>
+<body>
+
+
+    <div id="intro">
+        <div class="loading-container">
+        <div class="spinner"></div>
+        <div class="spinner-center"></div>
+
+      </div>
+    </div>
+
+    <div id="outro">
+
+        <div id="mob">
+
+      	<h1 id="name" class= "intro animated zoomIn">Your Name</h1>
+
+
+<div class="video-container">
+  <video loop autoplay muted playsinline>
+    <source src="Designer.webm" type="video/webm">
+      <source src="Designer.mp4" type="video/mp4">
+      <source src="Designer.ogg" type="video/ogg">
+  </video>
+
+
+
+</div>
+
+
+  <span style="font-size:30px;cursor:pointer;position: absolute;" onclick="openNav()">&#9776;</span>
+
+
+
+</div>
+
+<div id="desk">
+
+
+        	<h1 id="name" class= "intro animated zoomIn">Your Name</h1>
+
+
+  <div class="video-container">
+    <video loop autoplay muted playsinline>
+      <source src="Designer.webm" type="video/webm">
+        <source src="Designer.mp4" type="video/mp4">
+        <source src="Designer.ogg" type="video/ogg">
+    </video>
+
+
+
+
+  <span style="font-size:30px;cursor:pointer;position: absolute;" onclick="openNav()">&#9776;</span>
+
+</div>
+
+</div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+      <a href="contact.html">Contact</a>
+        <a href="work.html">Work</a>
+      <a href="home.html">Home</a>
+  </div>
+</div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+
+
+
+  	<script> //INTRO
+  $(document).ready(function(){
+      $(function(){
+
+          $("#intro").delay(1000).fadeOut("slow");
+
+       });
+   });
+   </script>
+   <script>
+  $(document).ready(function(){
+      $(function(){
+
+          $("#outro").delay(1100).fadeIn("slow");
+      });
+  });
+  </script>
+
+
+
+
+  	<script> //CLOCK 	<p id="time" ></p>
+  	var myVar = setInterval(function(){ myTimer() }, 1000);
+
+  	function myTimer() {
+  	    var d = new Date();
+  	    var t = d.toLocaleTimeString();
+  	    document.getElementById("time").innerHTML = t;
+  	}
+
+  	function myStopFunction() {
+  	    clearInterval(myVar);
+  	}
+
+
+  	</script>
+
+
+
+
+
+
+</body>
