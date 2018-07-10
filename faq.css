@@ -121,6 +121,7 @@ button{
   .btn{
     display:none;
     font-size:1.5rem;
+    color: black;
 
   }
     #demo{
@@ -211,7 +212,9 @@ a{
   margin-right: 3rem;
 }
   .btn{
-    left:40%;
+    left:0;
+    right: 0;
+    color: black;
   }
   span{
     display: none;
@@ -221,7 +224,13 @@ a{
     display: block;
     margin-top: 2rem;
   }
-
+  #fcontact{
+   display: none;
+  }
+  #fph{
+    display: none;
+  }
+}
       /* #opening{
         font-size: 3rem;
         top: 17rem;
@@ -229,16 +238,7 @@ a{
       #getstarted{
         top: 30rem;
       }
-      #fcontact{
-        top:5rem;
-        left: 75rem;
-        width: 30rem;
-      }
-      #fph{
-        top:7rem;
-        width: 30rem;
-        color: #C80000;
-      }
+      
       .ftime{
         display: none;
       }
@@ -255,4 +255,4 @@ a{
       span{
         font-size: 3rem;
       } */
-    }
+    
