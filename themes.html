@@ -1,240 +1,245 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Themes</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Themes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-        <link rel="stylesheet" href="themes/css/style.css">
+    <link rel="stylesheet" href="themes/css/style.css">
 
 
 
     <!-- <link rel="stylesheet" href="menu.css"> -->
     <script type="text/javascript">
-   $(document).ready(function() {
-      $().introtzikas();
-   });
-</script>
+        $(document).ready(function() {
+            $().introtzikas();
+        });
+    </script>
 
 
-<style>
-
-	@media screen and (min-width: 450px){
-    #sp{
-      display: none;
-    }
-    a{
-      text-decoration: none;
-      margin-right: 3rem;
-    }
-
-  }
-
-  	@media screen and (max-width: 450px){
-      nav{
-        display: none;
-      }
-    }
-
-#spann{
-  width: 100%;
-  height: 7vh;
-  text-align: center;
-  font-size: 1.5rem;
-  background-color: black;
-}
-#sp{
-  position: absolute;
-  top:0;
-  left: 0rem;
-  color: white;
-  font-size:2rem;
-  right: 0;
-
-}
-        		.overlay {
-              text-align: center;
-        		    height: 100%;
-        		    width: 0;
-        		    position: fixed;
-        		    z-index: 1;
-        		    top: 0;
-        		    left: 0;
-        		    background-color: white;
-        				opacity: .8;
-        		    overflow-x: hidden;
-        		    transition: 0.5s;
-        		}
-        		.overlay-content {
-        		    position: relative;
-        		    top: 25%;
-        		    width: 66%;
-        		    text-align: center;
-        		    margin-top: 30px;
-                margin: auto;
-        		}
-        		.overlay a {
-        		    padding: 8px;
-        		    text-decoration: none;
-        		    font-size:1.5rem;
-        		    color: black;
-        		    display: block;
-        		    transition: 0.3s;
-
-        		}
-        		.overlay a:hover, .overlay a:focus {
-        		    color: navy;
-        		}
-        		.overlay .closebtn {
-        		    position: absolute;
-        		    top: 20px;
-        		    right: 45px;
-        		    font-size: 60px;
-        		}
-        		@media screen and (max-height: 450px) {
-        		  .overlay a {font-size: 20px}
-        		  .overlay .closebtn {
-        		    font-size: 40px;
-        		    top: 15px;
-        		    right: 35px;
-        		  }
-        		}
-</style>
+    <style>
+        @media screen and (min-width: 450px) {
+            #sp {
+                display: none;
+            }
+            a {
+                text-decoration: none;
+                margin-right: 3rem;
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            nav {
+                display: none;
+            }
+        }
+        
+        #spann {
+            width: 100%;
+            height: 7vh;
+            text-align: center;
+            font-size: 1.5rem;
+            background-color: black;
+        }
+        
+        #sp {
+            position: absolute;
+            top: 0;
+            left: 0rem;
+            color: white;
+            font-size: 2rem;
+            right: 0;
+        }
+        
+        .overlay {
+            text-align: center;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: white;
+            opacity: .8;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        
+        .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 66%;
+            text-align: center;
+            margin-top: 30px;
+            margin: auto;
+        }
+        
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+        
+        .overlay a:hover,
+        .overlay a:focus {
+            color: navy;
+        }
+        
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+        
+        @media screen and (max-height: 450px) {
+            .overlay a {
+                font-size: 20px
+            }
+            .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-        <a href="aboutus.html">ABOUT US</a>
-          <a href="how.html" style="color:#C80000 ;">HOW IT WORKS</a>
-      <a href="faq.html" >THEME RECOMMENDATIONS</a>
-          <a href="homenn.html"  style="color:#C80000 ;">HOME</a>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="how.html" style="color:#C80000 ;">HOW IT WORKS</a>
+            <a href="faq.html">THEME RECOMMENDATIONS</a>
+            <a href="homenn.html" style="color:#C80000 ;">HOME</a>
 
-  </div>
-  </div>
-<div id="spann">
-  <span id="sp" style="cursor:pointer;" onclick="openNav()">MENU</span>
+        </div>
+    </div>
+    <div id="spann">
+        <span id="sp" style="cursor:pointer;" onclick="openNav()">MENU</span>
 
-          <nav class="nav">
+        <nav class="nav">
             <a href="aboutus.html" id="nav" style="color:white;">ABOUT US</a>
-              <a href="how.html"  style="color:#C80000;">HOW IT WORKS</a>
-          	<a href="faq.html" id="nav"  style="color:white;">THEME RECOMMENDATIONS</a>
-            <a href="homenn.html" id="nav"  style="color:#C80000;">HOME</a>
-          	</nav>
-  </div>
+            <a href="how.html" style="color:#C80000;">HOW IT WORKS</a>
+            <a href="faq.html" id="nav" style="color:white;">THEME RECOMMENDATIONS</a>
+            <a href="homenn.html" id="nav" style="color:#C80000;">HOME</a>
+        </nav>
+    </div>
 
 
 
 
-          <div class="container">
-          <div class="image" style="background-image: url(themes/hollywood.jpg)"></div>
-          <div class="content">
+    <div class="container">
+        <div class="image" style="background-image: url(themes/hollywood.jpg)"></div>
+        <div class="content">
             <h1><a href="hollywood/index.html" target="_blank">
               HOLLYWOOD
             </a></h1>
             <p>Price $299</p>
             <p>Clean functional design</p>
-          </div>
         </div>
+    </div>
 
 
     <div class="container">
-      <div class="image" style="background-image: url(themes/torso.jpg)"></div>
-      <div class="content">
-        <h1><a href="showcase/index.html" target="_blank">
+        <div class="image" style="background-image: url(themes/torso.jpg)"></div>
+        <div class="content">
+            <h1><a href="showcase/index.html" target="_blank">
           SHOWCASE
         </a></h1>
-        <p>Price $349</p>
-        <p>High end portfolio</p>
-      </div>
+            <p>Price $349</p>
+            <p>High end portfolio</p>
+        </div>
     </div>
-
-
-  <div class="container">
-    <div class="image" style="background-image: url(themes/kingdom.jpg)"></div>
-    <div class="content">
-      <h1><a href="kingdom.html" target="_blank">
-        KINGDOM
-      </a></h1>
-      <p>
-        Price $299
-        <br>
-        Appointments
-      </p>
-      <p>Great tool for indepent contractors</p>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="image" style="background-image: url(showtime.jpg)"></div>
-    <div class="content">
-      <h1><a href="showtime.html" target="_blank">
-        SHOWTIME
-      </a></h1>
-      <p>Price $299</p>
-      <p>Great for college grads</p>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="image" style="background-image: url(themes/vogue.jpg);"></div>
-    <div class="content">
-      <h1><a href="vogue/index.html" target="_blank">
-        VOGUE
-      </a></h1>
-      <p>Price $299</p>
-      <p>Good business functionality</p>
-    </div>
-  </div>
 
 
     <div class="container">
-      <div class="image" style="background-image: url(themes/minimal.jpg)"></div>
-      <div class="content">
-        <h1><a href="minimal/index.html" target="_blank">
+        <div class="image" style="background-image: url(themes/kingdom.jpg)"></div>
+        <div class="content">
+            <h1><a href="kingdom.html" target="_blank">
+        KINGDOM
+      </a></h1>
+            <p>
+                Price $299
+                <br> Appointments
+            </p>
+            <p>Great tool for indepent contractors</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image" style="background-image: url(showtime.jpg)"></div>
+        <div class="content">
+            <h1><a href="molo/color5/index3.html" target="_blank">
+        SHOWTIME
+      </a></h1>
+            <p>Price $299</p>
+            <p>Great for college grads</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image" style="background-image: url(themes/vogue.jpg);"></div>
+        <div class="content">
+            <h1><a href="vogue/index.html" target="_blank">
+        VOGUE
+      </a></h1>
+            <p>Price $299</p>
+            <p>Good business functionality</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="image" style="background-image: url(themes/minimal.jpg)"></div>
+        <div class="content">
+            <h1><a href="minimal/index.html" target="_blank">
           MINIMAL
         </a></h1>
-        <p>Price $299</p>
-        <p>Clean portfolio design</p>
-      </div>
+            <p>Price $299</p>
+            <p>Clean portfolio design</p>
+        </div>
     </div>
 
 
 
 
 
-   <div class="container">
-    <div class="image" style="background-image: url(themes/expression.jpg)"></div>
-    <div class="content">
-      <h1><a href="expression.html" target="_blank">
+    <div class="container">
+        <div class="image" style="background-image: url(themes/expression.jpg)"></div>
+        <div class="content">
+            <h1><a href="expression.html" target="_blank">
         EXPRESSION
       </a></h1>
-      <p>
-        Price $399
-        <br>
-        Elegant design
-      </p>
-      <p>brilliant animations</p>
+            <p>
+                Price $399
+                <br> Elegant design
+            </p>
+            <p>brilliant animations</p>
+        </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="image" style="background-image: url(themes/boundless.jpg)"></div>
-    <div class="content">
-      <h1><a href="boundless.html" target="_blank">
+    <div class="container">
+        <div class="image" style="background-image: url(themes/boundless.jpg)"></div>
+        <div class="content">
+            <h1><a href="boundless.html" target="_blank">
         BOUNDLESS
       </a></h1>
-      <p>Price $399</p>
-      <p>Hi Tech</p>
+            <p>Price $399</p>
+            <p>Hi Tech</p>
+        </div>
     </div>
-  </div>
 
-  <!-- <div class="container">
+    <!-- <div class="container">
     <div class="image" style="background-image: url(themes/jodes.jpg)"></div>
     <div class="content">
       <h1><a href="https://youtu.be/vIdLSvfeTgg" target="_blank">
@@ -257,24 +262,26 @@
   </div> -->
 
 
-  <script>
-  function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-  }
-  function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-  }
-  </script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 
 
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/jquery.velocity.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/velocity.ui.js'></script>
-  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/jquery.blast.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/jquery.velocity.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/velocity.ui.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/jquery.blast.js'></script>
 
 
-            - <script  src="homepage.js"></script>
+    -
+    <script src="homepage.js"></script>
 
 </body>
 
