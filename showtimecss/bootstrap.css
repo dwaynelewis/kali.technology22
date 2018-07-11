@@ -4258,6 +4258,7 @@ tbody.collapse.show {
     content: "";
     background: no-repeat center center;
     background-size: 100% 100%;
+    margin-right: 5vw;
 }
 
 @media (max-width: 575.98px) {
