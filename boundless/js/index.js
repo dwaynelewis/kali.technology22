@@ -1,125 +1,134 @@
-	var SEPARATION = 120, AMOUNTX = 300, AMOUNTY = 70;
+// PreLoader
+jQuery.noConflict();
+(function($) {
+	$(window).on('load', function() { // makes sure the whole site is loaded
+		$('#status').fadeOut(); // will first fade out the loading animation
+		$('#preloader').delay(200).fadeOut('slow'); // will fade out the white DIV that covers the website.
+	});
+})(jQuery);
 
-			var container, stats;
-			var camera, scene, renderer;
+// Scroll to Top
+jQuery.noConflict();
+(function($) {
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+			$('#return-to-top').fadeIn(200); // Fade in the arrow
+		} else {
+			$('#return-to-top').fadeOut(200); // Else fade out the arrow
+		}
+	});
+	$('#return-to-top').click(function() { // When arrow is clicked
+		$('body,html').animate({
+			scrollTop: 0 // Scroll to top of body
+		}, 500);
+	});
+})(jQuery);
 
-			var particles, particle, count = 0;
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+jQuery.noConflict();
+(function($) {
+	$(function() {
+		$('a.page-scroll').bind('click', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500, 'easeInOutExpo');
+			event.preventDefault();
+		});
+	});
+})(jQuery);
 
-			var mouseX = 0, mouseY = 0;
+// typer for hello
+window.onload = function() {
+	var elements = document.getElementsByClassName('txt-rotate');
+	for (var i = 0; i < elements.length; i++) {
+		var toRotate = elements[i].getAttribute('data-rotate');
+		var period = elements[i].getAttribute('data-period');
+		if (toRotate) {
+			new TxtRotate(elements[i], JSON.parse(toRotate), period);
+		}
+	}
+	// INJECT CSS
+	var css = document.createElement("style");
+	css.type = "text/css";
+	css.innerHTML = ".txt-rotate > .wrap { border-right: 10px solid #40E0D0 }";
+	document.body.appendChild(css);
+};
 
-			var windowHalfX = window.innerWidth / 2;
-			var windowHalfY = window.innerHeight / 2;
+var TxtRotate = function(el, toRotate, period) {
+	this.toRotate = toRotate;
+	this.el = el;
+	this.loopNum = 0;
+	this.period = parseInt(period, 1) || 1000;
+	this.txt = '';
+	this.tick();
+	this.isDeleting = false;
+};
 
-			init();
-			animate();
+TxtRotate.prototype.tick = function() {
+	var i = this.loopNum % this.toRotate.length;
+	var fullTxt = this.toRotate[i];
 
-			function init() {
+	if (this.isDeleting) {
+		this.txt = fullTxt.substring(0, this.txt.length - 1);
+	} else {
+		this.txt = fullTxt.substring(0, this.txt.length + 1);
+	}
 
-				container = document.createElement( 'div' );
-				document.body.appendChild( container );
+	this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
-				camera.position.z = 10000;
+	var that = this;
+	var delta = 200 - Math.random() * 100;
 
-				scene = new THREE.Scene();
+	if (this.isDeleting) {
+		delta /= 2;
+	}
 
-				particles = new Array();
+	if (!this.isDeleting && this.txt === fullTxt) {
+		delta = this.period;
+		this.isDeleting = true;
+	} else if (this.isDeleting && this.txt === '') {
+		this.isDeleting = false;
+		this.loopNum++;
+		delta = 200;
+	}
 
-				var PI2 = Math.PI * 2;
-				var material = new THREE.SpriteCanvasMaterial( {
+	setTimeout(function() {
+		that.tick();
+	}, delta);
+};
 
-					color: 0xffffff,
-					program: function ( context ) {
+// number count for stats
+jQuery.noConflict();
+(function($) {
+	$('.counter').each(function() {
+		var $this = $(this),
+			countTo = $this.attr('data-count');
 
-						context.beginPath();
-						context.arc( 0.9, 0, 0.5, 0, PI2, true );
-						context.fill();
+		$({
+			countNum: $this.text()
+		}).animate({
+				countNum: countTo
+			},
 
-					}
-
-				} );
-
-				var i = 0;
-
-				for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
-
-					for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
-
-						particle = particles[ i ++ ] = new THREE.Sprite( material );
-						particle.position.x = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 );
-						particle.position.z = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) / 2 );
-						scene.add( particle );
-
-					}
-
+			{
+				duration: 3000,
+				easing: 'linear',
+				step: function() {
+					$this.text(Math.floor(this.countNum));
+				},
+				complete: function() {
+					$this.text(this.countNum);
+					//alert('finished');
 				}
+			});
+	});
+})(jQuery);
 
-				renderer = new THREE.CanvasRenderer();
-				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
-				container.appendChild( renderer.domElement );
+// update footer copyright year
 
-				stats = new Stats();
-				stats.domElement.style.position = 'absolute';
-				stats.domElement.style.top = '0px';
-				container.appendChild( stats.domElement );
+var today = new Date();
+var year = today.getFullYear();
 
-	
-
-				//
-
-				window.addEventListener( 'resize', onWindowResize, false );
-
-			}
-
-			function onWindowResize() {
-
-				windowHalfX = window.innerWidth / 2;
-				windowHalfY = window.innerHeight / 2;
-
-				camera.aspect = window.innerWidth / window.innerHeight;
-				camera.updateProjectionMatrix();
-
-				renderer.setSize( window.innerWidth, window.innerHeight );
-
-			}
-
-			//
-
-			//
-
-			function animate() {
-
-				requestAnimationFrame( animate );
-
-				render();
-				stats.update();
-
-			}
-
-			function render() {
-
-		
-				camera.position.set(0,355,122);
-
-				var i = 0;
-        
-				for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
-
-					for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
-
-						particle = particles[ i++ ];
-						particle.position.y = ( Math.sin( ( ix + count ) * 0.3 ) * 50 ) +
-							( Math.sin( ( iy + count ) * 0.5 ) * 50 );
-						particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.3 ) + 1 ) * 4 +
-							( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 4;
-
-					}
-
-				}
-
-				renderer.render( scene, camera );
-
-				count += 0.1;
-
-			}
+var copyright = document.getElementById("copyright");
+copyright.innerHTML = 'KALI '+ year;
