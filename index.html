@@ -1,356 +1,1280 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-  <meta charset="UTF-8">
-  <title>KALI</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kali - Premium Websites</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="homepage.css">
-        <link rel="stylesheet" href="newdesktop.css">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icon.png">
 
+    <!-- Google font (font-family: 'Open Sans', sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!-- Google font (font-family: 'Poppins', sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,900" rel="stylesheet">
 
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '422542431545713');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=422542431545713&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="okomo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="okomo/css/plugins.css">
+    <link rel="stylesheet" href="okomo/style.css">
 
+    <!-- Cusom css -->
+    <link rel="stylesheet" href="okomo/css/custom.css">
 
-
-
-    <link rel="stylesheet" href="menu.css">
-
-    <style>
-    	@media screen and (min-width: 450px){
-    #mobile{
-      display:none;
-    }
-     #intro{
-    }
-     #logode{
-      height: 9vh;
-      width: 18.35vw;
-      position: absolute;
-      top:20rem;
-      left: 3rem;
-    }
-    #contactintrodesk{
-      position: absolute;
-      top:30rem;
-      left: 3rem;
-      height: 10rem;
-      width:100vw;
-      background-color: yellow;
-    }
-    #phintrodesk{
-        background-color: yellow;
-      position: absolute;
-      top:30rem;
-      left: 3rem;
-      font-size: 3rem;
-      color:white;
-      height: 3rem;
-      width:100vw;
-    }
-    
-
-    #ppw{
-     color: white;
-     font-size: 2rem;
-
-    }
-    .kali{
-
-        position:absolute;
-        top:5rem;
-        left:10rem;
-        width:7rem;
-        height:7rem;
-      
-    }
-
-    i{
-      font-size:200%;
-      margin: 1rem;
-    }
-    #phdesk{
-      position: absolute;
-      top:11rem;
-      left: 5rem;
-      width: 20rem;
-      font-size: 2rem;
-      color:#C80000;
-
-    }
-}
-    .scroll-left {
-    height: 50px;
-    overflow: hidden;
-    position: relative;
-    color: white;
-    margin-top: 53vh;
-    }
-    .scroll-left p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-size: 1.5rem;
-    line-height: 50px;
-    text-align: center;
-    /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);
-    transform:translateX(100%);
-    /* Apply animation to this element */
-    -moz-animation: scroll-left 10s linear infinite;
-    -webkit-animation: scroll-left 10s linear infinite;
-    animation: scroll-left 10s linear infinite;
-    }
-    /* Move it (define the animation) */
-    @-moz-keyframes scroll-left {
-    0% { -moz-transform: translateX(100%); }
-    100% { -moz-transform: translateX(-100%); }
-    }
-    @-webkit-keyframes scroll-left {
-    0% { -webkit-transform: translateX(100%); }
-    100% { -webkit-transform: translateX(-100%); }
-    }
-    @keyframes scroll-left {
-    0% {
-    -moz-transform: translateX(100%); /* Browser bug fix */
-    -webkit-transform: translateX(100%); /* Browser bug fix */
-    transform: translateX(100%);
-    }
-    100% {
-    -moz-transform: translateX(-100%); /* Browser bug fix */
-    -webkit-transform: translateX(-100%); /* Browser bug fix */
-    transform: translateX(-100%);
-    }
-    }
-</style>
-
-
-
-
-
+    <!-- Modernizer js -->
+    <script src="okomo/js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
+
 <body>
 
-  <script>
-  fbq('track', 'ViewContent');
-</script>
 
+    <!-- Add your site or application content here -->
 
-    <div id="intro">
+    <div class="fakeloader"></div>
 
+    <!-- Main wrapper -->
+    <div class="wrapper imgmenu-wrapper" id="wrapper">
 
+        <!-- Homepage -->
+        <div id="homepage-area" class="homepage">
 
-                        	<div id="opvid" class="video-container">
-                        	  <video  autoplay muted playsinline>
-                        	    <source src="kaliad1.webm" type="video/webm">
-                        	      <source src="kaliad1.mp4" type="video/mp4">
-                        	      <source src="kaliad1.ogg" type="video/ogg">
-                        	  </video>
-                        	</div>
+            <!-- Header -->
+            <header class="header-area">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="header logo" style="height: 2rem;">
+                    </a>
+                </div>
+                <button class="fsmenu-trigger fullscreen-menu-trigger">
+					<i class="ti-menu-alt"></i>
+				</button>
+            </header>
+            <!--// Header -->
 
+            <!-- Image Menu -->
+            <div class="imgmenu-wrap">
 
-                      <!-- <img id="logode" src="kalilogor.png" class="intro animated zoomIn" alt="Kali logo"> -->
+                <!-- Single Menu -->
+                <div class="imgmenu" style="background-image: url(okomo/img1.jpg);">
+                    <h2 class="imgmenu-title">01. About Me</h2>
+                    <a href="#" data-hashlink-trigger="about-me-area" class="imgmenu-content">
+                        <h2 data-title-overlay="About Me">01. About Me</h2>
+                        <h5>A little introduction about myself</h5>
+                        <span class="imgmenu-right-arrow">
+							<img src="okomo/images/icons/next-long-arrow.png" alt="next arrow">
+							<img src="okomo/images/icons/next-long-arrow-skyblue.png" alt="next arrow">
+						</span>
+                    </a>
+                </div>
+                <!--// Single Menu -->
 
-                              <!-- <div id="contactintrodesk">
-                               <a href="https://www.facebook.com/Kalitechnology-181198399253312/" id="fb" class="intro animated slideInLeft"><i style="color:#C80000;  font-size: 75px;" class="fa fa-facebook-official"></i></a>
-                               <a href="mailto:info@kali.technology" id="email" class="intro animated slideInRight"><i style=" color:#C80000 ; font-size: 75px;" class="fa">&#xf0e0;</i></a>
-                               <a href="https://www.instagram.com/kali.technology/" id="ig" class="intro animated slideInRight"><i style="color:#C80000; font-size: 75px;" class="fa fa-instagram"></i>
-                              </div>
-                              <div id="phintrodesk">T:+1-213-277-8118</div>
- -->
+                <!-- Single Menu -->
+                <div class="imgmenu" style="background-image: url(okomo/img2.jpg);">
+                    <h2 class="imgmenu-title">02. My Work</h2>
+                    <a href="#" data-hashlink-trigger="portfolios-area" class="imgmenu-content">
+                        <h2 data-title-overlay="My Work">02. My Work</h2>
+                        <h5>Some of my recent works</h5>
+                        <span class="imgmenu-right-arrow">
+							<img src="okomo/images/icons/next-long-arrow.png" alt="next arrow">
+							<img src="okomo/images/icons/next-long-arrow-skyblue.png" alt="next arrow">
+						</span>
+                    </a>
+                </div>
+                <!--// Single Menu -->
 
+                <!-- Single Menu -->
+                <div class="imgmenu" style="background-image: url(okomo/img3.jpg);">
+                    <h2 class="imgmenu-title">03. Blog</h2>
+                    <a href="#" data-hashlink-trigger="blogs-area" class="imgmenu-content">
+                        <h2 data-title-overlay="Blog">03. Blog</h2>
+                        <h5>Our latest blogs & news</h5>
+                        <span class="imgmenu-right-arrow">
+							<img src="okomo/images/icons/next-long-arrow.png" alt="next arrow">
+							<img src="okomo/images/icons/next-long-arrow-skyblue.png" alt="next arrow">
+						</span>
+                    </a>
+                </div>
+                <!--// Single Menu -->
 
-                          <h4 class="link anim-fancysub">ENTER</h4>
+                <!-- Single Menu -->
+                <div class="imgmenu" style="background-image: url(okomo/images/imgmenu/imgmenu-contact-bg.jpg);">
+                    <h2 class="imgmenu-title">04. Contact Me</h2>
+                    <a href="#" data-hashlink-trigger="contact-area" class="imgmenu-content">
+                        <h2 data-title-overlay="Contact Me">04. Contact Me</h2>
+                        <h5>Want to hire? Contact with me.</h5>
+                        <span class="imgmenu-right-arrow">
+							<img src="okomo/images/icons/next-long-arrow.png" alt="next arrow">
+							<img src="okomo/images/icons/next-long-arrow-skyblue.png" alt="next arrow">
+						</span>
+                    </a>
+                </div>
+                <!--// Single Menu -->
 
-</div>
-<div id="outro">
-<div id="mobile">
-      <img id="sun" src="sun.png" class="intro animated zoomIn" alt="Kali logo">
+            </div>
+            <!--// Image Menu -->
 
+            <!-- Fullscreen Header -->
+            <div class="fullscreen-header">
 
-      <img id="logom" src="kalilogor.png" class="intro animated zoomIn" alt="Kali logo">
+                <!-- Header -->
+                <header class="header-area header-style-2 header-transparent">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="logo.png" alt="header logo" style="height: 2rem;">
+                        </a>
+                    </div>
+                    <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+                </header>
+                <!--// Header -->
 
+                <nav class="fsmenu">
+                    <ul>
+                        <li><a class="back-to-root-button" href="#" style="color:red;">Home</a></li>
+                        <li><a href="#" data-hashlink-trigger="about-me-area">About</a></li>
+                        <li><a href="#" data-hashlink-trigger="blogs-area" style="color:red;">How It Works</a></li>
+                        <li><a href="faq.html">Theme Recommendations</a></li>
+                        <li><a href="#" data-hashlink-trigger="portfolios-area" style="color:red;">Themes</a></li>
+                        <li><a href="#" data-hashlink-trigger="contact-area">Contact</a></li>
+                    </ul>
+                </nav>
 
-                    	<div id="vid" class="video-container">
-                    	  <video loop autoplay muted playsinline>
-                    	    <source src="vacation.webm" type="video/webm">
-                    	      <source src="vacation.mp4" type="video/mp4">
-                    	      <source src="vacation.ogg" type="video/ogg">
-                    	  </video>
-                    	</div>
+            </div>
+            <!--// Fullscreen Header -->
 
-      	<div class="time" ><p id="time" ></p></div>
-<div id="contact">
-
- <a href="https://www.facebook.com/Kalitechnology-181198399253312/" id="fb" class="intro animated slideInLeft"><i style="color:#C80000;  font-size: 40px;" class="fa fa-facebook-official"></i></a>
- <a href="mailto:info@kali.technology" id="email" class="intro animated slideInRight"><i style=" color:#C80000 ; font-size: 40px;" class="fa">&#xf0e0;</i></a>
- <a href="https://www.instagram.com/kali.technology/" id="ig" class="intro animated slideInRight"><i style="color:#C80000; font-size: 40px;" class="fa fa-instagram"></i>
-
-</div>
-<div id="ph">T:+1-213-277-8118</div>
-
-
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="aboutus.html" >ABOUT US</a>
-      <a href="how.html" style="color:#C80000 ;" >HOW IT WORKS</a>
-    <a href="faq.html" >THEME RECOMMENDATIONS</a>
-      <a href="themes.html"  style="color:#C80000;" >THEMES</a>
-
-
-</div>
-</div>
-<span style="cursor:pointer" onclick="openNav()">MENU</span>
-
-
-  <div class="scroll-left">
-<p>Premium Portfolio Websites</p>
-</div>
-
-
-</div>
-
-  <div id="desktop">
-
-
-
-        <div id="container" class="video-container">
-          <video loop autoplay muted playsinline>
-            <source src="vacation.webm" type="video/webm">
-              <source src="vacation.mp4" type="video/mp4">
-              <source src="vacation.ogg" type="video/ogg">
-          </video>
         </div>
+        <!--// Homepage -->
+
+        <!-- About Me Area -->
+        <div id="about-me-area" class="imgmenu-single-area cr-section about-me-area">
+
+            <!-- Header -->
+            <header class="header-area header-style-2 header-transparent">
+                <div class="header-logo">
+                    <a href="okomo/index.html">
+                        <img src="okomo/images/logo/logo-1.png" alt="header logo">
+                    </a>
+                </div>
+                <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+            </header>
+            <!--// Header -->
+
+            <div class="about-me">
+                <div class="about-me-thumb">
+                    <img src="okomo/images/about/about-me-thumb.jpg" alt="About Me Thumb">
+                </div>
+                <div class="about-me-content-tab"></div>
+                <div class="about-me-content about-me-content-slider-active">
+
+                    <!-- About Me About -->
+                    <div id="about-me-about" class="about-me-block about-me-about" data-title="about">
+                        <h4>ABOUT ME</h4>
+                        <h2>Hi welcome to
+                            <br> “OKOMO” Creative Agency</h2>
+                        <p>
+                            <b>To design is much more than simply to assemble, to order, or even to edit: it is to add value and meaning, to illuminate,
+								to simplify, to clarify, to modify, to dignify, to dramatize, to persuade, and perhaps even to amuse. To design is
+								to transform prose into poetry</b>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    </div>
+                    <!--// About Me About -->
+
+                    <!-- About Me Mission -->
+                    <div id="about-me-mission" class="about-me-block about-me-mission" data-title="mission">
+                        <h4>MISSION</h4>
+                        <h2>Why Company
+                            <br> Mission Statements Matter</h2>
+                        <p>
+                            <b>To design is much more than simply to assemble, to order, or even to edit: it is to add value and meaning, to illuminate,to simplify, to clarify, to modify, to dignify, to dramatize, to persuade, and perhaps even to amuse. To design is to transform prose into poetry</b>
+                        </p>
+                        <p>Missions – is that something that only some people do, when their church sends them to another country to talk about Jesus? True, those people are missionaries – but so are those of us who stay at home! Your own country, your own
+                            neighborhood, sometimes your own family could be your mission field. Everywhere we go, we should be representing Jesus.</p>
+                        <p>We must express our interest in those who have not had our opportunities by our gifts.</p>
+                    </div>
+                    <!--// About Me Mission -->
+
+                    <!-- About Me Vision -->
+                    <div id="about-me-vision" class="about-me-block about-me-vision" data-title="vision">
+                        <h4>VISION</h4>
+                        <h2>Defining Your <br> Organization’s Purpose</h2>
+                        <p>
+                            <b>To design is much more than simply to assemble, to order, or even to edit: it is to add value and meaning, to illuminate,to simplify, to clarify, to modify, to dignify, to dramatize, to persuade, and perhaps even to amuse. To design is to transform prose into poetry</b>
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                    </div>
+                    <!--// About Me Vision -->
+
+                </div>
+            </div>
+
+        </div>
+        <!--// About Me Area -->
+
+        <!-- Portfolios Area -->
+        <div id="portfolios-area" class="imgmenu-single-area cr-section portfolios-area">
+
+            <!-- Header -->
+            <header class="header-area header-style-2">
+                <div class="header-logo">
+                    <a href="okomo/index.html">
+                        <img src="okomo/images/logo/logo-1.png" alt="header logo">
+                    </a>
+                </div>
+                <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+            </header>
+            <!--// Header -->
+
+            <!-- Portfolios -->
+            <div class="portfolios-wrap">
+                <div class="container custom-container portfolios" data-portfolio-show="5" data-portfolio-load="3">
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-1.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-1.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-portfolio-content">
+                                    <h5>BRANDING</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>New</span> Thinking 
+											To Change Old</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio single-portfolio-reverse">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-2 order-lg-1">
+                                <div class="single-portfolio-content">
+                                    <h5>Photography</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>powerful</span> design
+											portfolio theme</a></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 order-1 order-lg-2">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-2.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-2.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-3.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-3.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-portfolio-content">
+                                    <h5>Graphic Design</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>New</span> Thinking 
+											To Change Old</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio single-portfolio-reverse">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-2 order-lg-1">
+                                <div class="single-portfolio-content">
+                                    <h5>Web Development</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>powerful</span> design
+											portfolio theme</a></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 order-1 order-lg-2">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-4.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-4.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-5.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-5.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-portfolio-content">
+                                    <h5>Web Design</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>New</span> Thinking 
+											To Change Old</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio single-portfolio-reverse">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-2 order-lg-1">
+                                <div class="single-portfolio-content">
+                                    <h5>Photography</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>powerful</span> design
+											portfolio theme</a></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 order-1 order-lg-2">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-1.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-1.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-2.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-2.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-portfolio-content">
+                                    <h5>BRANDING</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>New</span> Thinking 
+											To Change Old</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio single-portfolio-reverse">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-2 order-lg-1">
+                                <div class="single-portfolio-content">
+                                    <h5>Photography</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>powerful</span> design
+											portfolio theme</a></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 order-1 order-lg-2">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-2.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-2.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-3.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-3.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-portfolio-content">
+                                    <h5>Graphic Design</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>New</span> Thinking 
+											To Change Old</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio single-portfolio-reverse">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-2 order-lg-1">
+                                <div class="single-portfolio-content">
+                                    <h5>Web Development</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>powerful</span> design
+											portfolio theme</a></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 order-1 order-lg-2">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-4.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-4.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-5.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-5.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-portfolio-content">
+                                    <h5>Web Design</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>New</span> Thinking 
+											To Change Old</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio single-portfolio-reverse">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 order-2 order-lg-1">
+                                <div class="single-portfolio-content">
+                                    <h5>Photography</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>powerful</span> design
+											portfolio theme</a></h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 order-1 order-lg-2">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-1.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-1.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <!-- Single Portfolio -->
+                    <div class="single-portfolio">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="single-portfolio-thumb">
+                                    <a href="okomo/images/portfolio/portfolio-image-2.jpg">
+                                        <img src="okomo/images/portfolio/portfolio-image-2.jpg" alt="portfolio thumb">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-portfolio-content">
+                                    <h5>BRANDING</h5>
+                                    <h2><a href="okomo/single-portfolio.html"><span>New</span> Thinking 
+											To Change Old</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Single Portfolio -->
+
+                    <div class="portfolios-button text-center">
+                        <a href="#" class="cr-btn cr-btn-icon portfolio-load-more">
+                            <span class="icon"><img src="okomo/images/icons/spin-icon.png" alt="spin icon"></span>
+                            <span class="text">Load More</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!--// Portfolios -->
+
+        </div>
+        <!--// Portfolios Area -->
+
+        <!-- Blogs Area -->
+        <div id="blogs-area" class="imgmenu-single-area cr-section blogs-area">
+
+            <!-- Header -->
+            <header class="header-area header-style-2">
+                <div class="header-logo">
+                    <a href="okomo/index.html">
+                        <img src="okomo/images/logo/logo-1.png" alt="header logo">
+                    </a>
+                </div>
+                <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+            </header>
+            <!--// Header -->
+
+            <!-- Breadcrumb Area -->
+            <div class="cr-breadcrumb-area">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-8 col-lg-10 col-md-10 col-12">
+                            <div class="cr-breadcrumb text-center">
+                                <h1>A Guide To How It Works</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Breadcrumb Area -->
+
+            <!-- Blogs Inner -->
+            <div class="blogs-area-inner">
+
+                <!-- Blogs Area Filter -->
+                <div class="blogs-area-filters-wrap bg-grey">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="blogs-area-filters text-center">
+                                    <button class="is-checked" data-filter="*">All Blog</button>
+                                    <button data-filter=".standard-blog">Standard Blog</button>
+                                    <button data-filter=".audio-blog">Audio Blog</button>
+                                    <button data-filter=".video-blog">Video Blog</button>
+                                    <button data-filter=".text-blog">Text Post</button>
+                                    <button data-filter=".image-blog">Image Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Blogs Area Filter -->
+
+                <!-- Blogs Wrapper -->
+                <div class="blog-items-wrapper section-padding-bottom-lg">
+                    <div class="container">
+                        <div class="row blog-items-grid">
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-1.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">15</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-2.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap text-blog">
+                                <div class="blog-item blog-item-qote">
+                                    <blockquote><a href="okomo/blog-details.html">Design is to transform prose assemble, to order, or even to value and meaning, to illuminate, to simplify, to clarify, to modify, to dignify.</a></blockquote>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap audio-blog">
+                                <div class="blog-item blog-item-audio">
+                                    <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/295926514&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap image-blog">
+                                <div class="blog-item blog-item-image">
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-imagepost-1.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-3.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-4.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap video-blog">
+                                <div class="blog-item blog-item-video">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-5.jpg" alt="blog thumb">
+                                        </a>
+                                        <a href="#" class="cr-video-btn cr-video-btn-small video-play-trigger" data-video-id='YB4AvOsgL9o'>
+                                            <span>
+												<img src="okomo/images/icons/play-icon.png" alt="play icon">
+											</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap video-blog">
+                                <div class="blog-item blog-item-video-2">
+                                    <div class="plyr__video-embed youtube-video-player">
+                                        <iframe src="https://www.youtube.com/embed/YB4AvOsgL9o?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
+
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-6.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
 
-        		<img src="kaliwhite.png" id="sunmain" class="kali">
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-1.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
-        <ul class="nav2">
-            <li id="ppw"><p>Premium Portfolio Websites</p></li>
-          <li><a href="aboutus.html" id="nav" class="link anim-fancysub">ABOUT US</a></li>
-            <li><a href="how.html" id="nav" style="color:#C80000 ;"class="link anim-fancysub">HOW IT WORKS</a></li>
-        	<li><a href="faq.html" id="nav" class="link anim-fancysub">THEME RECOMMENDATIONS</a></li>
-          <li><a href="themes.html" id="nav"  style="color:#C80000 ;"class="link anim-fancysub">THEMES</a></li>
-        </ul>
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">15</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-2.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap text-blog">
+                                <div class="blog-item blog-item-qote">
+                                    <blockquote><a href="okomo/blog-details.html">Design is to transform prose assemble, to order, or even to value and meaning, to illuminate, to simplify, to clarify, to modify, to dignify.</a></blockquote>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap image-blog">
+                                <div class="blog-item blog-item-image">
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-imagepost-1.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
-           <a href="https://www.facebook.com/Kalitechnology-181198399253312/" id="fb" class="intro animated slideInLeft"><i style="color:white;  font-size:3rem;" class="fa fa-facebook-official"></i></a>
-           <a href="mailto:info@kali.technology" id="email" class="intro animated slideInleft"><i style=" color:white ; font-size: 3rem;" class="fa">&#xf0e0;</i></a>
-           <a href="https://www.instagram.com/kali.technology/" id="ig" class="intro animated slideInleft"><i style="color:white; font-size: 3rem;" class="fa fa-instagram"></i></a>
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-3.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-4.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
-          <p id="phdesk" class="intro animated slideInleft">T:+1-213-277-8118</p>
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap video-blog">
+                                <div class="blog-item blog-item-video">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-5.jpg" alt="blog thumb">
+                                        </a>
+                                        <a href="#" class="cr-video-btn cr-video-btn-small video-play-trigger" data-video-id='YB4AvOsgL9o'>
+                                            <span>
+												<img src="okomo/images/icons/play-icon.png" alt="play icon">
+											</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
+                            <!-- Blog Item -->
+                            <div class="col-lg-6 col-12 blog-item-wrap standard-blog">
+                                <div class="blog-item">
+                                    <div class="blog-item-content">
+                                        <h6 class="blog-item-date"><span class="date">10</span> th <span class="month">March</span></h6>
+                                        <h4 class="blog-item-title"><a href="okomo/blog-details.html">Title Goes <br> Here For Your Blog</a></h4>
+                                        <ul class="blog-item-meta">
+                                            <li>Like : <a href="#"><i class="ti ti-heart"></i> 05</a></li>
+                                            <li>Comment : <a href="#"><i class="ti ti-comment"></i> 08</a></li>
+                                        </ul>
+                                        <div class="blog-item-share-wrap">
+                                            <div class="blog-item-share">
+                                                <button class="blog-item-share-toggle"><i class="ti ti-share"></i> Share</button>
+                                                <div class="social-links social-links-rounded-colored blog-item-social-links">
+                                                    <ul>
+                                                        <li class="dribbble"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="okomo/blog-details.html" class="cr-readmore">Read More 
+											<span>
+												<img src="okomo/images/icons/readmore-arrow-black.png" alt="Readmore Arrow">
+												<img src="okomo/images/icons/readmore-arrow.png" alt="Readmore Arrow">
+											</span>
+										</a>
+                                    </div>
+                                    <div class="blog-item-thumb">
+                                        <a href="okomo/blog-details.html">
+                                            <img src="okomo/images/blog/blog-thumb-6.jpg" alt="blog thumb">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// Blog Item -->
 
+                        </div>
 
-          
-            
-            
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="blogs-button text-center">
+                                    <a href="#" class="blogs-load-more-toggle cr-btn cr-btn-icon">
+                                        <span class="icon"><img src="okomo/images/icons/spin-icon.png" alt="spin icon"></span>
+                                        <span class="text">Load More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+                <!--// Blogs Wrapper -->
 
+            </div>
+            <!--// Blogs Inner -->
 
-</div>
-</div>
+        </div>
+        <!--// Blogs Area -->
 
-</body>
+        <!-- Contact Area -->
+        <div id="contact-area" class="imgmenu-single-area cr-section contact-area">
 
+            <!-- Header -->
+            <header class="header-area header-style-2">
+                <div class="header-logo">
+                    <a href="okomo/index.html">
+                        <img src="okomo/images/logo/logo-1.png" alt="header logo">
+                    </a>
+                </div>
+                <button class="back-to-root-button">GO BACK TO HOME<i class="ti-close"></i></button>
+            </header>
+            <!--// Header -->
 
-</html>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/jquery.velocity.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.6/velocity.ui.js'></script>
-<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/jquery.blast.js'></script>
+            <!-- Breadcrumb -->
+            <div class="cr-breadcrumb-area bg-breadcrumb-2" data-black-overlay="2">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="cr-breadcrumb cr-breadcrumb-2 text-center">
+                                <h1>Stay Connected For ever</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Breadcrumb -->
 
+            <!-- Contact Area Inner -->
+            <div class="contact-page section-padding-lg bg-white">
+                <div class="container">
+                    <div class="contact-page-address">
 
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <h5 class="small-title">Contact Address</h5>
+                                <p><b>A form of literature which uses digital technology to enhance the reading experience by responding to information about the reader's location, time of day, etc</b></p>
+                                <p>This is an activity that should be used primarily in the lower levels of language classes, because it will be most beneficial to lower-level speakers. Higher-level speakers should be having unpredictable conversations in
+                                    the TL, where neither the questions nor the answers are scripted or expected. If this activity were used with higher-level speakers it wouldn't have many benefits</p>
+                            </div>
+                        </div>
 
+                        <div class="row section-padding-top-xs">
 
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="contact-page-address-single">
+                                    <span class="contact-page-address-icon bg-skyblue">
+										<img src="okomo/images/icons/contact-icon-house.png" alt="icon house">
+									</span>
+                                    <div class="contact-page-address-content">
+                                        <h6>Home</h6>
+                                        <p>Junwatu Street 285B, Bandung, West Java , Indonesia, 65221.</p>
+                                    </div>
+                                </div>
+                            </div>
 
-        <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
-        </script>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="contact-page-address-single">
+                                    <span class="contact-page-address-icon bg-yellow">
+										<img src="okomo/images/icons/contact-icon-telephone.png" alt="icon telephone">
+									</span>
+                                    <div class="contact-page-address-content">
+                                        <h6>Phone</h6>
+                                        <p><a href="#">+012-3456-7890</a></p>
+                                        <p><a href="#">+012-3456-7890</a></p>
+                                        <p><a href="#">+012-3456-7890</a></p>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                <div class="contact-page-address-single">
+                                    <span class="contact-page-address-icon bg-blue">
+										<img src="okomo/images/icons/contact-icon-mail.png" alt="icon mail">
+									</span>
+                                    <div class="contact-page-address-content">
+                                        <h6>E-mail</h6>
+                                        <p><a href="mailto://info@example.com">info@example.com</a></p>
+                                        <p><a href="mailto://info@example.com">info@example.com</a></p>
+                                        <p><a href="mailto://info@example.com">info@example.com</a></p>
+                                    </div>
+                                </div>
+                            </div>
 
-                                 <script>
-                                 $(document).ready(function(){
-                                     $("h4").click(function(){
-                                         $(this).fadeOut();
-                                     });
-                                 });
-                                 </script>
+                        </div>
 
+                    </div>
 
-                                 <script> //INTRO
-                               $(document).ready(function(){
-                                   $("h4").click(function(){
-                                       $("#intro").delay(700).fadeOut("slow");
-                                       $("#outro").delay(1200).fadeIn("slow");
-                                   });
-                               });
-                               </script>
+                    <div class="row section-padding-top-lg">
+                        <div class="col-12">
+                            <h5 class="small-title">Drop Us A Line</h5>
+                            <form class="contact-form mt-5" id="contact-form" action="mail.php" method="POST">
+                                <textarea name="message" cols="30" rows="8" placeholder="Your Message"></textarea>
+                                <input name="name" type="text" placeholder="Name*">
+                                <input name="email" type="email" placeholder="Email*">
+                                <input name="phone" type="text" placeholder="Phone*">
+                                <input type="submit" value="Submit">
+                            </form>
+                            <p class="form-messege"></p>
+                        </div>
+                    </div>
 
-<script>
-                                  	 //CLOCK
-                                  	var myVar = setInterval(function(){ myTimer() }, 1000);
-                                  	function myTimer() {
-                                  	    var d = new Date();
-                                  	    var t = d.toLocaleTimeString();
-                                  	    document.getElementById("time").innerHTML = t;
-                                  	}
-                                  	function myStopFunction() {
-                                  	    clearInterval(myVar);
-                                  	}
-                                    </script>
+                    <div class="row justify-content-between align-items-center contact-page-footer mt-4">
+                        <div class="col-12 col-lg-6">
+                            <div class="contact-page-social">
+                                <h4>Follow Us On</h4>
+                                <div class="social-links social-links-colored">
+                                    <ul>
+                                        <li class="dribbble"><a href="#"><i class="ti ti-dribbble"></i></a></li>
+                                        <li class="pinterest"><a href="#"><i class="ti ti-pinterest"></i></a></li>
+                                        <li class="linkedin"><a href="#"><i class="ti ti-linkedin"></i></a></li>
+                                        <li class="instagram"><a href="#"><i class="ti ti-instagram"></i></a></li>
+                                        <li class="facebook"><a href="#"><i class="ti ti-facebook"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="contact-page-copyright">
+                                <p>© 2018 <a href="#">Okomo</a>. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            <!--// Contact Area Inner -->
 
-                                    <script>
-                                    let video = document.getElementById('container');
-                                    const setVideoDimensions = () => {
-                                      if (window.innerWidth / window.innerHeight > 16 / 9) {
-                                        video.style.width = '100vw';
-                                        video.style.height = 'calc(100vw * 9 / 16)';
-                                      } else {
-                                        video.style.width = 'calc(100vh * 16 / 9)';
-                                        video.style.height = '100vh';
-                                      }
-                                    };
-                                    window.onresize = setVideoDimensions;
-                                    setVideoDimensions();
-                                    </script>
+            <div class="google-map" id="google-map"></div>
 
+        </div>
+        <!--// Contact Area -->
 
+    </div>
+    <!-- //Main wrapper -->
+
+    <!-- Google Map Js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxvP66_Xk1ts77oL2Z7EpDxhDD_jMg-D0"></script>
+    <script src="okomo/js/google-map.js"></script>
+
+    <!-- JS Files -->
+    <script src="okomo/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="okomo/js/popper.min.js"></script>
+    <script src="okomo/js/bootstrap.min.js"></script>
+    <script src="okomo/js/plugins.js"></script>
+    <script src="okomo/js/plyr.min.js"></script>
+    <script src="okomo/js/ajax-mail.js"></script>
+    <script src="okomo/js/active.js"></script>
+    <script src="okomo/js/scripts.js"></script>
 
 </body>
 
