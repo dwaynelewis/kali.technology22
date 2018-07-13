@@ -7,3 +7,7 @@
 	Note: This is main css. All plugins css files import here.
 
 **********************************************************************************/
+
+.single-portfolio .single-portfolio-content h5 {
+    color: red;
+}
