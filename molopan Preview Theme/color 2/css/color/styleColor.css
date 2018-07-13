@@ -1,0 +1,46 @@
+h2:before,
+.home-page .content-home h1 span,
+.about-page h2 span{    
+    color: #FAC921;    
+}
+
+.home-page .content-home h1:after{  
+    border-bottom: 4px solid #FAC921;
+}
+/** Start icon-max && Close **/
+.about-page .icon-max,
+.services-page .icon-max,
+.contact-page .icon-max,
+.portfolio-page .icon-max,
+.portfolio-page .filter-port .content-icon .middle-cell a:hover,
+.dot1, 
+.dot2,
+.portfolio-page .nav-portfolio ul li.active{        
+    background: #FAC921;        
+}
+body::-webkit-scrollbar-thumb,
+.services-page .container-scroll::-webkit-scrollbar-thumb,
+.contact-page .container-scroll::-webkit-scrollbar-thumb,
+.portfolio-page .container-scroll::-webkit-scrollbar-thumb,
+.about-page .container-scroll::-webkit-scrollbar-thumb{
+    background: #FAC921;
+}
+/** Bottom Molo **/
+.btn-molo{
+    background-color: #FAC921;
+}
+.btn-molo-border,
+.btn-molo{    
+    border-color: #FAC921;    
+}
+.services-page h3:before,
+.navbar-dark .navbar-nav .nav-item:before{ 
+    border-bottom: 2px solid #FAC921;           
+}
+.portfolio-page .nav-portfolio ul li{
+    border: 1px solid #FAC921;
+}
+.contact-page form .form-input:focus,
+.contact-page form .textarea-input:focus{
+    border-bottom: 2px solid #FAC921;
+}

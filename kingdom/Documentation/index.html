@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Oz - Documentation</title>
+        <meta name="description" content="Oz - Personal Business VCard">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Awesomefont -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Main Style of the template -->
+		<link rel="stylesheet" href="css/main_style.css">
+		<!-- Syntax Highlighter -->
+		<link rel="stylesheet" href="css/shCoreDefault.css"/>		
+	</head>
+	<body>
+		<div id="lx-wrapper"><!-- Start of the Main wrapper -->
+			<div id="lx-header" class="lx-header"><!-- Start of the Main header -->
+				<div class="lx-logo">
+					<h1><a href="#">Oz</a></h1>
+				</div><!-- Logo  -->
+				<div class="lx-menu">
+					<ul>
+						<li><a href="#start" class="active">Start</a></li>
+						<li><a href="#structure">Structure</a></li>
+						<li><a href="#html">HTML</a></li>
+						<li><a href="#columns">Columns</a></li>
+						<li><a href="#css">CSS</a></li>
+						<li><a href="#js">Javascript / JQuery</a></li>
+					</ul>
+				</div>
+				<div class="lx-copyright">
+					<p>&copy; Copyright LinxTheme 2018</p>
+				</div>
+			</div><!-- End of the Main header -->
+			<div id="lx-main" class="lx-main"><!-- Start of the Main Body -->
+				<div class="lx-start" id="start">
+					<h1>Oz</h1>
+					<h3>Personal Business VCard</h3>
+					<ul>
+						<li>Created: 21/03/2018</li>
+						<li>By: LinxTheme</li>
+					</ul>
+					<p>Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free and contact us through this email <a href="mailto:lightinthedarkway@gmail.com">lightinthedarkway@gmail.com</a><p>
+				</div>
+				<div class="lx-structure" id="structure">
+					<h3>Structure</h3>
+					<ul>
+						<li>1.&nbsp;/HTML files <span>(All html files)</span></li>
+						<li>2.&nbsp;/css <span>(Template and plugings stylesheet)</span></li>
+						<li>3.&nbsp;/fonts <span>(Awesomefont)</span></li>
+						<li>3.&nbsp;/images <span>(Main images)</span></li>
+						<li>4.&nbsp;/js <span>(All needed javascript plugin and files)</span></li>
+					</ul>
+				</div>	
+				<div class="lx-structure">
+					<h3 id="html">HTML</h3>
+					<p>The HTML of this template is very clear and simple and well nested, you can easily reach whichever element you want without the need of breaking the structure. It uses as well a grid system of six columns,
+					so it would make the manipulation of the layout more flexible and customizable. All div blocs have a class name that is so clear and reflects what this div bloc is about.</p>
+					<p>Here is a sample of the HTML code</p>
+					<pre class="brush: html;">
+						<!-- Wrapper -->
+						<div class="lx-wrapper">
+							...
+							<!-- Header -->
+							<div class="lx-header">
+								<div class="lx-header-content">
+									...
+									<div class="lx-header-menu">
+										...
+									</div>
+									...
+								</div>
+							</div>
+							<!-- Main -->
+							<div class="lx-main">
+								<!-- Content -->
+								<div class="lx-main-content">
+									...
+								</div>
+							</div>
+							<!-- footer -->
+							<div class="lx-footer">
+								...
+							</div>
+						</div>
+					</pre>
+				</div>
+				<div class="lx-structure" id="columns">
+					<h3>Columns</h3>
+					<p>These basic columns are as follow : </p>
+					<pre class="brush: html;">
+						<div class="lx-g1">
+						
+						</div>
+						<div class="lx-g1-f">
+						
+						</div>
+						<div class="lx-g2">
+						
+						</div>
+						<div class="lx-g2-f">
+						
+						</div>
+						<div class="lx-g3">
+						
+						</div>
+						<div class="lx-g3-f">
+						
+						</div>
+						<div class="lx-g3-2">
+						
+						</div>
+						<div class="lx-g3-2-f">
+						
+						</div>
+						<div class="lx-g4">
+						
+						</div>
+						<div class="lx-g4-f">
+						
+						</div>
+						<div class="lx-g4-3">
+						
+						</div>
+						<div class="lx-g4-3-f">
+						
+						</div>
+						<div class="lx-g5">
+						
+						</div>
+						<div class="lx-g5-f">
+						
+						</div>
+						<div class="lx-g5-2">
+						
+						</div>
+						<div class="lx-g5-2-f">
+						
+						</div>
+						<div class="lx-g5-3">
+						
+						</div>
+						<div class="lx-g5-3-f">
+						
+						</div>
+						<div class="lx-g5-4">
+						
+						</div>
+						<div class="lx-g5-4-f">
+						
+						</div>
+						<div class="lx-g6">
+						
+						</div>
+						<div class="lx-g6-f">
+						
+						</div>
+						<div class="lx-g6">
+						
+						</div>
+						<div class="lx-g6-5-f">
+						
+						</div>
+						<div class="lx-g8">
+						
+						</div>
+						<div class="lx-g8-f">
+						
+						</div>
+						<div class="lx-g8-7">
+						
+						</div>
+						<div class="lx-g8-7-f">
+						
+						</div>
+					</pre>
+					<p>Just from there names you can notice how they work and what they are used for. For example, the class "lx-g3" is used when you want to make the bloc size the third of the page or the third of the container in which you place this "lx-g3" bloc. and the same goes for all other classes.</p>
+					<p>And below is the clear fix for floating blocs :</p>
+					<pre class="brush: html;">
+						<div class="lx-clear-fix"></div>
+						<!-- Clear float block -->
+					</pre>				
+				</div>
+				<div class="lx-structure" id="css">
+					<h3>CSS</h3>
+					<p>The CSS code in this templates is made of three files, the generale_settings, that contains the common setting between all elements. The main_style which contains almost all the CSS of this templates I can say even 99%. And the last but not least the reset_style that contains some classes that help change some predefined values in some blocs such as the padding the margin and so on ...</p>
+					<p>Here is the mains structure of the css code in this template : </p>
+					<pre class="brush: css;">
+						/* Loader */
+						.lx-loader{
+							display:flex;
+							align-items:center;
+							justify-content:center;
+							position:fixed;
+							z-index:99999;
+							left:0px;
+							top:0px;
+							width:100%;
+							height:100%;
+							text-align:center;
+							background:#3e3f50;
+						}
+						.lx-loader div{
+							color:#FFFFFF;
+						}
+						.lx-loader div h1{
+							font-family:'Lora';
+							font-size:40px;
+							font-weight:700;
+							margin-bottom:10px;
+						}
+						.lx-loader div p{
+							font-size:12px;
+							margin-top:10px;
+						}
+
+						/* Header */
+						.lx-header-content{
+							position:fixed;
+							z-index:3;
+							top:0px;
+							left:0px;
+							display:flex;
+							height:100%;
+						}					
+					</pre>	
+					<p>The main_style file contains a content table which will help you found quickly and easily the block you want and here it is in case you miss it : </p>
+					<pre class="brush: css;">
+						/* Or - Personal Business VCard
+						Here is the content of this css file
+
+							- Loader
+							- Header
+								- Logo
+								- Menu
+								- Menu Mobile
+							- Main
+								- Home info
+								- Home Slide
+								- Work
+								- Single Work
+								- Resume
+								- About
+								- Contact
+							- Footer
+
+						*/						
+					</pre>	
+					<p>The attributes for each elements appear in the following order : </p>
+					<ul>
+						<li>float :</li>
+						<li>display :</li>
+						<li>position (top:right:bottom:left) :</li>
+						<li>width :</li>
+						<li>height :</li>
+						<li>margin :</li>
+						<li>padding :</li>
+						<li>font (size:family:weight:style) :</li>
+						<li>text (align-transform) :</li>
+						<li>background :</li>
+						<li>color :</li>
+						<li>border :</li>
+						<li>border-radius :</li>
+						<li>box-shadow :</li>
+						<li>opacity :</li>
+						<li>transform :</li>
+						<li>transition :</li>
+					</ul>				
+				</div>
+				<div class="lx-structure" id="js">
+					<h3>Javascript / JQuery</h3>
+					<p>The mains js files are the JQuery library 1.12.4, and the main script file, the popup, and the gallery filter.</p>
+					<p>Most of the scripts in this template are our own coding.</p>
+					<p>Here is a sample of the js code we are using : </p>
+					<pre class="brush: js;">
+						// Strict Mode
+						"use strict";
+
+						var currentslide = 0;
+						var prevslide = 0;
+						var nbslides;
+						var timer;
+
+						// Window Load Event
+						$(window).on("load", function() {
+							// Loader Fade Out
+							$(".lx-loader").fadeOut();
+							return false;
+						});
+
+						// Document Ready event
+						$(document).on("ready", function() {
+							// Resize Youtube Iframe
+							if($("iframe[allowfullscreen]").length){
+								$("iframe[allowfullscreen]").height($("iframe[allowfullscreen]").width() * 0.6025);
+							}
+							// Mini Slide Init
+							if($(".lx-mini-slide").length){
+								for(var i=0;i<$(".lx-mini-slide").length;i++){
+									if(typeof $(".lx-mini-slide").attr("data-width") !== typeof undefined && $(".lx-mini-slide").attr("data-width") !== false){
+										if($(window).width() === 768){
+											$(".lx-mini-slide:eq("+i+")").parent().css({"width":($(window).width() - 80) + "px"});
+											$(".lx-mini-slide:eq("+i+") ul li").css({"width":($(window).width() - 80) + "px"});
+											$(".lx-mini-slide:eq("+i+") ul").css({"-webkit-transition":"all 0s","transition":"all 0s","left":"-"+ ($(window).width() - 80) + "px"});					
+										}
+										else if($(window).width() < 768){
+											$(".lx-mini-slide:eq("+i+")").parent().css({"width":($(window).width()) + "px"});
+											$(".lx-mini-slide:eq("+i+") ul li").css({"width":($(window).width()) + "px"});
+											$(".lx-mini-slide:eq("+i+") ul").css({"-webkit-transition":"all 0s","transition":"all 0s","left":"-"+ ($(window).width()) + "px"});					
+										}
+										else{
+											$(".lx-mini-slide:eq("+i+") ul li").css({"width":$(".lx-mini-slide:eq("+i+")").attr("data-width")});
+											$(".lx-mini-slide:eq("+i+") ul").css({"-webkit-transition":"all 0s","transition":"all 0s","left":"-"+$(".lx-mini-slide:eq("+i+")").attr("data-width")});					
+										}		
+									}
+									else{
+										$(".lx-mini-slide:eq("+i+") ul li").css({"width":$(".lx-mini-slide:eq("+i+")").outerWidth()+"px"});
+										$(".lx-mini-slide:eq("+i+") ul").css({"-webkit-transition":"all 0s","transition":"all 0s","left":"-"+$(".lx-mini-slide:eq("+i+")").outerWidth()+"px"});					
+									}
+								}		
+							}
+							// Nb. Slides
+							if($(".lx-home-slide").length){
+								nbslides = $(".lx-home-slide").length;
+							}
+							return false;
+						});
+
+						// Show Mobile Menu
+						$(".lx-header-menu-mobile > a").on("click",function(){
+							$(".lx-main-menu-mobile").fadeIn();
+						});
+						$(".lx-main-menu-mobile > i").on("click",function(){
+							$(".lx-main-menu-mobile").fadeOut();
+						});
+
+						// Home Navigation
+						$(".lx-home-navigation-content ul li a").on("click",function(){
+							var nb = $(this).attr("data-nb");
+							$(".lx-home-navigation-content ul li a").removeClass("active");
+							$(this).addClass("active");
+							$(".lx-fade-lt").removeAttr("style").css({"top":"-40px","left":"-60px","opacity":"0.0"});
+							$(".lx-fade-rb").removeAttr("style").css({"bottom":"-40px","right":"-60px","opacity":"0.0"});
+							window.setTimeout(function(){
+								$(".lx-home-slide").css("display","none");
+								$(".lx-home-slide:eq("+nb+")").css("display","block");
+								window.setTimeout(function(){
+									$(".lx-home-slide:eq("+nb+") .lx-fade-lt").removeAttr("style").css("transition","all ease 0.3s");
+									$(".lx-home-slide:eq("+nb+") .lx-fade-rb").removeAttr("style").css("transition","all ease 0.3s");
+									if(typeof $(".lx-mini-slide").attr("data-width") !== typeof undefined && $(".lx-mini-slide").attr("data-width") !== false){
+										if($(window).width() === 768){
+											$(".lx-mini-slide").parent().css({"width":($(window).width() - 80) + "px"});				
+										}
+										else if($(window).width() < 768){
+											$(".lx-mini-slide").parent().css({"width":($(window).width()) + "px"});				
+										}
+										else{
+											$(".lx-mini-slide").parent().css({"width":$(".lx-mini-slide").attr("data-width")});						
+										}		
+									}
+								},100);
+							},600);
+						});
+
+						// Mini Slide Navigation
+						var lx_passed = "yes";
+						$(".lx-mini-slide-nav > .fa-angle-right").on("click",function(){
+							if(lx_passed === "yes"){
+								lx_passed = "no";
+								var ul = $(this).parent().parent().find("ul")
+								ul.css({"-webkit-transition":"all 0.4s","transition":"all 0.4s","left":"-"+(ul.find("li").outerWidth()*2)+"px"});
+								window.setTimeout(function(){
+									ul.css({"-webkit-transition":"all 0s","transition":"all 0s","left":"-"+ul.find("li").outerWidth()+"px"});
+									var item = "<li style='width:"+ul.find("li").outerWidth()+"px;'>"+ul.find("li:eq(0)").html()+"</li>";
+									ul.append(item);
+									ul.find("li:eq(0)").remove();
+									lx_passed = "yes";
+								},500);
+							}
+						});
+						$(".lx-mini-slide-nav > .fa-angle-left").on("click",function(){
+							if(lx_passed === "yes"){
+								lx_passed = "no";
+								var ul = $(this).parent().parent().find("ul")
+								ul.css({"-webkit-transition":"all 0.4s","transition":"all 0.4s","left":"0px"});
+								window.setTimeout(function(){
+									ul.css({"-webkit-transition":"all 0s","transition":"all 0s","left":"-"+(ul.find("li").outerWidth())+"px"});
+									var item = "<li style='width:"+ul.find("li").outerWidth()+"px;'>"+ul.find("li:last-child").prev(".lx-mini-slide ul li").html()+"</li>";
+									ul.prepend(item);
+									ul.find("li:last-child").prev(".lx-mini-slide ul li").remove();
+									lx_passed = "yes";
+								},500);
+							}
+						});
+
+						if($(window).width() > 767){
+							if($(".lx-home-slide").length){
+								var myElement = document.getElementById('lx-home-slideup');
+								var mc = new Hammer(myElement);
+								mc.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+								mc.on("swipeup",function(ev){
+									if(currentslide < nbslides - 1){
+										currentslide = parseInt(currentslide) + 1;
+										$("a[data-nb='"+currentslide+"']").trigger("click");
+									}
+								});
+								mc.on("swipedown",function(ev){
+									if(currentslide > 0){
+										currentslide = parseInt(currentslide) - 1;
+										$("a[data-nb='"+currentslide+"']").trigger("click");
+									}	
+								});	
+							}
+							$(document).on("keyup", function(e) {
+								if (e.keyCode === 38) {
+									if(currentslide > 0){
+										currentslide = parseInt(currentslide) - 1;
+										$("a[data-nb='"+currentslide+"']").trigger("click");
+									}	
+								}	
+								if (e.keyCode === 40) {
+									if(currentslide < nbslides - 1){
+										currentslide = parseInt(currentslide) + 1;
+										$("a[data-nb='"+currentslide+"']").trigger("click");
+									}	
+								}	
+								return false;
+							});	
+						}
+
+						// Form Input Effect
+						$(".lx-textfield").on("click",function(){
+							$(this).find("span").css({"top":"0px","left":"15px"});
+							$(this).find("input").focus();
+							$(this).find("textarea").focus();
+						});
+						$(".lx-textfield input,.lx-textfield textarea").on("blur",function(){
+							if($(this).val() == ""){
+								$(this).next("span").css({"top":"25px","left":"25px"});
+							}
+						});
+
+						// Contact Form Errors
+						$(".lx-contact-form a").on("click", function() {
+							var fullname = $(".lx-contact-form input[name='fullname']");
+							var email = $(".lx-contact-form input[name='email']");
+							var patt = /^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+							var subject = $(".lx-contact-form input[name='subject']");
+							var txtarea = $(".lx-contact-form textarea");
+							if(fullname.val() !== "" && patt.test(email.val()) && txtarea.val()){
+								var url = "send-contact-form.php?fullname="+fullname.val()+"&email="+email.val()+"&subject="+subject.val()+"&message="+txtarea.val();
+								var posting = $.post( url );
+								posting.done(function( data ) {
+									$(".lx-floating-response").remove();
+									window.clearTimeout(timer);
+									$("body").append('<div class="lx-floating-response"><p class="lx-succes"><i class="material-icons">error_outline</i> Thanks for contacting me <b>'+fullname.val()+'</b>. Your message was sent succesfully. I\'m going to get in touch with you as soon as possible<i class="material-icons">close</i></p></div>');
+									$(".lx-floating-response").fadeIn();
+									timer = window.setTimeout(function(){
+										$(".lx-floating-response").fadeOut();
+									},5000);			
+									fullname.val("");
+									email.val("");
+									subject.val("");
+									txtarea.val("");
+								});	
+							}	
+							else{
+								$(".lx-floating-response").remove();
+								window.clearTimeout(timer);
+								$("body").append('<div class="lx-floating-response"><p class="lx-error"><i class="material-icons">error_outline</i> Something went wrong<i class="material-icons">close</i></p></div>');
+								$(".lx-floating-response").fadeIn();
+								timer = window.setTimeout(function(){
+									$(".lx-floating-response").fadeOut();
+								},5000);		
+							}
+							return false;
+						});
+
+						// Remove Floating Message
+						$("body").delegate(".lx-floating-response","click",function(){
+							$(".lx-floating-response").fadeOut();
+						});
+					</pre>
+					<p>I used also the syntaxhighlighter 3.0.83 jquery libarary to format the code text (html, css, js) in this documentation and in the template as well.</p>
+					<p>I hope this documentation will be satisfactory to you, and if you feel anything is wrong with the template please contact us in the following email <a href="mailto:lightinthedarkway@gmail">lightinthedarkway@gmail</a> or contact us through our page in themeforest.</p>
+					<p><b>LinxTheme</b><br />Best Regards</p>
+				</div>	
+			</div><!-- End of the Main Body -->
+		</div><!-- End of the Main wrapper -->
+		<!-- JQuery -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			$(".lx-menu ul li a").on("click",function(){
+				$(".lx-menu ul li a").removeClass("active");
+				$(this).addClass("active");
+			})
+		</script>		
+		<!-- Syntax Highlighter -->
+		<script type="text/javascript" src="js/shCore.js"></script>
+		<script type="text/javascript" src="js/shBrushXml.js"></script>
+		<script type="text/javascript" src="js/shBrushCss.js"></script>
+		<script type="text/javascript" src="js/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>	
+
+	</body>
+</html>

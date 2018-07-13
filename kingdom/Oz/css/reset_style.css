@@ -1,0 +1,35 @@
+/* Settings re-setters */
+.lx-fade-lt{
+	transition:all ease 0.6s;
+}
+.lx-fade-rb{
+	transition:all ease 0.6s;
+}
+.lx-pl-30{
+	padding-left:30px;
+}
+.lx-pr-30{
+	padding-right:30px;
+}
+.lx-br-1{
+	border-right:1px solid #c6c6c6;
+}
+.lx-bg-none{
+	background:none;
+}
+.lx-rel-l{
+	position:relative;
+	left:-50px;
+}
+.lx-rel-r{
+	position:relative;
+	right:-50px;
+}
+@media(max-width:768px){
+	.lx-rel-l{
+		left:0px;
+	}
+	.lx-rel-r{
+		right:0px;
+	}
+}
