@@ -19,3 +19,7 @@ button.fsmenu-trigger.fullscreen-menu-trigger {
 button.back-to-root-button {
     color: red;
 }
+
+.fullscreen-header {
+    background-image: url("../trees.jpg");
+}
