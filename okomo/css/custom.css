@@ -11,3 +11,11 @@
 .single-portfolio .single-portfolio-content h5 {
     color: red;
 }
+
+button.fsmenu-trigger.fullscreen-menu-trigger {
+    color: blue;
+}
+
+button.back-to-root-button {
+    color: red;
+}
