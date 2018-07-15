@@ -21,6 +21,6 @@ button.back-to-root-button {
 }
 
 .fullscreen-header {
-    background-image: url("../trees.jpg");
-    opacity: .9;
+    background-image: url("../hwy.jpg");
+    /* opacity: .9; */
 }
