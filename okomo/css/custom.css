@@ -21,6 +21,10 @@ button.back-to-root-button {
 }
 
 .fullscreen-header {
-    background-image: url("../hwy.jpg");
+    background-image: url("../white.jpg");
     /* opacity: .9; */
+}
+
+.fullscreen-header .back-to-root-button {
+    color: red;
 }
