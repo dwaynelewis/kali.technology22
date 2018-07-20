@@ -9,7 +9,7 @@
 **********************************************************************************/
 
 .single-portfolio .single-portfolio-content h5 {
-    color: red;
+    color: #B7281D;
 }
 
 button.fsmenu-trigger.fullscreen-menu-trigger {
@@ -17,7 +17,7 @@ button.fsmenu-trigger.fullscreen-menu-trigger {
 }
 
 button.back-to-root-button {
-    color: red;
+    color: #B7281D;
 }
 
 .fullscreen-header {
@@ -26,5 +26,5 @@ button.back-to-root-button {
 }
 
 .fullscreen-header .back-to-root-button {
-    color: red;
+    color: #B7281D;
 }
