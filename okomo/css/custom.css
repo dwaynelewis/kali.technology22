@@ -28,3 +28,14 @@ button.back-to-root-button {
 .fullscreen-header .back-to-root-button {
     color: #B7281D;
 }
+
+#faq {
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+    color: #B7281D;
+    font-size: 2rem;
+    font-weight: bold;
+}
