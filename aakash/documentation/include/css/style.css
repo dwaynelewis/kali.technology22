@@ -1,0 +1,46 @@
+/*reset css starts here*/
+* { margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6, p, ul, li, body, html, form, fieldset { margin:0; padding:0; outline:none; font-weight:normal; border:0 }
+form, fieldset { width:100% }
+img { border:0; }
+a { text-decoration:underline; border:0; outline:0; }
+a:hover{text-decoration:none;}
+.clear { clear:both; width:auto !important }
+ul { list-style:none; }
+a:focus, input:focus { outline:0 !important; box-shadow:none !important;}
+.nobg { background:transparent !important; }
+.color{color:#222;}
+/*reset css ends here*/
+html, body{min-height:100%;}
+body { background:#fff; font:300 16px/27px 'Gabriela'; color:#333; }
+a{-moz-transition: all 0.4s ease; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;}
+p{padding:15px 15px 40px; font-weight:300;}
+a, a:hover, a:focus, a:active{color:#222; font-weight:300;}
+.container{width:100%; max-width:1170px;}
+b, strong{font-weight:400;}
+header{padding:20px; text-align:center; color:#2d2d2d; margin-bottom:30px;}
+h1{font-size:60px; line-height:60px; font-weight:700; color:#2d2d2d; margin-bottom:10px;}
+h1 img{width:150px;}
+h2{font-size:26px; line-height:30px; font-weight:300; color:#2d2d2d; }
+h3{font-size:23px; line-height:30px; font-weight:300; color:#2d2d2d; margin-bottom:20px; }
+h4{font-size:20px; line-height:30px; font-weight:300; color:#fff; margin-bottom:20px; padding:10px; background:#2d2d2d; }
+
+.btn-default{color: #000; background-color: #e84545; border:0; text-shadow:none; margin:5px 0; clear:both;}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active{color:#000; background-color: #222; border:0;}
+
+ol{margin-bottom:30px;}
+ol li{ list-style-position:inside; padding-bottom:5px; color:#222;}
+pre{background:rgba(0,0,0,0.2); border:0; border-radius:0; font-family:'Gabriela'; font-size:15px; font-weight:bold; padding:25px; color:#000;}
+
+.go-top, .go-top:focus{float:left; background:#222; color:#fff; line-height:30px; font-size:13px; padding:3px 15px; position:fixed; right:15px; bottom:15px; text-align:center; z-index:999; cursor:pointer; border-radius:5px; text-decoration:none;  }
+.go-top:hover{background:#2d2d2d; text-decoration:none; color:#fff; }
+
+.jumbotron p{padding:0; margin:0; line-height:200%;}
+@media only screen and (max-width: 600px) {
+body{font-size:15px; line-height:23px;}
+h1{font-size:30px; line-height:34px;}
+h2{font-size:26px; line-height:32px;}
+
+}
+
+
